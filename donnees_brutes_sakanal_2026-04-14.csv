@@ -1,0 +1,973 @@
+﻿nom_produit,categorie,prix,magasin,date_scraping,url_produit
+CARTON CORNICHON BON APPETIT 12*37CL,Epicerie,81607752579962.0,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/7409-carton-cornichon-bon-appetit-1237cl.html
+THE LIPTON HETTE FRAISE TEA 25 SACHETS,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34751-the-lipton-hette-fraise-tea-25-sachets.html
+BISCUIT BOOM VANILLE 24PCS,Epicerie,15701491515382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34730-biscuit-boom-vanille-24pcs.html
+SAUCE SOJA AUX CHAMPIGNONS SORA SACHET 7ML,Epicerie,55525532.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34727-sauce-soja-aux-champignons-sora-sachet-7ml.html
+FLOCONS D'AVOINE COMPLETE NETTO 500G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34725-flocons-davoine-complete-netto-500g.html
+KETCHUP TOMATE NETTO 560G,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34724-ketchup-tomate-netto-560g.html
+CEREALE CORN FLAKES NETTO MAIS 8 VITAMINES DORE 500G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34723-cereale-corn-flakes-netto-mais-8-vitamines-dore-500g.html
+CAFE CAPPUCCINO NETTO SAVEUR CHOCOLAT 200G,Epicerie,29502802528912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34722-cafe-cappuccino-netto-saveur-chocolat-200g.html
+BISCUIT NETTO COOKIES PEPITES DE CHOCOLAT TOP BUDGET 200G,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34721-biscuit-netto-cookies-pepites-de-chocolat-top-budget-200g.html
+BISCUIT NETTO PALETS BRETONS 125G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34720-biscuit-netto-palets-bretons-125g.html
+MOUHAMSA PASTANORA PLOMB 250G,Epicerie,29027552842.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34716-mouhamsa-pastanora-plomb-250g.html
+BONBON HARIBO PEACHES 120G,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34714-bonbon-haribo-peaches-120g.html
+BONBON HARIBO POLKA 120G,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34713-bonbon-haribo-polka-120g.html
+BONBON HARIBO TAGADA 120G,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34712-bonbon-haribo-tagada-120g.html
+BONBON HARIBO D OEUF AU PLAT 120G,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34711-bonbon-haribo-d-oeuf-au-plat-120g.html
+CHOCOLAT LINDTLAIT CREATION PRALINE FEUILLANTINE 110G,Epicerie,37503562536752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34709-chocolat-lindtlait-creation-praline-feuillantine-110g.html
+CHOCOLAT LINDT CREATION CARAMEL 150G,Epicerie,32503087531852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34708-chocolat-lindt-creation-caramel-150g.html
+CHOCOLAT LINDT CREATION ROCHER LAIT 150G,Epicerie,32503087531852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34707-chocolat-lindt-creation-rocher-lait-150g.html
+CHOCOLAT LINDT EXCELLENT NOIR CARAMEL 150G,Epicerie,32503087531852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34706-chocolat-lindt-excellent-noir-caramel-150g.html
+CHOCOLAT LINDT L AUTHENTIQUE LAIT EXTRA FIN 100G,Epicerie,26802546526262.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34705-chocolat-lindt-l-authentique-lait-extra-fin-100g.html
+CHOCOLAT LINDT L AUTHENTIQUE CHOCOLAT NOIR 100G,Epicerie,26802546526262.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34704-chocolat-lindt-l-authentique-chocolat-noir-100g.html
+CHOCOLAT LINDT L AUTHENTIQUE ECLATS DE NOISSETTES 100G,Epicerie,26802546526262.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34703-chocolat-lindt-l-authentique-eclats-de-noissettes-100g.html
+CHOCOLAT LINDT L AUTHENTIQUE DOUBLE LAIT 100G,Epicerie,26802546526262.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34702-chocolat-lindt-l-authentique-double-lait-100g.html
+FROMAGE EMMENTAL FROMADELLI RAPE 100G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-frais/34701-fromage-emmental-fromadelli-rape-100g.html
+BONBON SUCETTE RAMA CREAMY LAIT 100PCS,Epicerie,31052949530422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34700-bonbon-sucette-rama-creamy-lait-100pcs.html
+BISCUIT LIMOSINE 1PCS,Epicerie,50475492.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34692-biscuit-limosine-1pcs.html
+SKL POP CORN 250G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34691-skl-pop-corn-250g.html
+VERMICELLE PASTA ALNOUR 5KG,Epicerie,45004275544102.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34685-vermicelle-pasta-alnour-5kg.html
+CAFE MOULU D EQUILIBRE NOYAUX DE DATTES 500G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34678-cafe-moulu-d-equilibre-noyaux-de-dattes-250g.html
+CAFE MOULU D EQUILIBRE NOYAUX DE DATTES 250G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34677-cafe-moulu-d-equilibre-noyaux-de-dattes-100g.html
+SAUCE PIZZA SULTAN SEAU 500G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34674-sauce-pizza-sultan-seau-500g.html
+CHOCOLAT ORIGINAL NOCILLA 180G,Epicerie,23002185522542.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34671-chocolat-original-nocilla-180g.html
+CAFE STICK BONJOURNE BY MR COOK 2GX150PCS,Epicerie,41053899540222.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34667-cafe-stick-bonjourne-by-mr-cook-2gx120pcs.html
+KETCHUP BONJOURNE BOUTEILLE 340G,Epicerie,47545154652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34664-ketchup-bonjourne-bouteille-340g.html
+CHOCOLAT EN POUDRE COLA CAO 400G,Epicerie,29502802528912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34651-chocolat-en-poudre-cola-cao-400g.html
+CHOCOLAT EN POUDRE COL CAO 250G,Epicerie,22502137522052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34650-chocolat-en-poudre-col-cao-250g.html
+MIEL HONEY NAURE PURE CLASSY 1KG,Epicerie,37503562536752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34646-miel-honey-naure-pure-classy-1kg.html
+BISCUIT BISCOTTES NETTO NETTO 6 CEREALES 300G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34643-biscuit-biscottes-netto-netto-6-cereales-300g.html
+BISCUIT BISCOTTES NETTO NATURE 300G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34642-biscuit-biscottes-netto-nature-300g.html
+EPICE NOKOSS PASSPARTOUT AMA VIANDE ET POUL ET NON EPICE 300G,Epicerie,18501757518132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34638-epice-nokoss-passpartout-ama-viande-et-poul-et-non-epice-300g.html
+EPICE NOKOSS PASSPARTOUT AMA PIMAIL NON EPICE 300G,Epicerie,18501757518132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34634-epice-nokoss-passpartout-ama-pimail-non-epice-300g.html
+EPICE NOKOSS PASSPARTOUT AMA NON EPICE 300G,Epicerie,18501757518132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34631-epice-nokoss-passpartout-ama-non-epice-300g.html
+CAFE BONJOURNE MR COOK POT 50G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34627-cafe-bonjourne-mr-cook-pot-50g.html
+CONFITURE C BON MARMELADE D ORANGE 370G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34625-confiture-c-bon-marmelade-d-orange-370g.html
+CURRY C'BON SACHETS 500G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34623-curry-cbon-sachets-500g.html
+PRINGLES CHEESE CREAM & ONION 165G,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34611-pringles-cheese-cream-onion-165g.html
+BISCUITS MARIA COOKI 0% SUCRE 200G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34539-biscuits-maria-cooki-0-sucre-200g.html
+COUSCOUS DALIA FIN 1KG,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34510-couscous-dalia-fin-1kg.html
+CARTON COUSCOUS DALIA MOYEN 12*1KG,Epicerie,1.2500118755122502e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/34509-carton-couscous-dalia-moyen-121kg.html
+COUSCOUS DALIA MOYEN 1KG,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34508-couscous-dalia-moyen-1kg.html
+CARTON MACARONI DALIA PENNE RIGATE 12*500G,Epicerie,1.2630119985123772e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/34507-carton-macaroni-dalia-penne-rigate-12500g.html
+MACARONI DALIA PENNE RIGATE 500G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34506-macaroni-dalia-plume-500g.html
+CARTON MACARONI DALIA TORSADE 12*500G,Epicerie,1.2630119985123772e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/34505-carton-macaroni-dalia-torsade-12500g.html
+MACARONI DALIA TORSADE 500G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34504-macaroni-dalia-torsade-500g.html
+MACARONI DALIA COQUILLETTES 500G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34502-macaroni-dalia-coquillettes-500g.html
+CARTON VERMICELLE CHEVEUX D'ANGE DALIA 12*500G,Epicerie,85008075583302.0,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/34500-carton-vermicelle-cheveux-dange-dalia-12500g.html
+VERMICELLE CHEVEUX D'ANGE DALIA 500G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34499-vermicelle-cheveux-dange-dalia-500g.html
+LISTERINE FEUILLE MENTHE FRESHBURST POCKET 24PCS,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34432-listerine-feuille-menthe-freshburst-pocket-24pcs.html
+CARTON NESCAFE SELECTION 12*100G,Epicerie,3.999537995539195e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34430-carton-nescafe-selection-12100g.html
+NESCAFE SPECIAL FILTRE JAR 100G,Epicerie,37503562536752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34429-nescafe-special-filtre-jar-100g.html
+NESCAFE SELECTION 100G,Epicerie,37503562536752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34427-nescafe-selection-100g.html
+CARTON NESCAFE SELECTION 6*200G,Epicerie,3.999537995539195e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34426-carton-nescafe-selection-6200g.html
+NESCAFE SELECTION 200G,Epicerie,78957500577372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34425-nescafe-selection-200g.html
+BISCUIT MINI CHICO MIKO CHOCOLAT POT 100G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34353-biscuit-mini-chico-miko-chocolat-pot-100g.html
+BISCUIT MINI CHICO MIKO VANILLE POT 100G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34352-biscuit-mini-chico-miko-vanille-pot-100g.html
+BISCUIT CUETARA TOSTA RICA 190G,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34351-biscuit-cuetara-tosta-rica-190g.html
+CEREALE CORN FLAKES KD CLASSIC 375G,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34347-cereale-corn-flakes-kd-classic-375g.html
+BISCUIT CUETARA WAFER COCOA 150G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34346-biscuit-cuetara-wafer-cocoa-150g.html
+MADELEINE DELICIOSA ORIGINAL 12PCS,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34344-madeleine-deliciosa-original-12pcs.html
+MADELEINE DELICIOSA ORIGINAL 6PCS,Epicerie,91086458912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34343-madeleine-deliciosa-original-6pcs.html
+BISCUIT MINI CHICO MIKO FRAISE POT 100G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34342-biscuit-mini-chico-miko-fraise-pot-100g.html
+BISCUIT KRIT KRITITAS SACHETS 40GR,Epicerie,45042754412.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34341-biscuit-krit-krititas-sachets-40gr.html
+BONBON ALWAYS FRESH PEPPERMINT 1.23 OZ 35G,Epicerie,14101339513812.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34340-bonbon-always-fresh-peppermint-123-oz-35g.html
+BONBON ALWAYS FRESH 1.23 OZ 35G,Epicerie,14101339513812.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34339-bonbon-always-fresh-123-oz-35g.html
+BISCUIT BAUDUCCO MINI WAFER FRAISE 30G,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34315-biscuit-bauducco-mini-wafer-fraise-30g.html
+BISCUIT POMME DE TERRE CREAM ET OINION POTATA 50PCS *15G,Epicerie,25002375524502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34309-biscuit-pomme-de-terre-cream-et-oinion-potata-50pcs-15g.html
+SAUCE SOJA BONJOURNE PM 150ML,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34302-sauce-soja-bonjourne-pm-150ml.html
+SAUCE SOJA BONJOURNE GM 750ML,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34301-sauce-soja-bonjourne-gm-750ml.html
+COFFE MATE 1.5KG,Epicerie,99909490597902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34297-coffe-mate-15kg.html
+CHIPS D'OR SUPER CRISPY FROMMAGE 35G,Epicerie,47545154652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34296-chips-dor-super-crispy-frommage-35g.html
+MIEL TUBE PURE BEE HONEY ADORO 400G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34295-miel-tube-pure-bee-honey-adoro-400g.html
+BISCUIT NETTO GALETTES BRETONNES 125G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34293-biscuit-netto-galettes-bretonnes-125g.html
+KETCHUP TOMATE TAMA 5L,Epicerie,49004655548022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34278-ketchup-tomate-tama-5l.html
+CONFITURE C BON DE FRUITS MELANGES 370G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34276-confiture-c-bon-de-fruits-melanges-370g.html
+CONFITURE C BON D ABRICOT 370G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34275-confiture-c-bon-d-abricot-370g.html
+CONFITURE C BON ANANAS 370G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34274-confiture-c-bon-ananas-370g.html
+CONFITURE C BON FRAISE 370G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34273-confiture-c-bon-fraise-370g.html
+COUSCOUS BON APPETIT FIN 1KG,Epicerie,84580258282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34216-couscous-bon-appetit-fin-1kg.html
+COUSCOUS BON APPETIT MOYEN 1KG,Epicerie,84580258282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34215-couscous-bon-appetit-moyen-1kg.html
+BISCUITS LA CASA DEL COOKIES GALACTICOS 140G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34202-biscuits-la-casa-del-cookies-galacticos-140g.html
+BISCUITS LA CASA DEL COOKIES MOSAIC 140G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34201-biscuits-la-casa-del-cookies-mosaic-140g.html
+BISCUITS LA CASA DEL COOKIES VANILLE 140G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34200-biscuits-la-casa-del-cookies-vanille-140g.html
+BISCUITS LA CASA DEL COOKIES AUX PEPITES DE CACAO 140G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34199-biscuits-la-casa-del-cookies-aux-pepites-de-cacao-140g.html
+BISCUITS DIBALA COOKIES PEPITES DE CHOCOLAT 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34196-biscuits-dibala-cookies-pepites-de-chocolat-1pcs.html
+BISCUITS DIBALA PRIMO COOKIES TROPICAL 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34195-biscuits-dibala-primo-cookies-tropical-1pcs.html
+BISCUITS DIBALA PRIMO COOKIES GRENADINE 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34193-biscuits-dibala-primo-cookies-grenadine-1pcs.html
+BISCUITS DIBALA PRIMO COOKIES DATTES 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34191-biscuits-dibala-primo-cookies-dattes-1pcs.html
+BISCUITS DIBALA PRIMO COOKIES DATTES 24PCS,Epicerie,43254108542382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34190-biscuits-dibala-primo-cookies-dattes-24pcs.html
+BISCUITS DIBALA PRIMO COOKIES ASSIL 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34189-biscuits-dibala-primo-cookies-assil-1pcs.html
+BISCUITS DIBALA PRIMO COOKIES DARK 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34188-biscuits-dibala-primo-cookies-dark-1pcs.html
+BISCUITS DIBALA PRIMO COOKIES DARK 24PCS,Epicerie,43254108542382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34187-biscuits-dibala-primo-cookies-dark-24pcs.html
+BISCUITS DIBALA PRIMO COOKIES MOSAIC 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34186-biscuits-dibala-primo-cookies-mosaic-1pcs.html
+BISCUITS DIBALA PRIMO COOKIES MOSAIC 24PCS,Epicerie,43254108542382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34185-biscuits-dibala-primo-cookies-mosaic-24pcs.html
+BISCUITS DIBALA PRIMO CAKE BRETON CITRON 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34184-biscuits-dibala-primo-cake-breton-citron-1pcs.html
+BISCUITS DIBALA PRIMO CAKE BRETON COCO 1PCS,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34182-biscuits-dibala-primo-cake-breton-coco-1pcs.html
+BISCUITS DIBALA PRIMO CAKE BRETON COCO 24PCS,Epicerie,43254108542382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34181-biscuits-dibala-primo-cake-breton-coco-24pcs.html
+FLOCONS D'AVOINE PRECUIT OATO QUICKER 500G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34078-flocons-davoine-precuit-oato-quicker-500g.html
+THE LIPTON BONJOURNE FRAISE 25SACHETS,Epicerie,16001520515682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34075-the-lipton-bonjourne-fraise-25sachets.html
+BISCUIT GAUFRETTES NETTO VANILLE 175G,Epicerie,11601102511362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34066-biscuit-gaufrettes-netto-vanille-175g.html
+PASTILLE VALDA CLASSIQUE PAQUETS DE 60PCS,Epicerie,11501092511272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34065-pastille-valda-classique-paquets-de-60pcs.html
+BISCUIT GAUFRETTES NETTO FOURRES AU CACAO 175G,Epicerie,11601102511362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34064-biscuit-gaufrettes-netto-fourres-au-cacao-175g.html
+BISCUIT GAUFRETTES NETTO NOISETTES 175G,Epicerie,11601102511362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34063-biscuit-gaufrettes-netto-noisettes-175g.html
+CAFE ASTA DECAFEINE 100G,Epicerie,35003325534302.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34052-cafe-asta-decafeine-100g.html
+CAFE BONJOURNE MR COOK POT 200G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/34042-cafe-bonjourne-mr-cook-pot-200g.html
+MAYONNAISE AMORA BOCAL 385G,Epicerie,29102764528512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34040-mayonnaise-amora-bocal-385g.html
+CAFE POT C BON 100G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34033-cafe-pot-c-bon-100g.html
+BETTRAVE LES JARDINS D ADRIENS 4/4 800G,Epicerie,18751781518372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34032-bettrave-les-jardins-d-adriens-4-4-800g.html
+NESCAFE SOLUBLE SELECTION BF 100G,Epicerie,30002850529402.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34028-nescafe-soluble-selection-bf-100g.html
+NESCAFE SOLUBLE SELECTION BF 50G,Epicerie,19001805518622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34026-nescafe-soluble-selection-bf-50g.html
+POIS CHICHES HEAD CHEF 4/4 800G,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34024-pois-chiches-head-chef-4-4-800g.html
+BOISSON GAZEUSE SCHWEPPES AGRUMES 30CL,Epicerie,35033253432.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34022-boisson-gazeuse-schweppes-agrumes-30cl.html
+CONSERVE COEUR DE PALMIER 1/2 400G,Epicerie,34503277533812.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34019-conserve-coeur-de-palmier-1-2-400g.html
+CONSERVE COEUR DE PALMIER 4/4 800G,Epicerie,68756531567372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34018-conserve-coeur-de-palmier-4-4-800g.html
+BISCUIT RACHELLA CHOCOLAT LAIT ET RIZ SOUFFLEE 24PCS,Epicerie,26502517525972.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34002-biscuit-rachella-chocolat-lait-et-riz-soufflee-24pcs.html
+BISCUIT RACHELLA CHOCOLAT BLANC NOIX DE COCO 24PCS,Epicerie,27502612526952.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/34001-biscuit-rachella-chocolat-blanc-noix-de-coco-24pcs.html
+MIEL HONEY MOURAFA BOUTEILLE 250ML,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33984-miel-honey-mourafa-bouteille-250ml.html
+BISCUIT COOKIE BOOM LAINE DE CHOCOLAT 36GX24PCS,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33970-biscuit-cookie-boom-laine-de-chocolat-36gx24pcs.html
+THE TWININGS MENTHE CITRON VERT GINGEMBRE 20 SACHETS,Epicerie,29502802528912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33941-the-twinings-menthe-citron-vert-gingembre-20-sachets.html
+THE POT TAMARIN NANAH ARAW 400G,Epicerie,29702821529102.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33940-the-pot-tamarin-nanah-araw-400g.html
+PINBOULETTE DE SARDINELLE 400G,Epicerie,13551287513272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33939-pinboulette-de-sardinelle-400g.html
+CONSERVE LIZA NDAMBE (NIEBE A LA SAUCE TOMTE ) 380G,Epicerie,78074157642.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33938-conserve-liza-ndambe-niebe-a-la-sauce-tomte-380g.html
+BISCUITS RAMA CRISPY CONE FRAISE 100PCS,Epicerie,35003325534302.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33926-biscuits-rama-crispy-cone-mango-100pcs.html
+CHEWING GUM FREEDENT PAQUETS 5*10D MENTHE VERT 14G,Epicerie,21902080521462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33925-chewing-gum-freedent-paquets-510d-menthe-vert-14g.html
+CHEWING GUM FREEDENT PAQUETS 5*10D FRAISE 14G,Epicerie,21902080521462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33924-chewing-gum-freedent-paquets-510d-fraise-14g.html
+BISCUITS RAMA CRISPY CONE VANILLE CHOCO 100PCS,Epicerie,35003325534302.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33923-biscuits-rama-crispy-cone-vanille-choco-100pcs.html
+COUSCOUS BONJOURNE BY MR COOK MOYEN 500G,Epicerie,55052255392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33916-couscous-bonjourne-by-mr-cook-moyen-500g.html
+COUSCOUS BONJOURNE BY MR COOK FIN 500G,Epicerie,57554655632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33915-couscous-bonjourne-by-mr-cook-fin-500g.html
+COUSCOUS BONJOURNE BY MR COOK MOYEN 1KG,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33914-couscous-bonjourne-by-mr-cook-moyen-1kg.html
+BISCUIT PETIT BEURRE ORIGINAL 60G,Epicerie,35033253432.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33912-biscuit-petit-beurre-original-60g.html
+BISCUIT GALETTE BRETOONE 60G,Epicerie,35033253432.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33911-biscuit-galette-bretoone-60g.html
+BISCUIT COOKY CHOCOLAT ORIGINAL 60G,Epicerie,32530853182.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33910-biscuit-cooky-chocolat-original-60g.html
+BEIGNET CREVETTE C'BON 170G,Epicerie,55052255392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33909-beignet-crevette-cbon-170g.html
+CHOCOLAT LINDT EXCELLENT NOIR AUX TROIS GRAINES 100G,Epicerie,32503087531852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33898-chocolat-lindt-excellent-noir-aux-trois-graines-100g.html
+BONBON HARIBO HAPPY COLA 120G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33894-bonbon-haribo-happy-cola-120g.html
+BISCUITS DIGESTIVE 0% CHOCOLAT HOME STYLE 200G,Epicerie,21001995520582.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33891-biscuits-digestive-0-chocolat-home-style-200g.html
+BISCUITS DIGESTIVE 0% CUETARA HOME STYLE 150G,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33890-biscuits-digestive-0-cuetara-home-style-150g.html
+BISCUITS DIGESTIVE 0% CUETA COOKIE 200G,Epicerie,22002090521562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33888-biscuits-digestive-0-cueta-cookie-200g.html
+BISCUIT FOURRE VANILLE BRINK 250G,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33886-biscuit-fourre-vanille-brink-250g.html
+BISCUIT FOURRE CHOCOLAT BRINK 250G,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33885-biscuit-fourre-chocolat-brink-250g.html
+CHEWING GUM FREEDENT 10D FRAISE 14G,Epicerie,15514751512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33883-chewing-gum-freedent-10d-fraise-14g.html
+BONBON HARIBO DRAGIBUS SOFT 120G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33881-bonbon-haribo-dragibus-soft-120g.html
+BONBON HARIBO DELIR PIK 120G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33880-bonbon-haribo-delir-pik-120g.html
+CHEWING GUM HOLLYWOOD DRAGE FRAISE,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33875-chewing-gum-hollywood-drage-fraise.html
+EPICE MOURAFA POIVRE GRAIN POT 60G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33824-epice-mourafa-poivre-grain-pot-60g.html
+EPICE MOURAFA PIMENT EN POUDRE POT 60G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33823-epice-mourafa-piment-en-poudre-pot-60g.html
+THE LIPTON MOURAFA NOIR 25 SACHETS,Epicerie,15701491515382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33822-the-lipton-mourafa-noir-25-sachets.html
+EPICE MOURAFA PIMENT EN POUDRE POT 30G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33821-epice-mourafa-piment-en-poudre-pot-30g.html
+EPICE MOURAFA PAPRIKA POT 30G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33820-epice-mourafa-paprika-pot-30g.html
+EPICE MOURAFA MORINGA EN POUDRE POT 60G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33817-epice-mourafa-moringa-en-poudre-pot-60g.html
+EPICE MOURAFA MORINGA EN POUDRE POT 30G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33816-epice-mourafa-moringa-en-poudre-pot-30g.html
+EPICE MOURAFA LAURIER EN POUDRE POT 60G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33815-epice-mourafa-laurier-en-poudre-pot-60g.html
+EPICE MOURAFA LAURIER EN POUDRE POT 30G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33814-epice-mourafa-laurier-en-poudre-pot-30g.html
+EPICE MOURAFA CURCUMA POT 60G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33813-epice-mourafa-curcuma-pot-60g.html
+EPICE MOURAFA CURCUMA POT 30G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33812-epice-mourafa-curcuma-pot-30g.html
+EPICE MOURAFA CURRY POT 60G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33811-epice-mourafa-curry-pot-60g.html
+CLOU DE GIROFLE GRAIN MOURAFA POT 60G,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33809-clou-de-girofle-grain-mourafa-pot-60g.html
+CLOU DE GIROFLE GRAIN MOURAFA POT 30G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33808-clou-de-girofle-grain-mourafa-pot-30g.html
+EPICE MOURAFA ANIS VERT POT 60G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33806-epice-mourafa-anis-vert-pot-60g.html
+EPICE MOURAFA ANIS VERT POT 30G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33805-epice-mourafa-anis-vert-pot-30g.html
+EPICE MOURAFA AIL EN POUDRE POT 30G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33803-epice-mourafa-ail-en-poudre-pot-30g.html
+EPICE MOURAFA 7EPICES POT 60G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33802-epice-mourafa-7epices-pot-60g.html
+EPICE MOURAFA 7EPICES POT 30G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33801-epice-mourafa-7epices-pot-30g.html
+EPICE MOURAFA 13EPICES POT 60G,Epicerie,1050997510292.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33800-epice-mourafa-13epices-pot-60g.html
+EPICE MOURAFA 13EPICES POT 30G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33799-epice-mourafa-13epices-pot-30g.html
+EPICE MOURAFA GINGEMBRE POT 60G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33798-epice-mourafa-gingembre-pot-60g.html
+EPICE MOURAFA PAPRIKA POT 60G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33797-epice-mourafa-paprika-pot-60g.html
+THE LIPTON MOURAFA GINGEMBRE 25 SACHETS,Epicerie,15701491515382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33796-the-lipton-mourafa-gingembre-25-sachets.html
+THE LIPTON MOURAFA CURCUMA 25 SACHETS,Epicerie,15701491515382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33795-the-lipton-mourafa-curcuma-25-sachets.html
+THE LIPTON MOURAFA KINKELIBA 25 SACHETS,Epicerie,16001520515682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33794-the-lipton-mourafa-kinkeliba-25-sachets.html
+THE LIPTON MOURAFA MORINGA 25 SACHETS,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33793-the-lipton-mourafa-moringa-25-sachets.html
+THE LIPTON HETTE CITRON TEA 25 SACHETS,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33771-the-lipton-hette-citron-tea-25-sachets.html
+THE LIPTON HETTE GINGEMBRE TEA 25 SACHETS,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33770-the-lipton-hette-gingembre-tea-25-sachets.html
+THE LIPTON HETTE PREMIUM TEA 25 SACHETS,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33769-the-lipton-hette-premium-tea-25-sachets.html
+THE LIPTON HETTE PURE NATURAL 25 SACHETS,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33768-the-lipton-hette-pure-natural-25-sachets.html
+CHEWING GUM STICK QUINTET PEPPERMINT 5PCS,Epicerie,16015251562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33761-chewing-gum-stick-quintet-peppermint-5pcs.html
+CHEWING GUM STICK QUINTET FRAISE SPERMINT 5PCS,Epicerie,16015251562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33760-chewing-gum-stick-quintet-fraise-spermint-5pcs.html
+CHOCOLAT LAIT COCO SWAREEN DAFFODIL 500G,Epicerie,51004845549982.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33753-chocolat-lait-coco-swareen-daffodil-500g.html
+MIEL VITAMAX ENERGY THE VERT 20G,Epicerie,21051999520622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33751-miel-vitamax-energy-the-vert-20g.html
+CONSERVE DAUCY PETIT EXTRA FINS 1/2 400G,Epicerie,14001330513722.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33716-conserve-daucy-petit-extra-fins-1-2-400g.html
+CONSERVE DAUCEY HARICOT VERT FIN 4/4 800G,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33715-conserve-daucey-haricot-vert-fin-4-4-800g.html
+VERMICELLE PANTERA CHEVEUX D'ANGE 500G,Epicerie,81277157952.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33710-vermicelle-pantera-cheveux-dange-500g.html
+FILTRE A CAFE N?4/40PIECES,Epicerie,13751306513472.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33690-filtre-a-cafe-n4-40pieces.html
+FILTRE A CAFE N?2/40PIECES,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33689-filtre-a-cafe-n2-40pieces.html
+CHOCOLAT FERRERO KINDER JOY GAR?ON 20G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33669-chocolat-ferrero-kinder-joy-garon-20g.html
+CHEWING GUM MENTOS 1PIECS,Epicerie,55525532.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33662-chewing-gum-mentos-1piecs.html
+COUSCOUS BONJOURNE BY MR COOK FIN 1 KG,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33656-couscous-bonjourne-fin-1-kg.html
+CAFE NESPRESO PALERMO KAZAAR 60G,Epicerie,47504512546552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33644-cafe-nespreso-palermo-kazaar-60g.html
+CAFE STICK JANUS REFRAISH 1.5GX150PCS,Epicerie,39753776538952.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33639-cafe-stick-janus-refraish-15gx150pcs.html
+VERMICELLE CHEVEUX D'ANGE MAJIDA 500G,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33608-vermicelle-cheveux-dange-majida-500g.html
+SAUCE SORALE ADJA 340ML,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33587-sauce-sorale-adja-340ml.html
+SAUCE SORALE ADJA 880ML,Epicerie,13751306513472.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33586-sauce-sorale-adja-880ml.html
+SPAGHETTI YUM ALNOUR 500G,Epicerie,55052255392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33564-spaghetti-yum-alnour-500g.html
+CHIPS CRAX BOWL EXOTIC SWEET CHILLI 25G,Epicerie,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33498-chips-crax-bowl-exotic-sweet-chilli-25g.html
+CHIPS CRAX BOWL EXOTIC PAPRIKA 25G,Epicerie,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33497-chips-crax-bowl-exotic-paprika-25g.html
+CHIPS CRAX BOWL EXOTIC JALAPENO 25G,Epicerie,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33496-chips-crax-bowl-exotic-jalapeno-25g.html
+MIEL TUBE PURE DE HAWA 250ML,Epicerie,20701966520282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33494-miel-tube-pure-de-hawa-250ml.html
+BISCUIT ULKER IKRAM CHOCOLAT 58G,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33464-biscuit-ulker-ikram-chocolat-58g.html
+CEREALE CORN FLAKES C'BON FROSTY FLAKES 375G,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33463-cereale-corn-flakes-cbon-frosty-flakes-375g.html
+OVALTINE POT EN FER 400G,Epicerie,33503182532832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33461-ovaltine-pot-en-fer-400g.html
+BISCUIT NUTELLA POT 166G DE 12PCS,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33457-biscuit-nutella-pot-166g-de-12pcs.html
+NESCAFE NES 100% CAFE 100G,Epicerie,36003420535282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33446-nescafe-nes-100-cafe-100g.html
+COUSCOUS MOYEN PANTERA 1KG,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33409-couscous-moyen-pantera-1kg.html
+PATE LASAGNE ROMERO 500G,Epicerie,21062000520632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33399-pate-lasagne-romero-500g.html
+SAUCE SOJA ROYAL AMAR GM 750ML,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33396-sauce-soja-amar-royal-gm-750ml.html
+DUCROS VINAIGRE BALSAMIQUE 25CL,Epicerie,23802261523322.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33351-ducros-vinaigre-balsamique-25cl.html
+CONSERVE LE SOLEIL PETIT POIS CARROTE ESTRA FIN 4/4 800G,Epicerie,24752351524252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33350-conserve-le-soleil-petit-pois-carrote-estra-fin-4-4-800g.html
+CAFE GINNY 200G POT,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33346-cafe-ginny-200g-pot.html
+CONFITURE BONNE MAMAN ORANGE 370G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33306-confiture-bonne-maman-orange-370g.html
+BISCUIT MOSAIC GFR FOURRES AU CHOCOLAT 40G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33287-biscuit-mosaic-gfr-fourres-au-chocolat-40g.html
+PATE SPAGHETTI LINGUINE 14 DIVELLA 500G,Epicerie,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33216-pate-tagliatelle-linguine-14-divella-500g.html
+CURCUMA MOULU BONI POT 50G,Epicerie,81677557992.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33210-curcuma-moulu-boni-pot-50g.html
+CHOCOLAT FIDJI FOURRE HAZELNUT 90G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33203-chocolat-fidji-fourre-hazelnut-90g.html
+CHOCOLAT FIDJI FOURRE CARAMEL 90G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33202-chocolat-fidji-fourre-caramel-90g.html
+CHOCOLAT SAIDA MAESTRO GOURMAND FOURRE A LA CREME DE CACAO 90G,Epicerie,11061050510832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33201-chocolat-saida-maestro-gourmand-fourre-a-la-creme-de-cacao-90g.html
+CHOCOLAT SAIDA MAESTRO GOURMAND FOURRE A LA CREME BERULEE 90G,Epicerie,11061050510832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33200-chocolat-saida-maestro-gourmand-fourre-a-la-creme-berulee-90g.html
+PATE PENNE ZITI RIGATE 27 COMPLET DIVELLA 500G,Epicerie,16851600516512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/33180-pate-penne-ziti-rigate-27-complet-divella-500g.html
+VINAIGRE BALSAMIQUE BELLA ROSA 500ML,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32963-vinaigre-balsamique-bella-rosa-500ml.html
+CONSERVE FERME D'ABAYE PETIT POIS CAROTTES TRES FIN 800G,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32930-conserve-ferme-dabaye-petit-pois-carottes-tres-fin-800g.html
+SAUCE BOLOGNAISE BF BARBECUE BF 420G,Epicerie,26502517525972.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32898-sauce-bolognaise-bf-barbecue-bf-420g.html
+PATE ROMERA TAGLIATELLE 500G,Epicerie,26502517525972.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32897-pate-romera-tagliatelle-500g.html
+BEURRE SOFIA SACHET 10*25G,Epicerie,73569857202.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32895-beurre-sofia-sachet-1025g.html
+BISCUIT WAFER BALOCCO SNACK HAZELNUT 45G,Epicerie,27526152692.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32890-biscuit-wafer-balocco-snack-hazelnut-45g.html
+BISCUIT WAFER BALOCCO SNACK COCOA 45G,Epicerie,16515651612.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32889-biscuit-wafer-balocco-snack-cocoa-45g.html
+CAFE POT C BON 50G,Epicerie,76572657492.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32884-cafe-pot-c-bon-50g.html
+CAFE POT C BON 200G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32883-cafe-pot-c-bon-200g.html
+BEIGNET CREVETTE COULEUR C BON 170G,Epicerie,55052255392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32882-beignet-crevette-couleur-c-bon-170g.html
+CONSERVE CORN BOEUF BONJOURNE POULET 190G,Epicerie,51548955042.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32872-conserve-corn-boeuf-bonjourne-190g.html
+CONSERVE CORN BOEUF BONJOURNE POULET 340G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32871-conserve-corn-boeuf-poulet-bonjourne-340g.html
+CONSERVE CORN BOEUF BONJOURNE 340G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32869-conserve-corn-boeuf-bonjourne-340g.html
+MIEL VITAMAX ENERGY COFFEE 20G,Epicerie,21051999520622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32667-miel-vitamax-energy-coffee-20g.html
+BISCUIT ASSORTIMENT TEA TIME 200G,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32663-biscuit-assortiment-tea-time-200g.html
+TOMATE DIEG BOU DIAR SEAU EN PLASTIQUE 350G,Epicerie,78074157642.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32659-tomate-dieg-bou-diar-seau-en-plastique-350g.html
+TOMATE DIEG BOU DIAR SEAU EN PLASTIQUE 2KG,Epicerie,40653861539832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32658-tomate-dieg-bou-diar-seau-en-plastique-2kg.html
+CARTON HARICOT VERT FIN AVRIL 4/4 12*800G,Epicerie,1.8740178035183652e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32503-carton-haricot-vert-fin-avril-4-4-12800g.html
+INFUSION LA TISANIERE MIEL ET R DES PERES THE NUIT CALME 20 SACHETS,Epicerie,35803401535082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32415-infusion-la-tisaniere-miel-et-r-des-peres-the-nuit-calme-20-sachets.html
+PETIT POIS AVRIL DOUX GARDEN PEAS 800G,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32413-petit-pois-avril-doux-garden-peas-800g.html
+HARICOT VERT TRES FIN AVRIL 1/2 400G,Epicerie,11251068511022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32412-haricot-vert-tres-fin-avril-1-2-400g.html
+HARICOT VERT FIN AVRIL 4/4 800G,Epicerie,17901700517542.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32411-haricot-vert-fin-avril-4-4-800g.html
+COCO RAPE SACHET SOFIA 250G,Epicerie,14201349513912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32410-coco-rape-sachet-sofia-250g.html
+COCO RAPE SACHET SOFIA 500G,Epicerie,27602622527042.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32409-coco-rape-sachet-sofia-500g.html
+POIVRE DE GUINNE/ DIAR EN POUDRE 100G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/32340-poivre-de-guinne-diar-en-poudre-100g.html
+BISCUIT TOBIGO CREAM CHOCOLAT 50G,Epicerie,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32337-biscuit-tobigo-cream-chocolat-50g.html
+CHOCOLAT ELMORDIENNE POT 700G,Epicerie,52104949551052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32332-chocolat-elmordienne-pot-700g.html
+BISCUIT FOURRE PEASY VANILLE 100G,Epicerie,1059951022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32325-biscuit-fourre-peasy-vanille-100g.html
+CEREALE NETTO PETAL BOULES CHOCO 500G,Epicerie,22002090521562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32318-cereale-netto-petales-choco-500g.html
+SAUCE SOJA CUISTO SACHET 28ML,Epicerie,1059951022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32243-sauce-soja-cuisto-sachet-28ml.html
+BONBON BEGUE ANANAS 400G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32239-bonbon-begue-ananas-400g.html
+KANGOO EN POUDRE CHOCOLATE 200G,Epicerie,11061050510832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32235-kangoo-en-poudre-chocolate-200g.html
+KANGOO EN POUDRE CHOCOLATE 400G,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32234-kangoo-en-poudre-chocolate-400g.html
+MIEL HONEY MOURAFA BOUTEILLE 1L,Epicerie,47404503546452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32212-miel-honey-mourafa-1l.html
+SAUCE TOMATE HEAD CHEF 680G,Epicerie,21902080521462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32210-sauce-tomate-head-chef-680g.html
+MACARONI BF LONGUE 500G,Epicerie,12151154511902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32206-macaroni-bf-long-500g.html
+BISCUIT COOKIE BOOM AUX PEPITES DE CHOCOLAT 37G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32157-biscuit-cookie-boom-aux-pepites-de-chocolat-37g.html
+BONBON MENTHE MOSS DOLY 400G,Epicerie,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32143-bonbon-menthe-moss-doly-400g.html
+BONBON BEGUE GINGEMBRE 400G,Epicerie,13161250512892.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32142-bonbon-begue-gingembre-400g.html
+CONSERVE DAUCY PETIT EXTRA FINS 4/4 800G,Epicerie,21062000520632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32132-conserve-daucy-petit-extra-fins-4-4-800g.html
+SEL IODE FIN EVERYDAY 500G,Epicerie,27526152692.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32124-sel-iode-fin-everyday-500g.html
+THON SOFIA ENTIER A L'HUILE 800G,Epicerie,79657566578052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32068-thon-sofia-entier-a-lhuile-800g.html
+THON ENTIER A L'HUILE VEGETALE MARIO 3*80G,Epicerie,18501757518132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/32064-thon-entier-a-lhuile-vegetale-mario-380g.html
+CHIPS FIESTA PUFFS FROMAGE FOOTBAL 11G,Epicerie,53505512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31881-chips-fiesta-puffs-fromage-footbal-11g.html
+CHIPS FIESTA MEEW CORN VANILLE 35G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31880-chips-fiesta-meew-corn-vanille-35g.html
+CHIPS FIESTA BUGLES SWEET CHILLI 30G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31879-chips-fiesta-bugles-sweet-chilli-30g.html
+CHIPS FIESTA STICKS CHEESE NACHOS 30G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31874-chips-fiesta-sticks-cheese-nachos-30g.html
+CHIPS FIESTA STICKS HOT SCORPION 30G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31873-chips-fiesta-sticks-hot-scorpion-30g.html
+CHIPS FIESTA RINGS PIZZA FLAVOR 25G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31872-chips-fiesta-rings-pizza-flavor-25g.html
+CHIPS FIESTA PUFFS KETCHUP FROMAGE 25G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31871-chips-fiesta-puffs-ketchup-fromage-25g.html
+CHIPS FIESTA PUFFS FROMAGE 25G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31870-chips-fiesta-puffs-fromage-25g.html
+EPICE MOURAFA 13EPICES SACHET 50G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31860-epice-mourafa-13epices-sachet-50g.html
+BISCUIT GULLON DIET FIBRE SANS SUCRES 170G,Epicerie,16351553516022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31830-biscuit-diet-sandiwich-gm.html
+CHOCAO POUDRE AU CACAO 100G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31776-chocao-pm.html
+BISCUIT KREMALI 40G,Epicerie,16015251562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31763-biscuit-kremali.html
+PETIT POIS CAROTTE CHTOURA FIELD 400G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31719-petit-pois-carotte-chtoura-field-400g.html
+PETIT POIS CHTOURA FIELD 4/4 800G,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31718-petit-pois-chtoura-field-4-4-800g.html
+MACARONI LISSE AMIRA 5KG,Epicerie,43704151542822.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/31661-macaroni-lisse-amira-5kg.html
+CARTON PETIT POIS EXTRA FIN EVERYDAY 4/4 12*800G,Epicerie,2.158020501521148e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31621-carton-petit-pois-extra-fin-everyday-4-4-12800g.html
+CEREALE CORN FLAKES C'BON FRUITY LOOPS 375G,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31586-cereale-corn-flakes-cbon-fruity-loops-375g.html
+CEREALE CORN FLAKES C'BON CHOCO FLAKES 375G,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31585-cereale-corn-flakes-cbon-choco-flakes-375g.html
+CONSERVE FERME D'ABAYE PETIT POIS CAROTTES TRES FIN 800G,Epicerie,16851600516512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31582-conserve-ferme-dabaye-petit-pois-carottes-tres-fin-800g.html
+CONSERVE FERME D'ABAYE PETIT POIS FIN 400G PM,Epicerie,1026974510052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31581-conserve-ferme-dabaye-petit-pois-fin-400g-pm.html
+THE VERT ZEUM 10*25G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31569-the-vert-zeum-1025g.html
+CHIPS CRAX MASK SWEET CHILI 35G,Epicerie,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31501-chips-crax-mask-sweet-chili-35g.html
+CHIPS CRAX MASK KETCHUP 35G,Epicerie,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31499-chips-crax-mask-ketchup-35g.html
+VINAIGRE ANA ROUGE 1L,Epicerie,58055155682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31464-vinaigre-ana-rouge-1l.html
+VINAIGRE ZAFI ROUGE 1L,Epicerie,58055155682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31462-vinaigre-zafi-rouge-1l.html
+PETIT POIS CAROTTE BF 1/2 400G,Epicerie,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31447-petit-pois-carotte-bf-1-2-400g.html
+THE LIPTON HOLIDAY CEYLON 100PCS,Epicerie,50047554902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31444-the-lipton-holiday-ceylon-100pcs.html
+BISCUIT EMPIRE GFR FOURRES AU CACAO 92G 1PC,Epicerie,21120052062.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31275-biscuit-empire-gfr-fourres-au-cacao-92g-1pc.html
+BISCUIT EMPIRE PLAIN GFR FOURRES AU CHOCOLAT 40G 1PC,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31274-biscuit-empire-plain-gfr-fourres-au-chocolat-40g-1pc.html
+BISCUIT MONGOFFI GFR ENROBEE AU CHOCOLAT 15G 1PC,Epicerie,50475492.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31273-biscuit-mongoffi-gfr-enrobee-au-chocolat-15g-1pc.html
+CHAMPIGNON SACHET MOURAFA 100G,Epicerie,22502137522052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31272-champignon-sachet-mourafa-100g.html
+BONBON HARIBO MIAMI PIK 120G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31267-bonbon-haribo-miami-pik-120g.html
+BONBON HARIBO GOLDBEARS L'OURS D'OR 120G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31266-bonbon-haribo-goldbears-lours-dor-120g.html
+BONBON HARIBO DRAGIBUS PART 120G,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31265-bonbon-haribo-dragibus-part-120g.html
+BISCUITS BAUDUCCO WAFER FRAISE 140G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31264-bauducco-wafer-fraise-140g.html
+BONBON HARIBO WORLD MIX 120G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31259-bonbon-haribo-world-mix-120g.html
+BONBON HARIBO ORANGINA PIK 120G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31258-bonbon-haribo-orangina-pik-120g.html
+BONBON HARIBO LES SCHTROUMPES PIK 120G,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31257-bonbon-haribo-les-schtroumpes-pik-120g.html
+THE NDAYANE BLANC BOITE EN FER 200G,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31236-the-ndayane-blanc-boite-en-fer-200g.html
+INFUSION LA TISANIERE THE NUIT CALME 20 SACHETS,Epicerie,36853500536112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31188-infusion-la-tisaniere-the-nuit-calme-20-sachets.html
+INFUSION LA TISANIERE FLEUR DE COMOMILLE 20 SACHETS,Epicerie,37503562536752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31187-infusion-la-tisaniere-fleur-de-comomille-20-sachets.html
+PETIT POIS AVRIL DOUX GARDEN PEAS 400G,Epicerie,99594559752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31174-petit-pois-avril-soux-garden-peas-400g.html
+VINAIGRE MILA ROUGE 1L,Epicerie,84580258282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31167-vinaigre-mila-rouge-1l.html
+CARTON ANANAS TRANCHES ENTIERES MINA RONDELLES 12*565G,Epicerie,1.3500128255132302e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31138-carton-ananas-tranches-entieres-mina-12565g.html
+COUSCOUS FIN KHOULALA 1KG,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31110-couscous-fin-khoulala-1kg.html
+THON WELSEA 1/1 ENTIER AU NATUREL 600/800G,Epicerie,61605852560362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31086-thon-welsea-11-entier-au-naturel-600800g.html
+CONFITURE MONTI FRAISE 440G,Epicerie,19801881519402.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31075-confiture-monti-fraise-440g.html
+CONFITURE MONTI ABRICOT 440G,Epicerie,19801881519402.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31074-confiture-monti-abricot-440g.html
+BISCUIT COOKIES ORIGINAL BAUDUCCO 60G,Epicerie,52549855142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31069-biscuit-cookies-original-bauducco-60g.html
+BISCUITS COOKIES CHOCO BAUDUCCO 60G,Epicerie,52549855142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31068-biscuits-cookies-choco-bauducco-60g.html
+THON WELSEA ALBACORE ENTIER 1/5 PACK 160G* 3,Epicerie,44204199543312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31066-thon-welsea-albacore-entier-1-5-pack-160g-3.html
+THON WELSEA MIETTES A L'HUILE DE TOURNESOL 1/5 160G,Epicerie,13151249512882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31065-thon-welsea-miettes-a-lhuile-de-tournesol-1-5-160g.html
+THON WELSEA MIETTES A LA TOMATE 1/5 160G,Epicerie,11601102511362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31064-thon-welsea-miettes-a-la-tomate-15-160g.html
+THON ENTIER ALBACORE A L'HUILE D'OLIVE EXTRA VIERGE WELSEA 1/5 160G,Epicerie,23702251523222.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31063-thon-entier-albacore-a-lhuile-dolive-extra-vierge-welsea-1-5-160g.html
+THON ENTIER ALBACORE A L'HUILE DE TOURNESOL WELSEA 1/5 160G,Epicerie,18051714517682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31062-thon-entier-albacore-a-lhuile-de-tournesol-welsea-1-5-160g.html
+THON ENTIER ALBACORE NATUREL WELSEA 1/5 160G,Epicerie,16351553516022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31061-thon-entier-albacore-naturel-welsea-15-160g.html
+THON EN MORCEAUX ALBACORE WELSEA AU NATUREL SACHET 74G,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31058-thon-en-morceaux-albacore-welsea-au-naturel-sachet-74g.html
+THON WELSEA EN MORCEAUX AU NATUREL SACHET 1000G,Epicerie,67506412566152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31057-thon-welsea-en-morceaux-au-naturel-sachet-1000g.html
+THON WELSEA EN MORCEAUX A L'HUILE DE TOURNESOL SACHET 1000G,Epicerie,69906640568502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31056-thon-welsea-en-morceaux-a-l-huile-de-tournesol-sachet-1000g.html
+THON WELSEA 1/1 EN MORCEAUX AU NATUREL 560/800G,Epicerie,57905500556742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31055-thon-11-en-morceaux-au-naturel-560800g.html
+THON 1/1 ENTIER ALBACORE A L'HUILE DE TOURNESOL 600/800 GR,Epicerie,63206004561932.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31053-thon-1-1-entier-albacore-a-lhuile-de-tournesol-600-800-gr.html
+THON WELSEA 1/1 ENTIER ALBACORE NATURE 600/800 GR,Epicerie,51004845549982.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31052-thon-1-1-entier-albacore-nature-600-800-gr.html
+THE LIPTON BONJOURNE MORINGA 25SACHETS,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31047-the-lipton-bonjourne-moringa-25sachets.html
+VERMICELLE AMIRA 250G,Epicerie,35033253432.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31008-vermicelle-amira-250g.html
+MACARONI LISSE AMIRA 500G,Epicerie,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31006-macaroni-lisse-amira-500g.html
+MACARONI LISSE AMIRA 250G,Epicerie,31029453032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/31005-macaroni-lisse-amira-250g.html
+SAV DU SAHEL ANIS VERT 40G,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30904-sav-du-sahel-anis-vert-40g.html
+CARTON MAYONNAISE KADI 12*500ML,Epicerie,1.4050133475137692e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30817-carton-mayonnaise-kadi-12500ml.html
+CARTON CDA CHOCOMOUSSE 6*1KG,Epicerie,1.1400108305111722e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30790-carton-cda-chocomousse-61kg.html
+CAFE TOUBA CAPSULE DIALIBATOU ESPRESSO CLASSIC 10PCS,Epicerie,36853500536112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30768-cafe-touba-capsule-dialibatou-espresso-classic-10pcs.html
+CAFE TOUBA CAPSULE DIALIBATOU ROBUSTA ET ARABICA 10PCS,Epicerie,36853500536112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30767-cafe-touba-capsule-dialibatou-robusta-et-arabica-10pcs.html
+CAFE TOUBA CLASSIQUE DIALIBATOU 250G,Epicerie,31603002530962.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30766-cafe-touba-classique-dialibatou-250g.html
+CARTON SUNUTHON 12*380G,Epicerie,1.6200153905158762e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/30626-carton-sunuthon-12380g.html
+BISCUIT VERITABLE PETIT BEURRE 200GR,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30622-biscuit-veritable-petit-beurre-200gr.html
+CARTON NUTELLA 12*750G,Epicerie,8.12757721157965e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/30600-carton-nutella-12750g.html
+CARTON THE BERNDE 41022 ROUGE BLANC 20*10*25G,Epicerie,2.2500213755220504e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30591-the-bernde-41022-rouge-blanc-201025g.html
+SPAGHETTI BF 500G,Epicerie,12151154511902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30585-spaghetti-bf-500g.html
+CHIPS CRUNCHIPS SALTED 75G,Epicerie,13001235512742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30572-chips-crunchips-salted-75g.html
+CHIPS CRUNCHIPS PAPRIKA 75G,Epicerie,13001235512742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30571-chips-crunchips-paprika-75g.html
+BISCUIT POMME DE TERRE POTATA PAQUET 50PCS *15G,Epicerie,25002375524502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30567-biscuit-pomme-de-terre-potata-paquet-50pcs-15g.html
+BISCUIT POMME DE TERRE POTATA 80G,Epicerie,26525152592.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30566-biscuit-pomme-de-terre-potata-80g.html
+MELOLAC CERALE LACTEE SACHET 50G,Epicerie,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30554-melolac-cerale-lactee-sachet-50g.html
+MELOLAC CERALE LACTEE AU LAIT 400G,Epicerie,27802641527242.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30553-melolac-cerale-lactee-au-lait-400g.html
+CAP MANUEL THON MIETTE A L'HUILE 185G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30548-cap-manuel-thon-miette-a-l-huile-185g.html
+THON LIZA ALBACORE MIETTES A L' HUILE 1/4 160G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30547-thon-liza-albacore-miettes-a-l-huile-14-160g.html
+CARTON VERMICELLE AMIRA 12*500G,Epicerie,75007125573502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30460-carton-vermicelle-amira-12500g.html
+SAUCE PROVENCALE BF 200G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30337-sauce-provencale-bf-200g.html
+SAUCE TOMATE BASILIC BF 200G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30336-sauce-tomate-basilic-bf-200g.html
+PATE PANZANI MACARONI 500G,Epicerie,15001425514702.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30332-pate-panzani-macaroni-500g.html
+CHEWING GUM HOLLYWOOD 10D FRAISE,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30307-chewing-gum-hollywood-10d-fraise.html
+COUSCOUS FIN WARDA 1KG,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30254-couscous-fin-warda-1kg.html
+THE LIPTON S. SAHEL INFUSION THE ET CITRONNELLE 25 SACHETS,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30182-the-lipton-s-sahel-infusion-the-et-citronnelle-25-sachets.html
+THON LIZA ENTIER A L' HUILE 1/5 185G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30179-thon-liza-entier-a-l-huile-1-5-185g.html
+THON THONINE MIETTES A L'HUILE 1/4,Epicerie,11601102511362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30178-thon-thonine-miettes-a-lhuile-1-4.html
+CHOCOLAT SAIDA LOOPI CHOCO COEUR FONDANT 48G,Epicerie,53050355192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30042-chocolat-saida-loopi-choco-coeur-fondant-48g.html
+CHOCOLAT SAID X.PLOSE 35G,Epicerie,32030453132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30041-chocolat-saia-xplose-35g.html
+PANZANI SAUCE TOMATES PROVENCALES 425G,Epicerie,21902080521462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30005-panzani-sauce-tomates-provencales-425g.html
+PETIT POIS VEGA GREEN PEAS 4/4 800G,Epicerie,502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/30001-petit-pois-vega-green-peas-44-800g.html
+CONSERVE HARICOT BLANC VEGA 800G,Epicerie,14201349513912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29995-conserve-haricot-blanc-vega-800g.html
+BONBON KARIM'S CARAMAL AUX LAIT 400G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29984-bonbon-karims-caramal-aux-lait-400g.html
+SARDINE A L'HUILE VEGETALE BON APPETIT 125G,Epicerie,39537553872.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29981-sardine-a-l-huile-vegetale-bon-appetit-125g.html
+CARTON MAYONNAISE KADI 6*1000ML,Epicerie,1.2180115715119362e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29956-carton-mayonnaise-kadi-61000ml.html
+CHOCOLAT M&M CRISPY 36G,Epicerie,69065556762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29877-chocolat-mm-crispy-36g.html
+THE LIPTON SUPER JOY THE NOIR 100PCS,Epicerie,22502137522052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29868-the-lipton-super-joy-the-noir-100pcs.html
+AROME SALY SACHET 10ML,Epicerie,55525532.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29863-arome-saly-sachet-10ml.html
+SAUCE HUITRE OYSTER SALY 510ML,Epicerie,18501757518132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29862-sauce-huitre-oyster-saly-510ml.html
+SAUCE SOJA SALY 150ML,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29861-sauce-soja-saly-150ml.html
+SAUCE SOJA SALY 750ML,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29860-sauce-soja-saly-750ml.html
+AROME SALY 370ML,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29859-arome-saly-370ml.html
+MACARONI GESNEDEN-COUPE-CUT EVERYDAY 500G,Epicerie,11061050510832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29848-macaroni-gesneden-coupe-cut-everyday-500g.html
+BONBON GAINDE ORIGINAL GINGER 400G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29846-bonbon-gainde-original-ginger-400g.html
+BISCUIT MOSAIC GFR FOURRES AU CHOCOLAT 100G*12PCS,Epicerie,24252303523762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29820-biscuit-mosaic-gfr-fourres-au-chocolat-100g12pcs.html
+BISCUIT A BREAK CACAO AUX PEPITES DE CHOCOLAT 80G,Epicerie,15014251472.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29815-biscuit-a-break-cacao-aux-pepites-de-chocolat-80g.html
+BISCUIT A BREAK AUX PEPITES DE CHOCOLAT 80G,Epicerie,15014251472.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29814-biscuit-a-break-aux-pepites-de-chocolat-80g.html
+BISCUIT MOSAIC GFR FOURRES AU CHOCOLAT 100G,Epicerie,20619552012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29813-biscuit-mosaic-gfr-fourres-au-chocolat-100g.html
+CHOCOLAT SAID GOBELET JUNIOR 50G,Epicerie,63560356222.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29784-chocolat-said-gobelet-junior-50g.html
+SUCRE VANILLE FLOWER 100S,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/lait-sucre/29693-sucre-vanille-flower-100s.html
+CARTON VINAIGRE MIS ROUGE 12*1L,Epicerie,52104949551052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/29613-carton-vinaigre-mis-rouge-121l.html
+VINAIGRE MIS ROUGE 1L,Epicerie,47545154652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29612-vinaigre-mis-rouge-1l.html
+CAFE NESPRESO VOLLUTO 49G,Epicerie,49504702548512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29610-cafe-nespreso-volluto-49g.html
+BISCUIT NUTELLA GM 304G,Epicerie,45004275544102.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29604-biscuit-nutella-gm-304g.html
+PRINGLES FROMAGE EMMENTAL 175G GM,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29353-pringles-fromage-emmental-175g-gm.html
+BONBON KARIM'S MENTHE FORTE 400G,Epicerie,1050997510292.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29343-bonbon-karims-menthe-forte-400g.html
+BONBON KARIM'S AU GINGER 400G,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29342-bonbon-karims-au-ginger-400g.html
+BONBON KARIM'S AU LAIT APPOLO 400G,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29340-bonbon-karims-au-lait-appolo-400g.html
+BONBON KARIM'S AUX FRUITS ACIDULES 400G,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29339-bonbon-karims-aux-fruits-acidules-400g.html
+THE JASMIN ACHOURA POT 300G,Epicerie,31252968530622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29316-the-jasmin-achoura-pot-300g.html
+THE JASMIN ACHOURA POT 150G,Epicerie,18451752518082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29315-the-jasmin-achoura-pot-150g.html
+PASTILLE VALDA MENTHE SACHET 5G,Epicerie,55525532.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29297-pastille-valda-menthe-sachet-5g.html
+CDA CHOCOMOUSSE 500G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29285-cda-chocomousse-500g.html
+COUSCOUS MOYEN WARDA 1KG,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29262-couscous-moyen-warda-1kg.html
+THE TWININGS MENTHE CITRON VERT 20 SACHETS,Epicerie,39503752538712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29254-the-twinings-menthe-citron-vert-20-sachets.html
+SPAGHETTI AMIRA 500G,Epicerie,58055155682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29230-spaghetti-amira-500g.html
+SPAGHETTI AMIRA 250G,Epicerie,29027552842.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29229-spaghetti-amira-250g.html
+CARTON MAGGI MAMEUN EPICES SACHET 36*10*15G,Epicerie,1.6315154995159882e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/29133-carton-maggi-mameun-epices-sachet-361015g.html
+THE BERNDE 4011 VERT BLANC 10*25G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29116-the-bernde-4011-vert-blanc-1025g.html
+THE BERNDE 41022 ROUGE BLANC 10*25G,Epicerie,12111150511862.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29115-the-bernde-41022-rouge-blanc-1025g.html
+CDA CHOCOMOUSSE 1KG,Epicerie,19001805518622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29112-cda-chocomousse-1kg.html
+CDA CHOCOMOUSSE 5KG,Epicerie,85008075583302.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29111-cda-chocomousse-5kg.html
+CDA CHOCOMOUSE 2.5KG,Epicerie,49504702548512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29110-cda-chocomouse-25kg.html
+PETIT POIS TRES FINS EVERYDAY 1/2 400G,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29105-petit-pois-tres-fins-everyday-1-2-400g.html
+PETIT POIS EXTRA FIN EVERYDAY 4/4 800G,Epicerie,19751876519352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29102-petit-pois-extra-fin-everyday-4-4-800g.html
+CARTON CHOCOLAT DELIA 12*500G,Epicerie,1.1995113955117552e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/29072-carton-chocolat-delia-12500g.html
+CURRY SACHET MOURAFA 100G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/29047-curry-sachet-mourafa-100g.html
+SAUCE SOJA AUX CHAMPIGNONS MUSHROOM 625ML,Epicerie,50047554902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29036-sauce-soja-aux-champignons-mushroom-625ml.html
+BEURRE LA PRAIRIE CLASSIQUE 450G,Epicerie,19001805518622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29029-beurre-la-prairie-classique-450g.html
+NESCAFE BON CAFE GOLD 200G,Epicerie,75407163573892.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29028-nescafe-bon-cafe-gold-200g.html
+SAUCE SOJA AUX CHAMPIGNONS C' BON 750ML,Epicerie,15501472515192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29019-sauce-soja-aux-champignons-c-bon-750ml.html
+CHEWING MANTHOS 50PCS,Epicerie,23502232523032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/29016-chewing-manthos-50pcs.html
+MAYONNAISE KADI 5L,Epicerie,78957500577372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28999-mayonnaise-kadi-5l.html
+CONFITURE BF MARMELADE ORANGES 370G,Epicerie,19901890519502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28989-confiture-bf-marmelade-oranges-370g.html
+THON DIANOR SOLID 1/4 185G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28986-thon-dianor-solid-1-4-185g.html
+THON DIANOR MIETTES 1/4 185G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28985-thon-dianor-miettes-1-4-185g.html
+BISCUIT CARNAVAL GFR ENROBEES DE CACO A LA CREME VANILLE 40G*1PC,Epicerie,55525532.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28952-biscuit-carnaval-gfr-vanille-45gr.html
+BISCUIT CARNAVAL GFR ENROBEES DE CACO A LA CREME FRAISE 40G*1PC,Epicerie,55525532.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28951-biscuit-carnaval-gfr-fraise-45gr.html
+BISCUIT CARNAVAL GFR CACAO AVEC CREME 40G 1PC,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28948-biscuit-carnaval-gfr-cacao-avec-creme-45gr.html
+BISCUIT HARMONY GRF A LA FRAISE 34G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28750-biscuit-harmony-grf-a-la-fraise-1pcs.html
+THON LIZA LISTAO ENTIER A HUILE 1KG,Epicerie,39403743538612.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28744-thon-liza-listao-entier-a-huile-1kg.html
+TOMATE TAMA EN PLASTIQUE 350G,Epicerie,81076957932.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28739-tomate-tama-en-plastique-350g.html
+VERMICELLE AMIRA 500G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28733-vermicelle-amira-500g.html
+BISCUIT OREO GOLDEN 66G,Epicerie,99594559752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28632-biscuit-oreo-golden-66g.html
+BISCUIT OREO ORIGINAL 66G,Epicerie,11061050510832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28631-biscuit-oreo-original-66g.html
+BONBON DOLIS ACIDULES 150G,Epicerie,15261449514952.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28629-bonbon-dolis-acidules-150g.html
+BONBON DOLIS MENTHE 150G,Epicerie,15261449514952.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28628-bonbon-dolis-menthe-150g.html
+CHOCOFUN POUDRE CHOCO 250G,Epicerie,22652151522192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28620-chocofun-poudre-choco-250g.html
+CHOCOFUN POUDRE CHOCO 400G,Epicerie,33163150532492.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28617-chocofun-poudre-choco-400g.html
+CHEWING GUM HOLLYWOOD GREEN FRESH POT 62 DRAGEES,Epicerie,38503657537732.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28537-chewing-gum-hollywood-green-fresh-pot-62-dragees.html
+MACARONI RAYE AMIRA 500G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28489-macaroni-raye-amira-500g.html
+MAYONNAISE KADI 500ML,Epicerie,12901225512642.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28486-mayonnaise-kadi-500ml.html
+BEURRE KADI 2.5KG,Epicerie,51004845549982.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28484-beurre-kadi-25kg.html
+BEURRE KADI 1KG,Epicerie,22202109521752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28483-beurre-kadi-1kg.html
+BEURRE KADI 500G,Epicerie,11901130511662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28482-beurre-kadi-500g.html
+CONSERVE POMMES DE TERRE BF 4/4 800G,Epicerie,15651486515332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28394-conserve-pommes-de-terre-bf-4-4-800g.html
+VERMICELLE CHEVEUX D'ANGE BF 500G,Epicerie,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28364-vermicelle-cheveux-dange-bf-500g.html
+BARILLA SPAGHETTONI N7 500G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28301-barilla-spaghettoni-n7-500g.html
+BARILLA SPAGHETTI N 5 500G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28300-barilla-spaghetti-n-5-500g.html
+THE LIPTON S. SAHEL INFUSION LAXA 25 SACHETS,Epicerie,26102479525572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28283-the-lipton-s-sahel-infusion-laxa-25-sachets.html
+THE LIPTON S. SAHEL INFUSION ARTEMISIA 25 SACHETS,Epicerie,30102859529492.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28282-the-lipton-s-sahel-infusion-artemisia-25-sachets.html
+THE LIPTON S. SAHEL INFUSION CITRONNELLE 25 SACHETS,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28280-the-lipton-s-sahel-infusion-citronnelle-25-sachets.html
+TOMATE LINGUERE CHAPELET DE 10*60G,Epicerie,11901130511662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28224-tomate-linguere-chapelet-de-1060g.html
+BISCUIT COOKIE BOOM AUX PEPITES DE CHOCOLAT 36GX24PCS,Epicerie,24252303523762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28198-biscuit-cookie-boom-aux-pepites-de-chocolat-36gx24pcs.html
+BISCUIT A BREAK AUX PEPITES DE CHOCOLAT 80GX24PCS,Epicerie,46354403545422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28196-biscuit-a-break-aux-pepites-de-chocolat-80gx24pcs.html
+BISCUIT A BREAK AUX PEPITES DE CHOCOLAT 37GX24PCS,Epicerie,24252303523762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28195-biscuit-a-break-aux-pepites-de-chocolat-37gx24pcs.html
+THON LIZA ALBACORE AU NATUREL 1K,Epicerie,42904075542042.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28176-thon-liza-albacore-au-naturel-1k.html
+PETIT POIS BF EXTRA FIN 400G,Epicerie,100095059802.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/28163-petit-pois-extra-fin-bf-400g.html
+CARTON ANANAS TRANCHES RONDELLES MINA 12*565G,Epicerie,1.3500128255132302e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/27960-carton-ananas-tranches-rondelles-mina-12565g.html
+CLOU DE GIROFLE MOULU MOURAFA POT 105G,Epicerie,18751781518372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27829-clou-de-girofle-moulu-mourafa-pot-100g.html
+BISCUIT HARMONYGFR A LA BANANE 34G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27814-biscuit-harmonygfr-a-la-banane-34g.html
+BISKREM 40G,Epicerie,12511851222.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27805-biskrem-40g.html
+NESCAFE CAPPUCCINO 140G,Epicerie,22002090521562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27802-nescafe-cappuccino-140g.html
+CAFE TOUBA TAWFEX 5KG,Epicerie,2.5260239975247544e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27794-cafe-touba-tawfex-5kg.html
+MIEL HONEY MOURAFA 270G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27438-miel-honey-mourafa-270g.html
+TAPIOCA MOURAFA SACHET 400G,Epicerie,18751781518372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27432-tapioca-mourafa-sachet-400g.html
+LISTERINE FEUILLE MENTHE FRESHBURST 24PCS,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27263-listerine-feuille-menthe-freshburst.html
+ZWAN HOT DOG POULET 200G,Epicerie,23162200522692.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27226-zwan-hot-dog-poulet-200g.html
+PRINGLES BARBECUE 40G PM,Epicerie,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27172-pringles-barbecue-40g-pm.html
+EPICE DOLI CUBE 60*12G,Epicerie,12201159511952.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/27133-epice-doli-cube-6012g.html
+MOUTARDE CHEF AIDA 5L,Epicerie,47404503546452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26999-moutarde-chef-aida-5l.html
+LEVURE SMART CHEF 100*30G,Epicerie,37503562536752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26985-levure-smart-chef-10030g.html
+ESSENCE 3 LION MENTHE 12X30 ML,Epicerie,36503467535772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/boissons/26909-essence-3-lion-menthe-12x30-ml.html
+EPICE KADI EPICE 60*10G,Epicerie,15101434514792.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26899-epice-kadi-epice-6012g.html
+CONFITURE BONNE MAMAN 4 FRUITS 370G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26830-confiture-bonne-maman-4-fruits-370g.html
+CHOCOLAT TWIX 50G,Epicerie,62559356122.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26821-chocolat-twix-50g.html
+CHEWING GUM HOLLYWOOD 10D POWER FRESH,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26789-chewing-gum-hollywood-10d-power-fresh.html
+CHEWING GUM HOLLYWOOD 10D MENTHE POLAURE,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26788-chewing-gum-hollywood-10d-menthe-polaure.html
+CHEWING GUM HOLLYWOOD 10D GREEN FRESH,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26787-chewing-gum-hollywood-10d-green-fresh.html
+BISCUIT BAUDUCCO MINI WAFER VANILLE 30G,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/26653-biscuit-bauducco-mini-wafer-vanille-30g.html
+BISCUITS BAUDUCCO MINI WAFER CHOCOLATE 30G,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26651-biscuits-bauducco-mini-wafer-chocolate-30g.html
+BARILLA TAGLIATELLE 500G,Epicerie,25802451525282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26628-barilla-tagliatelle-500g.html
+ZWAN COCKTAIL DE POULET 200G,Epicerie,25002375524502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26604-zwan-cocktail-poulet-200g.html
+BEURRE JADIDA 2.5KG,Epicerie,51604902550562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26559-beurre-jadida-25kg.html
+CHOCOLAT MARS 51G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26520-chocolat-mars-51g.html
+CHIPS CRUNCHIPS X-CUT SALT 85G,Epicerie,13001235512742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26516-chips-crunchips-x-cut-salt-85g.html
+BISCUIT KLASS 24*40G,Epicerie,26052474525522.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26499-biscuit-klass.html
+THON SOFIA ENTIER A L'HUILE 185G,Epicerie,12301168512052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26484-thon-sofia-entier-a-lhuile-185g.html
+THE KOUTAM 10*25G,Epicerie,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26469-the-koutam-1025g.html
+PRINGLES C. OIGNON 40G PM,Epicerie,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26408-pringles-c-oignon-40g-pm.html
+HARICOT BLANC SEC 500G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26288-haricot-blanc-sec-500g.html
+EPICE MOURAFA EPICES EN POUDRE POT 100G,Epicerie,18751781518372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26249-epice-mourafa-13-et-7-epices-en-poudre-pot-100g.html
+EPICE LAURIER EN POUDRE MOURAFA POT 100G,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26242-epice-laurier-en-poudre-mourafa-pot-100g.html
+EPICE AIL ET PERSIL GORMET 22G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26238-epice-ail-et-persil-gormet-22g.html
+CONFITURE BONNE MAMAN FRAISE 370G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26171-confiture-bonne-maman-fraise-370g.html
+CONFITURE BONNE MAMAN ABRICOT 370G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26170-confiture-bonne-maman-abricot-370g.html
+CHOCOLAT M&M PEANUT 45G,Epicerie,69065556762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26153-chocolat-mm-peanut-45g.html
+CHOCOLAT DELIA 2.5KG,Epicerie,52604997551542.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26146-chocolat-delia-25kg.html
+CARTON THE FLECHA 41022 BLAN 20 *25G,Epicerie,2.5650243675251372e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26102-carton-the-flecha-41022-blan-20-25g.html
+CARTON ANANAS TRANCHES BRISEES MINA 12*565G,Epicerie,1.0530100035103192e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/26050-carton-ananas-tranches-brisees-mina-12565g.html
+CAFE TOUBA TAWFEKH 40*50G,Epicerie,87508312585752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26049-cafe-touba-tawfekh-4050g.html
+BOUNTY 57G,Epicerie,66563156512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/26020-bounty-57g.html
+AIL EN POUDRE MOURAFA POT 100G,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25900-ail-en-poudre-mourafa-pot-100g.html
+CHOCOLAT NESQUICK 300G,Epicerie,26702536526162.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25863-chocolat-nesquick-300g.html
+CHOCOLAT DELIA 500G,Epicerie,11501092511272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25860-chocolat-delia-500g.html
+BISCUIT KRIT SANDWISH 125G,Epicerie,13151249512882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25821-biscuit-krit-sandwish-125g.html
+ASPERGES BLANCHES MOYENNES 330G,Epicerie,26002470525482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25808-asperges-blanches-moyennes-330g.html
+THE TWININGS VERT MENTHE CITRON 25S,Epicerie,37903600537142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25731-the-twinings-vert-menthe-citron-25s.html
+THE BELLE FRANCE FRUIT ROUGE 20SACHETS,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25725-the-belle-france-fruit-rouge-20sachets.html
+SNICKERS 50G,Epicerie,62559356122.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25714-snickers-50g.html
+PRINGLES KETCHUP 165G GM,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25644-pringles-ketchup-165g-gm.html
+PATE PANZANI TORTI EPI/TOM 500G,Epicerie,21001995520582.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25619-pate-panzani-torti-epi-tom-500g.html
+PATE PANZANI FARFALL 500G,Epicerie,22002090521562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25618-pate-panzani-farfall-500g.html
+PIMENT MOULU 500G,Epicerie,22502137522052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24075-piment-moulu-500g.html
+CONSERVE DAUCY PETIT POIS CAROTTE TRES FIN 4/4,Epicerie,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25396-conserve-daucy-petit-pois-carotte-tres-fin-4-4.html
+CONSERVE DAUCY HARICOTS VERTS FIN 400G,Epicerie,11251068511022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25395-conserve-daucy-haricots-verts-fin-400g.html
+CHOCOLAT DELIA 1KG,Epicerie,19901890519502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25374-chocolat-delia-1kg.html
+THE FLECHA 4011 NOIRE 10*25G,Epicerie,11601102511362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/25332-the-flecha-4011-noire-1025g.html
+THE JASMIN ACHOURA POT 200G,Epicerie,27252588526702.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25288-the-jasmin-achoura-200g.html
+THE BELLE FRANCE VERVEINE MENTHE 20SC,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25286-the-belle-france-verveine-menthe-20sc.html
+MENTHE FRAICHE SACHET 20PCS,Epicerie,11601102511362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/25196-menthe-fraiche-sachet.html
+CHOCOLAT M&M CHOCO 45G,Epicerie,69065556762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25060-chocolat-mm-choco-45g.html
+CAFE CARTE NOIRE A L'INSTANT STICK 25*45G,Epicerie,27002565526462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25022-cafe-carte-noire-a-linstant-stick-2545g.html
+EPICE JUMBO PAQUET DE 48 CUBES,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25016-epice-jumbo-paquet-de-48-cubes.html
+FARINE MAIS GOFIO LA PINA 500G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25012-farine-mais-gofio-la-pina-500g.html
+FARINE DE NIEBE MOURAFA 400G,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25008-farine-de-niebe-mourafa-400g.html
+SAV DU SAHEL FARINE DE MAIS 400G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/25007-sav-du-sahel-farine-de-mais-400g.html
+EPICE CURCUMA MOULU MOURAF 200G,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24998-epice-curcuma-moulu-mouraf-200g.html
+EPICE MOURAFA 7EPICES POUDRE POT 100G,Epicerie,18451752518082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24982-epice-mourafa-7epices-poudre-pot-100g.html
+EPICE CURCUMA MOULU MOURAFA 100G,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24981-epice-curcuma-moulu-mourafa-100g.html
+TOMATE LINGUERE SACHET 40*60G,Epicerie,43754156542872.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24967-tomate-linguere-sachet-4060g.html
+PASTILLE VALDA 28G,Epicerie,24523252402.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24960-pastille-valda-28g.html
+THON CAP MANUEL AU NATUREL ALBACORE 1/4,Epicerie,13901320513622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24937-thon-cap-manuel-au-naturel-albacore-1-4.html
+SONIA MOUTARDE EXTRA FORTE 370G,Epicerie,84580258282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24927-sonia-moutarde-extra-forte-370g.html
+SAV DU SAHEL THYM 40G,Epicerie,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24859-sav-du-sahel-thym-40g.html
+SAV DU SAHEL HERBES DE PROVINCE SACHET,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24858-sav-du-sahel-herbes-de-province-sachet.html
+SAV DU SAHEL BISSAP FRUITE ORANGE 100G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24857-sav-du-sahel-bissap-fruite-orange-100g.html
+PATE PANZANI TAGLIATELLE 500G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24830-pate-panzani-tagliatelle-500g.html
+PATE PANZANI LASAGNE 500G,Epicerie,29502802528912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24827-pate-panzani-lasagne-500g.html
+MACEDOINE DE LEGUME AVRIL 800G,Epicerie,18301738517932.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24778-macedoine-de-legume-avril-800g.html
+LENTILLE EN VRAC 500G,Epicerie,67564156612.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24764-lentille-en-vrac-500g.html
+HARICOT BLANC AVRIL 400G,Epicerie,11751116511512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/24724-haricot-blanc-avril-400g.html
+GOURMET FEUILLE DE THYM GOURMET 15G,Epicerie,67564156612.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24722-gourmet-feuille-de-thym-gourmet-15g.html
+EPICE MAGGI POULET 60X10G,Epicerie,100095059802.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24695-epice-maggi-poulet-60x10g.html
+EPICE MAGGI NOKOSS 60X10G,Epicerie,18251733517882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24694-epice-maggi-nokoss-60x10g.html
+EPICE MAGGI MAMEUN EPICES SACHET 10*15G,Epicerie,53050355192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24693-epice-maggi-mameun-epices-sachet-1015g.html
+CONSERVE MAIS DOUX BON APPETIT 800G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24591-mais-doux-bon-appetit-800g.html
+CONSERVE DAUCY LENTILLE 4/4 800G,Epicerie,20001900519602.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24577-conserve-daucy-lentille-4-4-800g.html
+CONSERVE DAUCY HARICOTS BLANCS 1/2 400G00.,Epicerie,11901130511662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24576-conserve-daucy-haricots-blancs-1-2-400g00.html
+CAFE TOUBA PEMIUM DIALIBATOU 250G,Epicerie,31603002530962.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24558-cafe-touba-premium-dialibatou-250g.html
+CAFE ASTA DYNAMIC 45G,Epicerie,13801311513522.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24557-cafe-asta-dynamic-45g.html
+BISCUIT KRIT PUB-MIX 350G,Epicerie,1050997510292.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24545-biscuit-krit-pub-mix-350g.html
+BISCUIT KRIT CANAPE 100G,Epicerie,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24544-biscuit-krit-canape-100g.html
+BEURRE JADIDA 500G,Epicerie,12101149511852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24525-beurre-jadida-500g.html
+BEURRE ADJA 500G,Epicerie,13151249512882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24523-beurre-adja-500g.html
+BISCUITS BAUDUCCO WAFER CHOCO HAZELNUT 140G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/24521-bauducco-wafer-choco-hazelnut-140g.html
+THE FLECHA 41022 BLANC 10*25G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24516-the-flecha-41022-blanc-1025g.html
+AIL GOURMET MOL.SALE. 55G,Epicerie,57054155582.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24486-ail-gourmet-molsale-55g.html
+FARINE PATISSIERE 1KG,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24461-farine-patissiere-1kg.html
+BEURRE JADIDA 1KG,Epicerie,23752256523272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24439-beurre-jadida-1kg.html
+BISCUITS BAUDUCCO WAFER VANILLE 140G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24438-bauducco-wafer-vanille-140g.html
+PETIT POIS AMOR ORDINAIRE 800G,Epicerie,81677557992.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24437-petit-pois-amor-ordinaire-800g.html
+SEL IODE FIN MOURAFA POT 250G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24410-sel-iode-fin-mourafa-pot-250g.html
+POUDRE DE MANIOC MOURAFA 400G,Epicerie,16851600516512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24399-poudre-de-manioc-mourafa-400g.html
+POUDRE DE MAIS MOURAFA 400G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24398-poudre-de-mais-mourafa-400g.html
+PAPRIKA EN SACHET MOURAFA 100G,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24391-paprika-en-sachet-mourafa-100g.html
+MOUTARDE KADI 5KG,Epicerie,69506602568112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24379-moutarde-kadi-5kg.html
+MIEL HONEY MOURAFA 280G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24378-miel-honey-mourafa-280g.html
+GRAINES DE SESAME SACHET MOURAFA 200G,Epicerie,18751781518372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24363-graines-de-sesame-sachet-mourafa-200g.html
+GARI SACHET MOURAFA 400G,Epicerie,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24356-gari-sachet-mourafa-400g.html
+FORZA 500G,Epicerie,90085558822.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24352-forza-500g.html
+FONIO MOURAFA 400G,Epicerie,18451752518082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24351-fonio-mourafa-400g.html
+FEUILLES DE LAURIER MOURAFA SACHET 50G,Epicerie,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24349-feuilles-de-laurier-mourafa-sachet-50g.html
+FARINE MAIS GOFIO LA PINA 1KG,Epicerie,16851600516512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24348-farine-mais-gofio-la-pina-1kg.html
+EPICE JUMBO AROME 48CUBES,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24347-epice-jumbo-arome-48cubes.html
+CLOU DE GIROFLE VRAC SKL SACHET,Epicerie,13512851322.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24276-clou-de-girofle-sachet.html
+CLOU DE GIROFLE POUDRE MOURAFA 100G,Epicerie,21062000520632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24275-clou-de-girofle-poudre-mourafa-100g.html
+CLOU DE GIROFLE GRAIN MOURAFA SACHET 100G,Epicerie,21062000520632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24274-clou-de-girofle-grain-mourafa-sachet-100g.html
+CHAMPIGNON SACHET MOURAFA 50G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24265-champignon-sachet-mourafa-50g.html
+ATTIEKE PAQUET MOURAFA 300G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24248-attieke-paquet-mourafa-300g.html
+EPICE MOURAFA 7EPICES SACHET 120G,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24241-epice-mourafa-7epices-sachet-120g.html
+CAFE CHICORE 100G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/16538-cafe-chicore-100g.html
+SAUCE BARBECUE PROVENCALE BF 415G,Epicerie,21001995520582.0,Sakanal,2026-04-14,https://sakanal.sn/fr/-tomate-ketchup/24160-sauce-barbecue-provencale-bf-415g.html
+PANZANI SAUCE TOMATES BASILIC 400G,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24158-panzani-sauce-tomates-basilic-400g.html
+FECULE POMME DE TERRE TIPIAK 250G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24157-fecule-pomme-de-terre-250g.html
+FARINE MAIZENA 400G,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/19114-farine-maizena-400g.html
+CONSERVE CHAMPIGNONS PIEDS ET MORCEAUX KARIMS 4/4 800G,Epicerie,16251543515922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24148-conserve-champignons-pieds-et-morceaux-karims-4-4-800g.html
+CONSERVE HARICOTS VERTS FIN BF 400G,Epicerie,1050997510292.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24144-conserve-haricots-verts-fin-bf-400g.html
+CONSERVE HARICOTS VERTS FIN BF 800G,Epicerie,16701586516362.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24143-conserve-haricots-verts-fin-bf-800g.html
+SAUCE BOLONESE BARBECUE BF 350G,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24139-sauce-bolonese-barbecue-bf-350g.html
+SEL BALEINE 550G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24136-sel-fin-baleine-550g.html
+CHOCOLAT MIXIMAX 400G,Epicerie,18451752518082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24124-chocolat-miximax-400g.html
+THE LIPTON A LA MENTHE FRUITS ROUGES 25SACHETS,Epicerie,20901985520482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24117-the-lipton-a-la-menthe-fruits-rouges-25sachets.html
+CARTON BEURRE ADJA 12*500GR,Epicerie,1.4495137705142052e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/acheter-au-prix-gros/24116-carton-beurre-adja-12500gr.html
+CHEWING GUM HOLLYWOOD 2 FRESH MENTHE FORTE POT 62 DRAGEES,Epicerie,38503657537732.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17437-chewing-gum-hollywood-2-fresh-menthe-forte-pot-62-dragees.html
+CHEWING GUM HOLLYWOOD 2 FRESH CHROLOPHYLE POT,Epicerie,38503657537732.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17435-chewing-gum-hollywood-2-fresh-chrolophyle-pot.html
+BISCUIT KRIT KRITITAS 350G,Epicerie,17151629516802.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/16012-biscuit-krit-krititas-350g.html
+TOMATE LINGUERE EN PLASTIQUE 700G,Epicerie,15001425514702.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/24086-tomate-linguere-en-plastique-700g.html
+PIQUE COCKTAIL COULEUR 144PCS,Epicerie,31252968530622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23995-pique-cocktail-couleur-144pcs.html
+MAYONNAISE KADI 1000ML,Epicerie,21502042521072.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23969-mayonnaise-kadi-1000ml.html
+CONSERVE CORN BOEUF SAYA 190G,Epicerie,52549855142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23929-conserve-corn-boeuf-sara-190g.html
+THE LIPTON NETTO VERT MENTHE 25 SACHET,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23842-the-lipton-netto-vert-menthe-25-sachet.html
+CAFE MAXWELL HOUSE STICKS FINE MOUSSE 100STICKS,Epicerie,72606897571142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/16518-cafe-cappuccino-maxwell-house-sticks-fine-mousse.html
+EPICE MAGGI TABLETTE 60*10G,Epicerie,18251733517882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23684-epice-maggi-tablette-6010g.html
+EPICE MAGGI AROME TABLETTES 60*10G,Epicerie,17371650517022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23657-epice-maggi-arome-tablettes-6010g.html
+BEURRE SOFIA 1KG,Epicerie,23502232523032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/-margarine/23655-beurre-sofia-1kg.html
+CHIPS BANANE SACHET MOURAFA 120G,Epicerie,13151249512882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23642-chips-banane-sachet-mourafa-120g.html
+DATTE EN TABLETTE AITA 250GRS,Epicerie,51548955042.0,Sakanal,2026-04-14,https://sakanal.sn/fr/ramadan/23613-datte-en-tablette-aita-250grs.html
+DATTE EN TABLETTE AITA 500GRS,Epicerie,100095059802.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23601-datte-en-tablette-aita-500grs.html
+EPICE MOURAFA AIL EN POUDRE POT 100G,Epicerie,21001995520582.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/19009-epice-mourafa-ail-en-poudre-pot-100g.html
+PANIER RAMADAN 30000,Epicerie,30000.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/20991-panier-ramadan-30000-nescafe-special-filtre-jar-100g-1-lait-gloria-370g-1-sucre-en-poudre-en-morceau-1kg-1-lait-nido-en-poudre-f.html
+MACARONI KAYNA TORSADE 500G,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23548-macaroni-kayna-torsade-500g.html
+MACARONI KAYNA COQUILLETTE 500G,Epicerie,99094059702.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23547-macaroni-kayna-coquillette-500g.html
+PETIT POIS MIS 800G,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23536-petit-pois-mis-800g.html
+PETIT POIS MIS 400G,Epicerie,51048454992.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23535-petit-pois-mis-400g.html
+CONSERVE CORN BOEUF SARA VIANDE DE POULET 340G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17887-conserve-corn-boeuf-sara-viande-de-poulet-340g.html
+TOMATE LINGUERE PLASTIQUE 2KG,Epicerie,35003325534302.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/23515-tomate-linguere-plastique-2kg.html
+CAFE NESPRESO ROMA 50G,Epicerie,49504702548512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23494-cafe-nespreso-roma-50g.html
+CAFE NESPRESO RISTRETTO 60G,Epicerie,49504702548512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23493-cafe-nespreso-ristretto-57g.html
+CAFE NESPRESO CAPRICCIO 60G,Epicerie,49504702548512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23473-cafe-nespreso-capriccio-50g.html
+CAFE NESPRESO NAPOLI 60G,Epicerie,40003800539202.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23472-cafe-nespreso-napoli-50g.html
+CAFE NESPRESO ARPEGGIO 60G,Epicerie,49504702548512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23471-cafe-nespreso-arpeggio-53g.html
+CAFE NESPRESO COSI 60G,Epicerie,47504512546552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23470-cafe-nespreso-cosi-50g.html
+THE LIPTON YELLOW 100PCS,Epicerie,32903125532242.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23463-the-lipton-yellow-100pcs.html
+POIVRE MOULU 1KG,Epicerie,65306203563992.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21178-poivre-moulu-1kg.html
+THE LIPTON YELLOW LABEL PAQUET DE 10 SACHETS,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22141-the-lipton-yellow-label-paquet-de-10-sachets.html
+CHOCOLAT BELLE FRANCE DESSERT 200G,Epicerie,22652151522192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17574-chocolat-belle-france-dessert-200g.html
+BARILLA SPAGHETTINI N 3 500G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/15641-barilla-spaghettini-n-3-500g.html
+COUSCOUS KAYNA MOYEN 1KG,Epicerie,12151154511902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/18087-couscous-kayna-moyen-1kg.html
+SEL FIN 600G BV BALEINE,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21648-sel-fin-600g-bv-baleine.html
+CAFE L' OR POT SOLUBLE 100G,Epicerie,41003895540182.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/23208-cafe-l-or-pot-soluble-100g.html
+PRINGLES BBQ MEGA STACK GM,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21233-pringles-bbq-mega-stack-gm.html
+PRINGLES HOY&SPICY 165G GM,Epicerie,14701396514402.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21240-pringles-hoyspicy-165g-gm.html
+COUSCOUS KAYNA FIN 1KG,Epicerie,11751116511512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/18086-couscous-kayna-fin-1kg.html
+CHOCOLAT CHOCOBOSS 750G,Epicerie,46004370545082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22950-chocolat-chocoboss-750g.html
+CHOCOLAT MONCHOCO PLASTIQUE 500G,Epicerie,13161250512892.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22949-chocolat-monchoco-plastique-500g.html
+CHOCOLAT MONCHOCO PLASTIQUE 1KG,Epicerie,22112100521662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22948-chocolat-monchoco-plastique-1kg.html
+CHOCOLAT MONCHOCO EN VERRE 200G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22946-chocolat-monchoco-en-verre-200g.html
+CHOCOLAT MONCHOCO PLASTIQUE 5KG,Epicerie,84258003582562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22941-chocolat-monchoco-plastique-5kg.html
+THE BELLE FRANCE MENTHE 25 SACHET,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22110-the-belle-france-menthe-25-sachet.html
+AROME AMORA 192ML,Epicerie,13251258512982.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/15551-arome-amora-192ml.html
+EPICE ADJA CUBE TABLETTE EPICES 60*12G,Epicerie,17361649517012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/18898-epice-adja-cube-tablette-epices-6012g.html
+THON LIZA ALBACORE ENTIER A HUILE 1KG,Epicerie,39903790539102.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22179-thon-liza-albacore-entier-a-huile-1kg.html
+THE LIPTON S. SAHEL INFUSION VERT MENTHE 25 SACHETS,Epicerie,12701206512442.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22786-the-lipton-s-sahel-infusion-vert-menthe-25-sachets.html
+THE LIPTON S. SAHEL INFUSION BONUS POUR HOMME 25 SACHETS,Epicerie,29502802528912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22783-the-lipton-s-sahel-infusion-bonus-pour-homme-25-sachets.html
+THE LIPTON YELLOW 25PCS,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/22140-the-lipton-yellow-25pcs.html
+MOUTARDE SONIA PATHIAL 1KG,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21884-moutarde-sonia-pathial-1kg.html
+SAV DU SAHEL SEL AROMATISE 250G,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21542-sav-du-sahel-sel-aromatise-250g.html
+PRINGLES H&S 40G PM,Epicerie,68064656662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21238-pringles-hs-40g-pm.html
+CAFE MAXWELL CAFEINE STICK 25*2G,Epicerie,23152199522682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/16559-cafe-maxwell-cafeine-stick-2545g.html
+CHOCOLAT NESQUICK NESTLE MILO 400G,Epicerie,31502992530872.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17698-chocolat-nesquick-nestle-milo-400g.html
+SAUCE SOJA RESTO GM 750ML,Epicerie,16351553516022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/21515-sauce-soja-resto-gm-750ml.html
+EPICE NETETOU SOUMBALA MOURAFA SACHET 100G,Epicerie,10651011510432.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/19014-epice-netetou-soumbala-mourafa-sachet-100g.html
+CHOCOLAT BELLE FRANCE LAIT SUPERIEUR 100G,Epicerie,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17576-chocolat-belle-france-lait-superieur-100g.html
+CEREALE BRISURE DE MAIS MOURAFA 500G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17131-cereale-brisure-de-mais-mourafa-500g.html
+BEURRE JADIDA 5KG,Epicerie,97509262595552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-frais/15676-beurre-jadida-5kg.html
+CHOCOLAT DELIA 250G,Epicerie,69065556762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/17622-chocolat-delia-250g.html
+BEURRE SOFIA 5KG,Epicerie,92508787590652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/15684-beurre-sofia-5kg.html
+HARICOT BLANC AVRIL 4/4 800G,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/19506-haricot-blanc-avril-4-4-800g.html
+BEURRE SOFIA 500G,Epicerie,12151154511902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-frais/15683-beurre-sofia-500g.html
+MAYONNAISE BAMA GM,Epicerie,33003135532342.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/20505-mayonnaise-bama-946ml-gm.html
+MOUTARDE KADI 1KG,Epicerie,17501662517152.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8910-moutarde-kadi-1kg.html
+MOUTARDE KADI 370G,Epicerie,87082658522.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8909-moutarde-kadi-370g.html
+MACARONI KAYNA COUDE RAYE 500G,Epicerie,99094059702.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8876-macaroni-kayna-coude-raye-500g.html
+MOUHAMSA RIZ KAYNA 250G,Epicerie,30528952982.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8870-mouhamsa-plomb-kayna-250g.html
+MOUHAMSA PLOMB FIN KAYNA 250G,Epicerie,29027552842.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8865-mouhamsa-plomb-fin-kayna-250g.html
+ANANAS TRANCHE AITA 565G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8800-ananas-tranche-aita-565g.html
+BISCUIT MILK BIKIS 8X44G GM,Epicerie,24252303523762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8726-biscuit-milk-bikis-12x44g.html
+PRINGLES SALT ET VINAGAR PM 40G,Epicerie,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8310-pringles-salt-et-vinagar-pm-40g.html
+CONSERVE CORN BOEUF POULET SAYA 198G,Epicerie,52549855142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8266-conserve-corn-boeuf-saya-198g.html
+BARILLA MACCHERONI N.44 500G,Epicerie,15751496515432.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8263-barilla-maccheroni-n44-500g.html
+BARILLA SPAGETTI ANGEL HAIR N.1 500G,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/8260-barilla-spagetti-angel-hair-n1-500g.html
+POIVRE NOIR 500G,Epicerie,29502802528912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/8210-poivre-noir-500g.html
+MOUTARDE CHEF AIDA 250ML,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/8147-moutarde-chef-aida-250ml.html
+MOUTARDE CHEF AIDA 1000ML,Epicerie,18501757518132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/8146-moutarde-chef-aida-1000ml.html
+THE JASMINE ACHOURA 10*25G,Epicerie,19901890519502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/8143-the-jasmine-achoura-1025g.html
+MOUTARDE SONIA PATHIAL 350G,Epicerie,49547054852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/8098-moutarde-sonia-pathial-350g.html
+MOUTARDE SONIA SEAU 5KG,Epicerie,62505937561252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/8097-moutarde-sonia-seau-5kg.html
+PIMENT SONIA EXTRA FORT PATHIAL 350G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/8095-piment-sonia-extra-fort-pathial-350g.html
+BISCUITS DIBALA PRIMO COOKIES ASSIL 24PCS,Epicerie,43254108542382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/8073-biscuits-dibala-primo-cookies-assil-24pcs.html
+CAFE ASTA GOLD 190G,Epicerie,48004560547042.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/8058-cafe-asta-gold-190g.html
+CAFE ASTA GOLD 45G,Epicerie,18001710517642.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/8055-cafe-asta-gold-45g.html
+AIL ET PERSIL EPICE GOURMET 22G,Epicerie,55052255392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/7827-ail-et-persil-epice-gourmet-22g.html
+CLOU DE GIROFLE GOURMET 30G,Epicerie,95590759352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/7825-clou-de-girofle-gourmet-30g.html
+VINAIGRE DE CIDRE BELLE FRANCE 75CL,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/7663-vinaigre-de-cidre-belle-france-75cl.html
+THE KOUTAM 10X20G,Epicerie,11651106511412.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/7438-the-koutam-10x20g.html
+MACARONI BLE D'OR 500G,Epicerie,65061756372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/7164-macaroni-ble-dor-500g.html
+MORINGA EN POUDRE MOURAFA POT 105G,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/7110-moringa-en-poudre-mourafa-100g.html
+PAPRIKA MOURAFA POT 100G,Epicerie,13551287513272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/7106-paprika-mourafa-pot-100g.html
+PAPRIKA EN SACHET MOURAFA 200G,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/7007-paprika-en-sachet-mourafa-200g.html
+CURRY SACHET MOURAFA 200G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/7001-curry-sachet-mourafa-200g.html
+GINGEMBRE EN POUDRE MOURAFA SACHET 200G,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6996-gingembre-en-poudre-mourafa-200g.html
+BRISURE DE MAIS MOURAFA 500G,Epicerie,90085558822.0,Sakanal,2026-04-14,https://sakanal.sn/fr/-pates-alimentaires/6992-brisure-de-mais-mourafa-500g.html
+ATTIEKE SACHET MOURAFA 300G,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/6990-attieke-sachet-mourafa-300g.html
+SEL IODE GRAIN MOURAFA 1KG,Epicerie,53050355192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6981-sel-iode-grain-mourafa-1kg.html
+SEL IODE FIN MOURAFA 1KG,Epicerie,53050355192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6980-sel-iode-fin-mourafa-1kg.html
+SEL IODE GRAIN MOURAFA 750G,Epicerie,37535653672.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/6979-sel-iode-grain-mourafa-750g.html
+SEL IODE FIN MOURAFA 750G,Epicerie,42540354162.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6978-sel-iode-fin-mourafa-750g.html
+SEL IODE GRAIN MOURAFA 500G,Epicerie,29027552842.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6977-sel-iode-grain-mourafa-500g.html
+SEL IODE FIN MOURAFA 500G,Epicerie,29027552842.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/6976-sel-iode-fin-mourafa-500g.html
+MAYONNAISE CHEF AIDA 900ML,Epicerie,22152104521702.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6937-mayonnaise-chef-aida-1000ml.html
+MAYONNAISE CHEF AIDA 450ML,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6936-mayonnaise-chef-aida-500ml.html
+MAYONNAISE CHEF AIDA 225ML,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6935-mayonnaise-chef-aida-250ml.html
+PROMOS FILTRE A CAFE 150CT,Epicerie,11501092511272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/6813-promos-filtre-a-cafe-150ct.html
+PRINGLES SOUR CREAM & ONION 158G,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6751-pringles-sour-cream-onion-158g.html
+MAYONNAISE CHEF AIDA 2.5L,Epicerie,38153624537382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/6650-mayonnaise-chef-aida-25l.html
+NESCAFE CLASSIC STICK 150X1.5G,Epicerie,67256388565902.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/6371-nescafe-classic-stick-150x15g.html
+CONSERVE CORN BOEUF SARA 320G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/5931-conserve-corn-boeuf-sara-320g.html
+BICARBONATE DE SOUDE 90G,Epicerie,10610051032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/5916-bicarbonate.html
+PATE PANZANI SPAGHETTI 500G,Epicerie,14501377514212.0,Sakanal,2026-04-14,https://sakanal.sn/fr/5781-pate-panzani-spaghetti-500g.html
+PETIT POIS SEC 1KG,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/5766-petit-pois-sec-1kg.html
+BISKREM 24*40G,Epicerie,29502802528912.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/5746-biskrem-2440g.html
+CIGAL NGALAKH EXPRESS 1KG,Epicerie,25002375524502.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/5505-cigal-ngalakh-express-1kg.html
+MOUTARDE REINE 5KG,Epicerie,58505557557332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4918-moutarde-reine-5kg.html
+PATE PANZANI SEMOULE MOYENNE 500G,Epicerie,13151249512882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4916-pate-panzani-semoule-moyenne-500g.html
+PATE PANZANI SEMOULE FINE 500G,Epicerie,13161250512892.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4915-pate-panzani-semoule-fine-500g.html
+PETIT POIS AVRIL TRES FIN 400G,Epicerie,11501092511272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4911-petit-pois-avril-tres-fin-400.html
+PATE PANZANI NOUILLES FINES 500G,Epicerie,16901605516562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/-pates-alimentaires/4901-pate-panzani-nouilles-fines-500g.html
+PATE PANZANI PENNE RIGATE 500G,Epicerie,18901795518522.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4898-pate-panzani-penne-rigate-500g.html
+PATE PANZANI MACARONI 500G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4897-pate-panzani-macaroni-500g.html
+PATE PANZANI COQUILETTE 500G,Epicerie,16901605516562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4892-pate-panzani-coquilette-500g.html
+PATE PANZANI CHEVEUX D'ANGE 500G,Epicerie,16851600516512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4891-pate-panzani-cheveux-dange-500g.html
+PATE PANZANI VERMICELLE 500G,Epicerie,11061050510832.0,Sakanal,2026-04-14,https://sakanal.sn/fr/-pates-alimentaires/4890-pate-panzani-vermicelle-500g.html
+PATE PANZANI SPAGHETTI CAPELLINI 500G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/-pates-alimentaires/4889-pate-panzani-spaghetti-capellini-500g.html
+PANZANI SAUCE OLIVE&BASILIC 400G,Epicerie,21902080521462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4887-panzani-sauce-olivebasilic-400g.html
+NUTELLA 750G,Epicerie,68506507567132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/4886-nutella-750g.html
+NUTELLA 350G,Epicerie,39503752538712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/4885-nutella-350g.html
+MOUTARDE AMORA 440G,Epicerie,18451752518082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4882-moutarde-amora-440g.html
+LAIT BRIDEL DEMI-ECREME 50CL,Epicerie,1050997510292.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/4816-lait-bridel-demi-ecreme-50cl.html
+LAIT BRIDEL DEMI-ECREME 1L,Epicerie,19951895519552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/4814-lait-bridel-demi-ecreme-1l.html
+TOMATE DIEG BOU DIAR 8*30G,Epicerie,52549855142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4803-tomate-dieg-bou-diar-830g.html
+TOMATE DIEG BOU DIAR CHAPELET DE 10*60G,Epicerie,11751116511512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4798-tomate-dieg-bou-diar-chapelet-de-1060g.html
+PRINGLES SALT ET VINEGAR 165G,Epicerie,1050997510292.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4673-pringles-salt-et-vinegar-165g.html
+MACEDOINE DE LEGUME AVRIL 400G,Epicerie,12251163512002.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4622-macedoine-de-legume-avril-400g.html
+PETIT POIS AVRIL CAROTTE 800G,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4620-petit-pois-avril-carotte-800g.html
+LENTILLE AVRIL 800G,Epicerie,18501757518132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4619-lentille-avril-800g.html
+SAV DU SAHEL ORIGAN 25G,Epicerie,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4537-sav-du-sahel-origan-25g.html
+TOMATE DIEG BOU DIAR EN FER 800G,Epicerie,19001805518622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4438-tomate-dieg-bou-diar-en-fer-800g.html
+TOMATE DIEG BOU DIAR EN FER 2KG,Epicerie,43004085542142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4437-tomate-dieg-bou-diar-en-fer-2kg.html
+CHOCOPAIN 5KG,Epicerie,102009690599962.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/4424-chocopain-5kg.html
+LENTILLE AVRIL 400G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4290-lentille-avril-400g.html
+MOUTARDE REINE 370G PM,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4284-moutarde-reine-370g-pm.html
+MOUTARDE REINE GM 1062G,Epicerie,19151819518762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4283-moutarde-reine-gm-1062g.html
+PETIT POIS AVRIL EXTRA FIN 400G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4281-petit-pois-avril-extra-fin-400g.html
+PETIT POIS AVRIL TRES FIN 800G,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4280-petit-pois-avril-tres-fin-800g.html
+PETIT POIS AVRIL EXTRA FIN 800G,Epicerie,22002090521562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4279-petit-pois-avril-extra-fin-800g.html
+THON SOFIA THON MIETTES A L'HUILE 185G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4278-thon-sofia-thon-miettes-a-lhuile-185g.html
+VINAIGRE ADJA ROUGE 1L,Epicerie,53550855242.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/4247-vinaigre-adja-rouge-1l.html
+CAFE L'OR ABSOLU CLASSIQUE 25*45G,Epicerie,24502327524012.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/4172-cafe-lor-absolu-classique-2545g.html
+CARTON LEVURE JAUNE SMART CHEF 100S,Epicerie,37903600537142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4128-levure-jaune-smart-chef.html
+DATTE BRANCHEES DEGLET NOUR 1KG,Epicerie,32653101531992.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4113-datte-branchees-al-jazira-1kg.html
+BISCUIT BOOM CHOCOLAT 24PCS,Epicerie,15701491515382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4062-biscuit-boom-chocolat-24pcs.html
+VERMICELLE KAYNA 500G,Epicerie,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/4009-vermicelle-kayna-500g.html
+GALETTE DE RIZ C BON SIZE 16 /18 CM,Epicerie,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/3986-galette-de-riz-size-16-et-18.html
+POMME DE TERRE LOCAL 25KG,Epicerie,78957500577372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3879-pomme-de-terre-local-25kg.html
+MALTESERS 37G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/3859-maltesers-37g.html
+OIGNON LOCAL 12.5KG,Epicerie,39503752538712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3687-oignon-local-125kg.html
+NIOC MAN 732ML,Epicerie,21051999520622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3644-nioc-man-732ml.html
+NIOC MAN PM,Epicerie,13601292513322.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3643-nioc-man-pm.html
+MOUTARDE COVINOR 1070G,Epicerie,25752446525232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3640-moutarde-covinor-1070g.html
+MAYONNAISE BAMA 473ML MOY,Epicerie,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3622-mayonnaise-bama-473ml-moy.html
+OEUF TABLETTE DE 30,Epicerie,30552902529932.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/3459-oeuf-tablette-de-30.html
+VINAIGRE KADI ROUGE 1L,Epicerie,53050355192.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3444-vinaigre-kadi-rouge-1l.html
+LENTILLE EN VRAC 1KG,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3419-lentille-en-vrac-1kg.html
+THON LIZA SARDINELLES TOMATE 425G,Epicerie,13051239512782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/3117-thon-liza-sardinelles-tomate-425g.html
+THON LIZA NATUREL 1/4,Epicerie,13951325513672.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3116-thon-liza-naturel-1-4.html
+THON LIZA MIETTES A HUILE 1/4,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3110-thon-liza-miettes-a-huile-1-4.html
+CAP MANUEL THON MIETTES A L'HUILE 1KG,Epicerie,41503942540672.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3107-cap-manuel-thon-miettes-a-lhuile-1kg.html
+CAP MANUEL THON MIETTE A L'HUILE 1/4,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3103-cap-manuel-thon-miette-a-lhuile-1-4.html
+PINTHON MM 380G,Epicerie,14901415514602.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3101-pinthon-mm-380g.html
+PINTHON PM 180G,Epicerie,89084558722.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/3099-pinthon-pm-180g.html
+CARTIER OLIVES VERTES DENOYAUTEES 72CL,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3028-cartier-olives-vertes-denoyautees-72cl.html
+CARTIER OLIVES NOIRES DENOYAUTEES 37CL,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3026-cartier-olives-noires-denoyautees-37cl.html
+CARTIER OLIVES VERTES DENOYAUTEES 37CL,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3025-cartier-olives-vertes-denoyautees-37cl.html
+CARTIER OLIVES NOIRES DENOYAUTEES 72CL,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3021-cartier-olives-noires-denoyautees-72cl.html
+CARTIER OLIVES VERTES ENTIERES 72CL,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3019-cartier-olives-vertes-entieres-72cl.html
+CARTIER OLIVES NOIRES CONFITES 37CL,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/3012-cartier-olives-noires-confites-37cl.html
+PETIT POIS SEC 500G,Epicerie,67564156612.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2918-petit-pois-sec-500g.html
+NESCAFE 100G SACHET,Epicerie,22052094521602.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2856-nescafe-100g-sachet.html
+NESCAFE 200G POT,Epicerie,52104949551052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2848-nescafe-200g-pot.html
+ADJA EPICE SACHET 1KG,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2847-adja-epice-sachet-1kg.html
+NESCAFE 50G POT,Epicerie,15351458515042.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2845-nescafe-50g-pot.html
+MAYONNAISE MAYNES 946G,Epicerie,25302403524792.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2842-mayonnaise-maynes-946g.html
+MAYONNAISE MAYNES 5KG,Epicerie,84007980582322.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2841-mayonnaise-maynes-5kg.html
+MAYONNAISE MAYNES 473G,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2840-mayonnaise-maynes-473g.html
+MAYONNAISE MAYNES 237G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2839-mayonnaise-maynes-237g.html
+AROME MAGGI GM 250ML,Epicerie,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2837-arome-maggi-gm-250ml.html
+NESCAFE 100G POT,Epicerie,30502897529892.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2827-nescafe-100g-pot.html
+PETIT POIS CAROTTE AVRIL 1/2 400G,Epicerie,11251068511022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2822-petit-pois-carotte-avril-1-2-400g.html
+KETCHUP TOMATE LINGUERE 5L,Epicerie,46504417545572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2821-ketchup-linguere-5l.html
+MOUTARDE COVINOR PM,Epicerie,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2817-moutarde-covinor-pm.html
+CHOCOPAIN 1KG,Epicerie,23502232523032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2766-chocopain-1kg.html
+CHOCOPAIN 500G,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2765-chocopain-500g.html
+AROME ADJA 250ML,Epicerie,61558456022.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2751-arome-adja-250ml.html
+ADJA TOMATE STICK 60*15G,Epicerie,19851885519452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2748-adja-tomate-stick-6015g.html
+ADJA EPICE 60G,Epicerie,16515651612.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2747-adja-epice-75g.html
+ADJA EPICE STICK 60*15,Epicerie,19851885519452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2745-adja-epice-stick-6015.html
+VINAIGRE ADJA BLANC 1L,Epicerie,58055155682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2742-vinaigre-adja-blanc-1l.html
+ADJA TOMATE STICK 10*15G,Epicerie,47545154652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2736-adja-tomate-stick-1015g.html
+EPICE ADJA STICK 10*15G,Epicerie,42540354162.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2735-epice-adja-stick-1015g.html
+MOUHAMSA PLOMB LA ROSE BLANCHE 250G,Epicerie,32530853182.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2730-mouhamsa-plomb-la-rose-blanche-250g.html
+PETIT POIS AMOR ORDINAIRE 400G,Epicerie,45042754412.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2707-petit-pois-amor-ordinaire-400g.html
+ANANAS TRANCHES BRISEES MINA 565G,Epicerie,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2691-ananas-tranches-brisees-mina-565g.html
+LAIT NIDO 400G POT,Epicerie,40603857539782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2673-lait-nido-400g-pot.html
+LAIT GLORIA EN POUDRE 370G,Epicerie,20901985520482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2667-lait-gloria-en-poudre-370g.html
+NESCAFE STICK SPECIAL FILTRE 25*2G,Epicerie,25802451525282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2665-nescafe-stick-special-filtre-252g.html
+VINAIGRE 3LIONS ROUGE 1L,Epicerie,57554655632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2613-vinaigre-3-lions-rouge-1l.html
+AIL 1KG,Epicerie,16851600516512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2494-ail-1kg.html
+MAYONNAISE CALVE 825ML,Epicerie,35403363534692.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2470-mayonnaise-calve-825ml.html
+MAYONNAISE CALVE 450ML,Epicerie,18751781518372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2469-mayonnaise-calve-450ml.html
+MAYONNAISE CALVE 225ML,Epicerie,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2467-mayonnaise-calve-225ml.html
+PRINGLES PAPRIKA 40G PM,Epicerie,68064656662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2443-pringles-paprika-40g-pm.html
+PRINGLES PAPRIKA 165G GM,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2440-pringles-paprika-165g-gm.html
+PRINGLES ORIGINAL 165G GM,Epicerie,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2438-pringles-original-165g-gm.html
+TOMATE LINGUERE EN PLASTIQUE 350G,Epicerie,81076957932.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2434-tomate-linguere-en-plastique-350g.html
+THE FLECHA 4011 NOIR 250GRS,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2322-the-flecha-4011-noir-250grs.html
+MAYONNAISE JADIDA 5KG,Epicerie,88958450587172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2319-mayonnaise-jadida-5kg.html
+MAYONNAISE JADIDA 500ML,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2318-mayonnaise-jadida-500ml.html
+KADI EPICES 60*15G,Epicerie,17401653517052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2299-kadi-epices-6015g.html
+KADI EPICES 10*15,Epicerie,29027552842.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2298-kadi-epices-1015.html
+MAYONNAISE JADIDA 250ML PM,Epicerie,77573657592.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2294-mayonnaise-jadida-250ml-pm.html
+VERMICELLE KAYNA 5KG,Epicerie,62105899560852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2272-vermicelle-kayna-5kg.html
+SUNUTHON 380G,Epicerie,14101339513812.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2270-sunuthon-380g.html
+FROMAGE VACHE QUI RIT EMMENTAL 8 PORTIONS,Epicerie,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/2075-fromage-vache-qui-rit-emmental-8-portions.html
+CHIPS BELIN CROUSTILLE 35G,Epicerie,69566056812.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/2049-chips-belin-croustille-35g.html
+CAFE TOUBA TAWFEX 500G,Epicerie,29102764528512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2028-cafe-touba-tawfex-500g.html
+CAFE TOUBA TAWFEX 50G,Epicerie,26525152592.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2027-cafe-touba-tawfex-50g.html
+CAFE TOUBA TAWFFFEX 250G,Epicerie,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/2026-cafe-touba-tawfffex-250g.html
+BISCUITS BAUDUCCO WAFER CHOCOLATE 140G,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/1981-bauducco-wafer-choco-140g.html
+VINAIGRE ADJA ROUGE 250ML,Epicerie,21019952052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1779-vinaigre-adja-rouge-250ml.html
+THE TWININGS ENGLISH BREAKFAST 25SHT,Epicerie,43504132542632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/1669-the-twinings-english-breakfast-25sht.html
+SAUCE SOJA PM RESTO 150ML,Epicerie,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1665-sauce-soja-pm-resto-150ml.html
+AIL 500G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1663-ail-500g.html
+SAFRAN PAQUET DE 100 SACHETS,Epicerie,100095059802.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1661-safran-paquet-de-100-sachets.html
+LEVURE SACHET DE 13GRS,Epicerie,55525532.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/1648-levure-sachet-de-13grs.html
+COCKTAIL DE FRUITS PIYARA 825G,Epicerie,15701491515382.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/1412-cocktail-de-fruits-piyara-825g.html
+COCKTAIL DE FRUITS PIYARA 565G,Epicerie,10701016510482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/1411-cocktail-de-fruits-piyara-565g.html
+COCKTAIL DE FRUITS PIYARA 425G,Epicerie,76072257442.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/1410-cocktail-de-fruits-piyara-425g.html
+ANANAS TRANCHES ENTIERES MINA RONDELLES 565G,Epicerie,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/1409-ananas-tranches-entieres-mina-565g.html
+CDA CHOCOMOUSSE 800G,Epicerie,15601482515282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/1392-cda-chocomousse-800g.html
+TOMATE DIEG BOU DIAR 400G,Epicerie,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1373-tomate-dieg-bou-diar-400g.html
+CARTIER OLIVES VERTES ENTIERES 37CL,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1281-cartier-olives-vertes-entieres-37cl.html
+CARTON CAFE MAXWELL HOUSE 16*45G,Epicerie,3.1050294975304292e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/1218-carton-cafe-maxwell-cafeine-stick-162545g.html
+BON APPETIT OIGNON BLANC 720G,Epicerie,14651391514352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1116-bon-appetit-oignon-blanc-720g.html
+BON APPETIT OIGNON BLANC 370ML,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1115-bon-appetit-oignon-blanc-370ml.html
+CONSERVE MAIS DOUX BON APPETIT 340G,Epicerie,52549855142.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/1028-conserve-mais-doux-bon-appetit-340g.html
+BON APPETIT CORNICHON 370ML,Epicerie,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/874-bon-appetit-cornichon-370ml.html
+BON APPETIT CORNICHON 720ML,Epicerie,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/873-bon-appetit-cornichon-720ml.html
+CARTON CARTIER OLIVES NOIRES CONFITES 12*37CL,Epicerie,87008265585262.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/845-carton-cartier-olives-noires-denoyautees-1237g.html
+CARTON CARTIER OLIVES VERTES ENTIERES 12X37CL,Epicerie,87008265585262.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/843-carton-cartier-olives-vertes-entieres-12x370ml.html
+CARTON CARTIER OLIVES VERTES DENOYAUTEES 12*72CL,Epicerie,1.6800159605164642e+16,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/842-carton-cartier-olives-vertes-denoyautees-1272cl.html
+VINAIGRE COVINOR ROUGE 1L,Epicerie,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/787-vinaigre-covinor-rouge-1l.html
+BISCUIT BISCOTTES BELLE FRANCE AU FROMAGE 300G,Epicerie,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/755-biscuit-biscottes-belle-france-300g.html
+CAFE LAVAZZA POT,Epicerie,54005130552922.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/698-cafe-lavazza-pot.html
+KETCHUP ALFA BOUTEILLE 340G,Epicerie,63560356222.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/686-ketchup-alfa-bouteille-340g.html
+HARICOT BLANC SEC 250G,Epicerie,75071257352.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/678-haricot-blanc-sec-250g.html
+THE JASMIN 200G POT JAUNE,Epicerie,23502232523032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/646-the-jasmin-200g-pot-jaune.html
+POIVRE NOIR 1KG,Epicerie,58005510556842.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/579-poivre-noir-1kg.html
+CAFE MAXWELL HOUSE CAFEINE 200G,Epicerie,65006175563702.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/568-cafe-maxwell-house-cafeine-200g.html
+CAFE CARTE NOIRE MOULU 250G,Epicerie,57905500556742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/566-cafe-carte-noire-moulu-250g.html
+CAFE TOUBA TAWFEKH 1KG,Epicerie,56805396555662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/562-cafe-touba-tawfekh-1kg.html
+CAFE MAXWELL HOUSE DECAFEINE 25 STICKS,Epicerie,23502232523032.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/559-cafe-maxwell-house-decafeine-25-sticks.html
+HARICOT VERT BONDUELLE TRES FIN 800G,Epicerie,22112100521662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-salee/490-haricot-vert-bonduelle-tres-fin-800g.html
+THE BELLE FRANCE VERT A LA MENTHE 25PCS,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/284-the-belle-france-vert-a-la-menthe-25pcs.html
+THE BELLE FRANCE AU CITRON 25PCS,Epicerie,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/283-the-belle-france-au-citron-25pcs.html
+BISCUIT BISKO 50 SACHETS,Epicerie,24752351524252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/113-biscuit-bisko-50-sachets.html
+KANGOO CHOCOLATE STICK SACHET DE 60,Epicerie,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie-sucree/108-kangoo-chocolate-stick-sachet-de-60.html
+FARINE FATY 250G,Epicerie,21520452102.0,Sakanal,2026-04-14,https://sakanal.sn/fr/102-farine-faty-250g.html
+SKL POP CORN 500G,Epicerie,13001235512742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/epicerie/59-skl-pop-corn-500g.html
+MOURAFA POUDRE DE FENUGREC 200G,Produits Locaux,26502517525972.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/34372-mourafa-poudre-de-fenugrec-200g.html
+FARINE DE RIZ MOURAFA 400G,Produits Locaux,11501092511272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/34370-farine-de-riz-mourafa-400g.html
+MOURAFA GRAINS DE FENUGREC 200G,Produits Locaux,26502517525972.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/34369-mourafa-grains-de-fenugrec-200g.html
+EPICE MOURAFA LAURIER EN POUDRE SACHETS 120G,Produits Locaux,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/34368-epice-mourafa-laurier-en-poudre-sachets-120g.html
+GINGEMBRE EN POUDRE MOURAFA SACHET 50G,Produits Locaux,81577457982.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/34367-gingembre-en-poudre-mourafa-sachet-50g.html
+DIARRY THIACKRY DE MAIS 400G,Produits Locaux,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/34175-diarry-thiackry-de-mais-400g.html
+EPICE CANELLE MOULU MOURAFA SACHET 50G,Produits Locaux,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/33792-epice-canelle-moulu-mourafa-sachet-50g.html
+MOURAFA BATON DE CANELLE 25G,Produits Locaux,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/33791-mourafa-baton-de-canelle-25g.html
+MOURAFA PETIT COLA EN POUDRE 25G,Produits Locaux,1050997510292.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/33789-mourafa-petit-cola-en-poudre-25g.html
+MOURAFA POUDRE DE FENUGREC 100G,Produits Locaux,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/33786-mourafa-poudre-de-fenugrec-100g.html
+MOURAFA GRAINS DE FENUGREC 100G,Produits Locaux,14751401514452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/33785-mourafa-grains-de-fenugrec-100g.html
+CLOU DE GIROFLE VRAC SKL SACHET 250G,Produits Locaux,23002185522542.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/33504-clou-de-girofle-vrac-skl-sachet-250g.html
+SAV DU SAHEL BISSAP CITRONNELLE 100G,Produits Locaux,12001140511762.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/31448-sav-du-sahel-bissap-citronnelle-100g.html
+FEUILLE DE BISSAP MOURAFA SACHET 100G,Produits Locaux,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/31271-feuille-de-bissap-mourafa-sachet-100g.html
+POUDRE DE FEUILLES DE CAROSSOL GRAVIOLA SECHE,Produits Locaux,34753301534052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/31234-poudre-de-feuilles-de-carossol-graviola-seche.html
+MOURAFA THACRY 400G,Produits Locaux,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/31089-mourafa-thacry-400g.html
+DIARRY THIACKRY DE MIL 5KG,Produits Locaux,54755201553652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/31000-diarry-thiackry-de-mil-5kg.html
+DIARRY FARINE DE MAIS 400G,Produits Locaux,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28749-diarry-farine-de-mais-400g.html
+DIARRY FARINE DE MIL 400G,Produits Locaux,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28748-diarry-farine-de-mil-400g.html
+DIARRY THIERE DE MIL 1KG,Produits Locaux,13501282513232.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28478-diarry-thiere-de-mil-1kg.html
+DIARRY SANKHAL DE MIL 400G,Produits Locaux,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28477-diarry-sankhal-de-mil-400g.html
+DIARRY NDIORNI 400G,Produits Locaux,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28475-diarry-ndiorni-400g.html
+DIARRY THIACKRY DE MIL 400G,Produits Locaux,84580258282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28473-diarry-thiackry-de-mil-400g.html
+DIARRY ARRAW DE MAIS 400G,Produits Locaux,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28472-diarry-arraw-de-mais-400g.html
+DIARRY ARRAW DE MIL 400G,Produits Locaux,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28471-diarry-arraw-de-mil-400g.html
+DIARRY BRISURE DE MAIS 400G,Produits Locaux,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/28470-diarry-brisure-de-mais-400g.html
+MOURAFA KINKELIBA,Produits Locaux,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27887-mourafa-kinkeliba.html
+MOURAFA SANKHAL 400G,Produits Locaux,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27886-mourafa-sankhal-400g.html
+MOURAFA ARRAW 400G,Produits Locaux,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27885-mourafa-arraw-400g.html
+MOURAFA THIERE LALO 400G,Produits Locaux,89585058772.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27884-mourafa-thiere-lalo-400g.html
+MOURAFA GOMBO EN POUDRE 400G,Produits Locaux,16851600516512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27434-mourafa-gombo-en-poudre-400g.html
+POUDRE DE FEUILLES DE BAOBAB MOURAFA 200G,Produits Locaux,74070357252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27433-poudre-de-feuilles-de-baobab-mourafa-200g.html
+LABEL AFRIK POUDRE MORINGA 200G,Produits Locaux,26702536526162.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27428-label-afrik-poudre-moringa-200g.html
+SAV DU SAHEL MUREX TOUFFA 80G,Produits Locaux,16501567516172.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/27035-sav-du-sahel-murex-touffa-80g.html
+BRISURE DE MAIS SAV DU SAHEL,Produits Locaux,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/26739-brisure-de-mais-sav-du-sahel.html
+FEUILLES DE LAURIER MOURAFA SACHET 25G,Produits Locaux,58055155682.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/26268-feuilles-de-laurier-mourafa-sachet-25g.html
+BOUYE EN POUDRE MOURAFA 100G,Produits Locaux,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/26021-bouye-en-poudre-mourafa-100g.html
+SAV DU SAHEL BADIANE MOULU,Produits Locaux,96591659452.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25670-sav-du-sahel-badiane-moulu.html
+LABEL AFRIK THIERE LALO 450G,Produits Locaux,88584058672.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25510-label-afrik-thiere-lalo-450g.html
+LABEL AFRIK THIAKRY 450G,Produits Locaux,84580258282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25509-label-afrik-thiakry-450g.html
+LABEL AFRIK SANKHAL 450G,Produits Locaux,84580258282.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25508-label-afrik-sankhal-450g.html
+LA VIVRIERE THIAKRY MIL 400G,Produits Locaux,76572657492.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25507-la-vivriere-thiakry-mil-400g.html
+SAV DU SAHEL FONIO PRECUIT 400G,Produits Locaux,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25460-fonio-precuit-sav-du-sahel-400g.html
+RAISIN SEC 1KG,Produits Locaux,39503752538712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25243-raisin-sec-1kg.html
+MOURAFA THIERE SANS LALO 400G,Produits Locaux,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25203-mourafa-thiere-sans-lalo-400g.html
+GARI SACHET MOURAFA 200G,Produits Locaux,76572657492.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25144-gari-sachet-mourafa-200g.html
+BOUYE EN POUDRE MOURAFA 200G,Produits Locaux,21001995520582.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25021-bouye-en-poudre-mourafa-200g.html
+EPICE NETETOU SOUMBALA SACHET 200G,Produits Locaux,18751781518372.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/25000-epice-netetou-soumbala-sachet-200g.html
+LA VIVRIERE THIERE LALO MIL 400G,Produits Locaux,83078858132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24959-la-vivriere-thiere-lalo-mil-400g.html
+POUDRE DE MORINGA SAV DU SAHEL 40G,Produits Locaux,97592659552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24849-poudre-de-moringa-sav-du-sahel-40g.html
+POIVRE NOIR 250G,Produits Locaux,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24846-poivre-noir-250g.html
+POIVRE MOULU 250G,Produits Locaux,16801596516462.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24845-poivre-moulu-250g.html
+PIMENT SEC 250G,Produits Locaux,11001045510782.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24838-piment-sec-250g.html
+PIMENT MOULU 250G,Produits Locaux,12501187512252.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24837-piment-moulu-250g.html
+LABEL AFRIK POUDRE DE MORINGA 150G,Produits Locaux,27402603526852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24749-label-afrik-poudre-de-moringa-150g.html
+LABEL AFRIK LALO 50G,Produits Locaux,51548955042.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24747-label-afrik-lalo-50g.html
+LABEL AFRIK FEUILLE DE MORINGA 80G,Produits Locaux,14951420514652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24746-label-afrik-feuille-de-moringa-80g.html
+LABEL AFRIK ARRAW DE MIL 400G,Produits Locaux,86982558512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24745-label-afrik-arraw-de-mil-400g.html
+LA VIVRIERE THIERE THIAKH SANS LALO 400G,Produits Locaux,71067456952.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24744-la-vivriere-thiere-thiakh-sans-lalo-400g.html
+LA VIVRIERE FARINE DE NIEBE 400G,Produits Locaux,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24743-la-vivriere-farine-de-niebe-400g.html
+LA VIVRIERE FARINE DE MIL 400G,Produits Locaux,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24742-la-vivriere-farine-de-mil-400g.html
+LA VIVRIERE FARINE DE MAIS 400G,Produits Locaux,68565056712.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24741-la-vivriere-farine-de-mais-400g.html
+SAV DU SAHEL FEUILLE NEBEDAYE 50G,Produits Locaux,85080758332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24701-sav-du-sahel-feuille-nebedaye-50g.html
+SAV DU SAHEL CREVETTE SECHEE 80G,Produits Locaux,18451752518082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24600-sav-du-sahel-crevette-sechee-80g.html
+LA VIVRIERE SANKHAL DE MIL 400G,Produits Locaux,73569857202.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24503-la-vivriere-sankhal-de-mil-400g.html
+PATE D ARACHIDE MOURAFA 500G,Produits Locaux,13151249512882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24395-pate-d-arachide-mourafa-500g.html
+PATE D ARACHIDE MOURAFA 1KG,Produits Locaux,23752256523272.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24394-pate-d-arachide-mourafa-1kg.html
+MUSCADE EN NOIX 4,Produits Locaux,18517551812.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24380-muscade-en-noix-4.html
+FEUILLES DE MORINGA MOURAFA SACHET 75G,Produits Locaux,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24350-feuilles-de-moringa-mourafa-sachet-75g.html
+CLOU DE GIROFLE GRAIN MOURAFA 50G,Produits Locaux,12651201512392.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24273-clou-de-girofle-grain-mourafa-50g.html
+POIVRE DE GUINNE/ DIAR 50G,Produits Locaux,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24080-poivre-de-guinne-diar-50g.html
+MOURAFA HARICOT BLANC 400G,Produits Locaux,16401558516072.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/24069-mourafa-haricot-blanc-400g.html
+OIGNON LOCAL 1KG,Produits Locaux,31529953082.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/23867-oignon-local-1kg.html
+LA VIVRIERE BRISURES DE MAIS 400G,Produits Locaux,60057055882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/23865-la-vivriere-brisures-de-mais-400g.html
+COCO RAPE SACHET MOURAFA 400G,Produits Locaux,18951800518572.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/23722-coco-rape-sachet-mourafa-400g.html
+POIVRE MOULU 500G,Produits Locaux,34753301534052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21179-poivre-moulu-500g.html
+GINGEMBRE EN POUDRE MOURAFA SACHET 100G,Produits Locaux,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/23506-gingembre-en-poudre-mourafa-100g.html
+SAV DU SAHEL NOFLAYE 250G,Produits Locaux,79075057742.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21540-sav-du-sahel-noflaye.html
+PIMENT MOULU 1KG,Produits Locaux,49504702548512.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21125-piment-moulu-1kg.html
+SAV DU SAHEL POUDRE CREVETTE 100G,Produits Locaux,73770057222.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/22885-sav-du-sahel-poudre-crevette-100g.html
+SAV DU SAHEL HUITRES SECHEES YOKHOSS,Produits Locaux,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21547-sav-du-sahel-huitres-sechees-yokhoss.html
+SAV DU SAHEL YET SECHE 200G,Produits Locaux,21062000520632.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21545-sav-du-sahel-yet-seche-200g.html
+SAV DU SAHEL THIACKRY 400G,Produits Locaux,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21544-sav-du-sahel-thiackry-400g.html
+SAV DU SAHEL LAURIER FEUILLES SACHETS,Produits Locaux,42240054132.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21538-sav-du-sahel-laurier-feuilles-sachets.html
+SAV DU SAHEL LAURIER MOULU 50G,Produits Locaux,100095059802.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/21539-sav-du-sahel-laurier-moulu-50g.html
+MOURAFA GOMBO EN POUDRE 200G,Produits Locaux,81677557992.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/20671-mourafa-gombo-en-poudre-200g.html
+LA VIVRIERE ARAW MIL 400G,Produits Locaux,73569857202.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/20015-la-vivriere-araw-mil-400g.html
+HUILE DE PALME MOURAFA 1L,Produits Locaux,22502137522052.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/7323-huile-de-palme-mourafa-1l.html
+HUILE DE PALME MOURAFA 50CL,Produits Locaux,13151249512882.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/7322-huile-de-palme-mourafa-50cl.html
+RAISIN SEC 500G,Produits Locaux,21051999520622.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/7040-raisin-sec-500g.html
+MORINGA EN POUDRE MOURAFA SACHET 100G,Produits Locaux,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/7003-moringa-en-poudre-sachet-100g.html
+BOUYE EN POUDRE MOURAFA 400G,Produits Locaux,37503562536752.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/6988-bouye-en-poudre-mourafa-400g.html
+BISSAP EN POUDRE MOURAFA 200G,Produits Locaux,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/6985-bissap-en-poudre-mourafa-200g.html
+OIGNON LOCAL 25KG,Produits Locaux,73707001572222.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/6875-oignon-local-25kg.html
+RAISIN SEC 250G,Produits Locaux,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/5945-raisin-sec-250g.html
+SAV DU SAHEL PATE D'ARACHIDE 500ML,Produits Locaux,13701301513422.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/5596-sav-du-sahel-pate-darachide-500ml.html
+SKL ALDANKE,Produits Locaux,17016151662.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/5591-skl-aldanke.html
+SAV DU SAHEL CANNELLE BATONNETS 30G,Produits Locaux,19501852519112.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/5588-sav-du-sahel-cannelle-batonnets-30g.html
+LABEL AFRIK FARINE DE NIEBE 500G,Produits Locaux,15801501515482.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/3828-label-afrik-farine-de-niebe-500g.html
+POMME DE TERRE 12.5KG,Produits Locaux,44754251543852.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/3697-pomme-de-terre-125kg.html
+PIMENT SEC 500G,Produits Locaux,21502042521072.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/2495-piment-sec-500g.html
+SAV DU SAHEL SESAME BLANC 40G,Produits Locaux,95090259312.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/2124-sav-du-sahel-sesame-blanc-40g.html
+SAV DU SAHEL ARAW DU RIZ DE LA VALLEE 350G,Produits Locaux,10551002510332.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/2115-sav-du-sahel-araw-du-riz-de-la-vallee-350g.html
+PIMENT SEC 1KG,Produits Locaux,42504037541652.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/1655-piment-sec-1kg.html
+LABEL AFRIK THIAKRY 5KG,Produits Locaux,52114950551062.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/817-label-afrik-thiakry-5kg.html
+HARICOT BLANC SEC 1KG,Produits Locaux,22002090521562.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/677-haricot-blanc-sec-1kg.html
+MUSCADE 250G,Produits Locaux,47504512546552.0,Sakanal,2026-04-14,https://sakanal.sn/fr/produits-locaux/628-muscade-250g.html
