@@ -7,7 +7,6 @@ import re
 import random
 from fake_useragent import UserAgent
 
-# ==================== CONFIGURATION ANTI-CLOUDFLARE ====================
 ua = UserAgent()
 
 HEADERS_BASE = {
@@ -17,25 +16,29 @@ HEADERS_BASE = {
     "DNT": "1",
 }
 
-# ==================== CATÉGORIES AVEC SEUIL ADAPTÉ ====================
 CATEGORIES = [
-    #{"url": "https://www.auchan.sn/104-epicerie-salee", "categorie": "Epicerie Salée", "stop_threshold": 10},
-    #{"url": "https://www.auchan.sn/91-epicerie-sucree", "categorie": "Epicerie Sucrée", "stop_threshold": 10},
+    {"url": "https://www.auchan.sn/104-epicerie-salee", "categorie": "Epicerie Salée", "stop_threshold": 10},
+    {"url": "https://www.auchan.sn/91-epicerie-sucree", "categorie": "Epicerie Sucrée", "stop_threshold": 10},
     {"url": "https://www.auchan.sn/137-boissons", "categorie": "Boissons", "stop_threshold": 7},
     {"url": "https://www.auchan.sn/92-fruits-legumes", "categorie": "Fruits & Légumes", "stop_threshold": 8},
-    # Ajoute ici d'autres catégories (ex: surgelés, frais...)
+    {"url": "https://www.auchan.sn/232-produits-surgeles", "categorie": "Produits Surgelés", "stop_threshold": 8},
+    {"url": "https://www.auchan.sn/121-produits-frais", "categorie": "Produits Frais", "stop_threshold": 8},
 ]
 
 MAX_PAGES_PER_CATEGORY = 50
 
 def clean_price(price_text):
+    """Nettoyage intelligent : prend UNIQUEMENT le vrai prix avant CFA/FCFA"""
     if not price_text:
         return None
-    numbers = re.sub(r'[^0-9]', '', price_text)
-    try:
-        return float(numbers)
-    except ValueError:
-        return None
+    match = re.search(r'(\d[\d\s.,]*?)\s*(?:CFA|FCFA)', str(price_text), re.IGNORECASE)
+    if match:
+        number_str = re.sub(r'[\s.,]', '', match.group(1))
+        try:
+            return float(number_str)
+        except ValueError:
+            return None
+    return None
 
 def clean_name(name):
     if not name:
@@ -44,18 +47,14 @@ def clean_name(name):
     return name
 
 def extract_price_from_h2(h2_tag):
-    """NOUVELLE VERSION : prend le PRIX TOTAL (celui sans '/ l' ou '/ kg')"""
     if not h2_tag:
         return None
-    
     current = h2_tag.next_sibling
-    for _ in range(20):  # on cherche plus loin
+    for _ in range(25):
         if current:
             text = current.get_text(strip=True) if hasattr(current, 'get_text') else str(current)
-            if "CFA" in text:
-                # On ignore le prix unitaire (qui contient / l ou / kg)
-                if "/ l" not in text and "/ kg" not in text and "/ pièce" not in text:
-                    return text  # ← c'est le prix total !
+            if "CFA" in text.upper() and "/ l" not in text and "/ kg" not in text and "/ pièce" not in text:
+                return text
         else:
             break
         current = current.next_sibling
@@ -117,26 +116,18 @@ def scrape_auchan():
                 
                 print(f"   ✅ {products_found} produits valides ajoutés")
                 
-                if products_found < threshold and page > 5:
-                    print(f"   → Fin de catégorie détectée (seuil {threshold} atteint)")
+                if products_found == 0 and page > 2 or (products_found < threshold and page > 3):
+                    print("   → Fin de catégorie détectée")
                     break
                 
-                sleep_time = random.uniform(6, 12)
+                sleep_time = random.uniform(7, 13)
                 print(f"   ⏳ Pause {sleep_time:.1f}s (anti-Cloudflare)...")
                 time.sleep(sleep_time)
                 
-            except requests.exceptions.HTTPError as e:
-                if e.response.status_code == 522:
-                    print("   ❌ Erreur 522 Cloudflare → catégorie suivante")
-                    break
-                else:
-                    print(f"   ❌ Erreur HTTP {e.response.status_code}")
-                    break
             except Exception as e:
                 print(f"   ❌ Erreur page {page} : {e}")
                 break
     
-    # ====================== Sauvegarde ======================
     if all_data:
         df = pd.DataFrame(all_data)
         df = df.drop_duplicates(subset=["nom_produit", "prix", "magasin"], keep='first')
@@ -144,13 +135,8 @@ def scrape_auchan():
         filename = f"donnees_brutes_auchan_{date_today}.csv"
         df.to_csv(filename, index=False, encoding="utf-8-sig")
         
-        print(f"\n🎉 SCRAPING AUCHAN TERMINÉ !")
-        print(f"   Total lignes uniques : {len(df)}")
-        print(f"   Fichier : {filename}")
-        print("\nAperçu :")
+        print(f"\n🎉 AUCHAN TERMINÉ → {len(df)} lignes (prix corrigés !)")
         print(df.head())
-    else:
-        print("⚠️ Aucun produit récupéré.")
 
 if __name__ == "__main__":
     scrape_auchan()

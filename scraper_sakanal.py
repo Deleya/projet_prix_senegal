@@ -12,46 +12,38 @@ HEADERS = {
 
 CATEGORIES = [
     {"url": "https://sakanal.sn/fr/111-epicerie", "categorie": "Epicerie"},
-    # Ajoute ici d'autres catégories quand tu veux :
-     {"url": "https://sakanal.sn/fr/83-produits-locaux", "categorie": "Produits Locaux"},
+    {"url": "https://sakanal.sn/fr/83-produits-locaux", "categorie": "Produits Locaux"},
 ]
 
 MAX_PAGES_PER_CATEGORY = 30
 
 def clean_price(price_text):
-    """Nettoie le prix → retourne float ou None"""
+    """Nettoyage intelligent : prend UNIQUEMENT le vrai prix avant CFA/FCFA"""
     if not price_text:
         return None
-    # Garde uniquement les chiffres
-    numbers = re.sub(r'[^0-9]', '', price_text)
-    try:
-        return float(numbers)
-    except ValueError:
-        return None
+    match = re.search(r'(\d[\d\s.,]*?)\s*(?:CFA|FCFA)', str(price_text), re.IGNORECASE)
+    if match:
+        number_str = re.sub(r'[\s.,]', '', match.group(1))
+        try:
+            return float(number_str)
+        except ValueError:
+            return None
+    return None
 
 def clean_name(name):
-    """Nettoyage minimal pour standardisation future"""
     if not name:
         return ""
     name = re.sub(r'\s+', ' ', name.strip())
-    return name  # On enlève .title() pour garder l'original
-
-def extract_quantity_and_unit(name):
-    """Bonus : essaie d'extraire la quantité (ex: 500G, 12*37CL) pour plus tard"""
-    # On garde le nom tel quel pour l'instant, mais on pourra l'utiliser après
-    return name  # pour le moment on ne change rien
+    return name
 
 def extract_price_from_h2(h2_tag):
-    """Meilleure façon de trouver le prix juste après le h2"""
     if not h2_tag:
         return None
-    
-    # On cherche le prochain texte qui contient "FCFA"
     current = h2_tag.next_sibling
-    for _ in range(15):  # limite raisonnable
+    for _ in range(25):
         if current:
             text = current.get_text(strip=True) if hasattr(current, 'get_text') else str(current)
-            if "FCFA" in text:
+            if "FCFA" in text.upper():
                 return text
         else:
             break
@@ -75,12 +67,10 @@ def scrape_sakanal():
                 response.raise_for_status()
                 
                 soup = BeautifulSoup(response.text, "html.parser")
-                
-                # Sélecteur principal : tous les liens de produits dans les h2
                 product_links = soup.select("h2 a")
                 
                 products_found = 0
-                seen = set()  # évite doublons sur la même page
+                seen = set()
                 
                 for a_tag in product_links:
                     nom = clean_name(a_tag.get_text())
@@ -91,7 +81,7 @@ def scrape_sakanal():
                     price_text = extract_price_from_h2(h2_tag)
                     prix = clean_price(price_text)
                     
-                    if prix is None or prix < 100:   # filtre les prix absurdes
+                    if prix is None or prix < 100:
                         continue
                     
                     all_data.append({
@@ -100,7 +90,9 @@ def scrape_sakanal():
                         "prix": prix,
                         "magasin": "Sakanal",
                         "date_scraping": date_today,
-                        "url_produit": "https://sakanal.sn" + a_tag["href"] if a_tag.get("href", "").startswith("/") else a_tag.get("href", "")
+                        "url_produit": "https://sakanal.sn" + a_tag["href"] 
+                                        if a_tag.get("href", "").startswith("/") 
+                                        else a_tag.get("href", "")
                     })
                     
                     seen.add(nom)
@@ -108,21 +100,16 @@ def scrape_sakanal():
                 
                 print(f"   ✅ {products_found} produits valides ajoutés")
                 
-                # Arrêt intelligent
                 if products_found < 25 and page > 5:
-                    print("   → Fin de catégorie détectée (peu de produits sur cette page)")
+                    print("   → Fin de catégorie détectée")
                     break
                 
                 time.sleep(1.8)
                 
-            except requests.exceptions.HTTPError as e:
-                print(f"   ❌ Erreur HTTP {e.response.status_code} → arrêt de la catégorie")
-                break
             except Exception as e:
-                print(f"   ❌ Erreur inattendue page {page} : {e}")
+                print(f"   ❌ Erreur page {page} : {e}")
                 break
     
-    # ====================== Sauvegarde finale ======================
     if all_data:
         df = pd.DataFrame(all_data)
         df = df.drop_duplicates(subset=["nom_produit", "prix", "magasin"], keep='first')
@@ -130,12 +117,8 @@ def scrape_sakanal():
         filename = f"donnees_brutes_sakanal_{date_today}.csv"
         df.to_csv(filename, index=False, encoding="utf-8-sig")
         
-        print(f"\n🎉 SCRAPING TERMINÉ AVEC SUCCÈS !")
-        print(f"   Total lignes uniques : {len(df)}")
-        print(f"   Fichier sauvegardé : {filename}")
-        print("\nAperçu des 5 premières lignes :")
+        print(f"\n🎉 SAKANAL TERMINÉ → {len(df)} lignes (prix corrigés !)")
         print(df.head())
-        print(f"\nColonnes : {list(df.columns)}")
     else:
         print("⚠️ Aucun produit récupéré.")
 
