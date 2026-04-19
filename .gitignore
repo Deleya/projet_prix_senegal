@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+
+data/raw/*.csv
+data/processed/*.csv
+data/kpi/*.csv
+
+.streamlit/
+.DS_Store
