@@ -258,6 +258,103 @@ def compute_monthly_inflation(df):
     return monthly, global_monthly
 
 
+def compute_category_store_score(df):
+    score = (
+        df.groupby(["categorie_standardisee", "magasin_standardise"], dropna=False)
+        .agg(
+            nb_produits=("cle_matching_exacte", "nunique"),
+            nb_observations=("prix_comparable", "size"),
+            prix_moyen=("prix_comparable", "mean"),
+            prix_median=("prix_comparable", "median"),
+            prix_min=("prix_comparable", "min"),
+            prix_max=("prix_comparable", "max"),
+            part_produits_normalises=("type_prix_comparable", lambda s: (s != "raw_price").mean()),
+        )
+        .reset_index()
+    )
+    if score.empty:
+        return score
+
+    score["part_produits_normalises"] = score["part_produits_normalises"] * 100
+
+    total_par_categorie = (
+        df.groupby("categorie_standardisee", dropna=False)["cle_matching_exacte"]
+        .nunique()
+        .rename("nb_produits_categorie_total")
+        .reset_index()
+    )
+    score = score.merge(total_par_categorie, on="categorie_standardisee", how="left")
+    score["couverture_categorie_pct"] = (
+        score["nb_produits"] / score["nb_produits_categorie_total"]
+    ) * 100
+
+    reference_categorie = (
+        score.groupby("categorie_standardisee", dropna=False)["prix_moyen"]
+        .transform("mean")
+    )
+    score["indice_categorie_base_100"] = (score["prix_moyen"] / reference_categorie) * 100
+
+    return score.sort_values(
+        ["categorie_standardisee", "indice_categorie_base_100", "prix_median"],
+        ascending=[True, True, True],
+        kind="stable",
+    )
+
+
+def assign_confidence_level(row):
+    nb_produits = row.get("nb_produits", 0)
+    couverture = row.get("couverture_categorie_pct", 0)
+    part_normalisee = row.get("part_produits_normalises", 0)
+
+    if nb_produits >= 30 and couverture >= 60 and part_normalisee >= 50:
+        return "eleve"
+    if nb_produits >= 15 and couverture >= 35:
+        return "moyen"
+    return "faible"
+
+
+def build_ai_context_table(category_store_score):
+    if category_store_score.empty:
+        return pd.DataFrame()
+
+    context = category_store_score.copy()
+    context["niveau_comparaison"] = "categorie"
+    context["indicateur_principal"] = context["indice_categorie_base_100"].round(2)
+    context["score_confiance"] = context.apply(assign_confidence_level, axis=1)
+
+    # Champ texte compact et directement injectable dans un prompt/system context.
+    context["note_methodologique"] = context["score_confiance"].map(
+        {
+            "eleve": "comparaison robuste (couverture et normalisation elevees)",
+            "moyen": "comparaison exploitable avec prudence moderee",
+            "faible": "comparaison a interpreter avec prudence (couverture faible ou echantillon limite)",
+        }
+    )
+
+    columns = [
+        "niveau_comparaison",
+        "categorie_standardisee",
+        "magasin_standardise",
+        "nb_produits",
+        "nb_observations",
+        "prix_moyen",
+        "prix_median",
+        "prix_min",
+        "prix_max",
+        "part_produits_normalises",
+        "nb_produits_categorie_total",
+        "couverture_categorie_pct",
+        "indice_categorie_base_100",
+        "indicateur_principal",
+        "score_confiance",
+        "note_methodologique",
+    ]
+    return context[columns].sort_values(
+        ["categorie_standardisee", "indice_categorie_base_100"],
+        kind="stable",
+    )
+
+
 def build_summary(df, variation_index, competitiveness, fluctuation, inflation_global):
     latest_day = df["jour"].max()
     latest_month = df["mois"].max()
@@ -366,6 +463,8 @@ def main():
     competitiveness = compute_store_competitiveness(panel)
     fluctuation = compute_product_fluctuation(reliable_history)
     inflation_categorie, inflation_globale = compute_monthly_inflation(reliable_history)
+    category_store_score = compute_category_store_score(reliable_history)
+    ai_context = build_ai_context_table(category_store_score)
     summary = build_summary(reliable_history, variation_index, competitiveness, fluctuation, inflation_globale)
     quality_report = build_quality_report(history, reliable_history, panel)
 
@@ -375,6 +474,9 @@ def main():
     output_fluct = KPI_DATA_DIR / f"kpi_fluctuation_produits_{latest_suffix}.csv"
     output_infl_cat = KPI_DATA_DIR / f"kpi_inflation_mensuelle_categorie_{latest_suffix}.csv"
     output_infl_global = KPI_DATA_DIR / f"kpi_inflation_mensuelle_globale_{latest_suffix}.csv"
+    output_category_store_score = KPI_DATA_DIR / f"kpi_score_categorie_magasin_{latest_suffix}.csv"
+    output_ai_context_csv = KPI_DATA_DIR / f"kpi_contexte_ia_{latest_suffix}.csv"
+    output_ai_context_json = KPI_DATA_DIR / f"kpi_contexte_ia_{latest_suffix}.json"
     output_summary = KPI_DATA_DIR / f"kpi_resume_{latest_suffix}.csv"
     output_panel = KPI_DATA_DIR / f"kpi_panel_journalier_{latest_suffix}.csv"
     output_quality = KPI_DATA_DIR / f"kpi_qualite_donnees_{latest_suffix}.csv"
@@ -384,6 +486,9 @@ def main():
     fluctuation.to_csv(output_fluct, index=False, encoding="utf-8-sig")
     inflation_categorie.to_csv(output_infl_cat, index=False, encoding="utf-8-sig")
     inflation_globale.to_csv(output_infl_global, index=False, encoding="utf-8-sig")
+    category_store_score.to_csv(output_category_store_score, index=False, encoding="utf-8-sig")
+    ai_context.to_csv(output_ai_context_csv, index=False, encoding="utf-8-sig")
+    ai_context.to_json(output_ai_context_json, orient="records", force_ascii=False, indent=2)
     summary.to_csv(output_summary, index=False, encoding="utf-8-sig")
     panel.to_csv(output_panel, index=False, encoding="utf-8-sig")
     quality_report.to_csv(output_quality, index=False, encoding="utf-8-sig")
@@ -396,6 +501,9 @@ def main():
     print(f"Fluctuation produits : {output_fluct.name}")
     print(f"Inflation categorie : {output_infl_cat.name}")
     print(f"Inflation globale : {output_infl_global.name}")
+    print(f"Score categorie x magasin : {output_category_store_score.name}")
+    print(f"Contexte IA (csv) : {output_ai_context_csv.name}")
+    print(f"Contexte IA (json) : {output_ai_context_json.name}")
     print(f"Resume KPI : {output_summary.name}")
     print(f"Panel journalier : {output_panel.name}")
     print(f"Qualite donnees : {output_quality.name}")

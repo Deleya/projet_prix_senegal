@@ -18,12 +18,14 @@ def load_latest_datasets():
     targets = {
         "analytics": find_latest_file(PROCESSED_DATA_DIR, "donnees_analytiques_kpi_*.csv"),
         "panel": find_latest_file(KPI_DATA_DIR, "kpi_panel_journalier_*.csv"),
+        "category_store_score": find_latest_file(KPI_DATA_DIR, "kpi_score_categorie_magasin_*.csv"),
         "competitiveness": find_latest_file(KPI_DATA_DIR, "kpi_magasin_competitif_*.csv"),
         "summary": find_latest_file(KPI_DATA_DIR, "kpi_resume_*.csv"),
         "variation": find_latest_file(KPI_DATA_DIR, "kpi_indice_variation_prix_*.csv"),
         "inflation_category": find_latest_file(KPI_DATA_DIR, "kpi_inflation_mensuelle_categorie_*.csv"),
         "inflation_global": find_latest_file(KPI_DATA_DIR, "kpi_inflation_mensuelle_globale_*.csv"),
         "fluctuation": find_latest_file(KPI_DATA_DIR, "kpi_fluctuation_produits_*.csv"),
+        "ai_context": find_latest_file(KPI_DATA_DIR, "kpi_contexte_ia_*.csv"),
         "quality": find_latest_file(KPI_DATA_DIR, "kpi_qualite_donnees_*.csv"),
     }
 
@@ -48,11 +50,13 @@ def load_latest_datasets():
 def prepare_datasets(datasets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     analytics = datasets["analytics"].copy()
     panel = datasets["panel"].copy()
+    category_store_score = datasets["category_store_score"].copy()
     competitiveness = datasets["competitiveness"].copy()
     variation = datasets["variation"].copy()
     inflation_category = datasets["inflation_category"].copy()
     inflation_global = datasets["inflation_global"].copy()
     fluctuation = datasets["fluctuation"].copy()
+    ai_context = datasets.get("ai_context", pd.DataFrame()).copy()
     quality = datasets.get("quality", pd.DataFrame()).copy()
 
     for frame in (analytics, panel):
@@ -63,6 +67,18 @@ def prepare_datasets(datasets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFram
     numeric_columns = [
         (analytics, ["prix", "prix_par_kg_ou_l", "prix_par_piece", "score_matching"]),
         (panel, ["prix_obs", "nb_magasins_jour", "nb_types_prix_jour", "score_matching_moyen"]),
+        (category_store_score, [
+            "nb_produits",
+            "nb_observations",
+            "prix_moyen",
+            "prix_median",
+            "prix_min",
+            "prix_max",
+            "part_produits_normalises",
+            "nb_produits_categorie_total",
+            "couverture_categorie_pct",
+            "indice_categorie_base_100",
+        ]),
         (competitiveness, [
             "nb_produits_comparables",
             "indice_competitivite_min",
@@ -101,6 +117,19 @@ def prepare_datasets(datasets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFram
             "amplitude_pct",
             "coefficient_variation_pct",
         ]),
+        (ai_context, [
+            "nb_produits",
+            "nb_observations",
+            "prix_moyen",
+            "prix_median",
+            "prix_min",
+            "prix_max",
+            "part_produits_normalises",
+            "nb_produits_categorie_total",
+            "couverture_categorie_pct",
+            "indice_categorie_base_100",
+            "indicateur_principal",
+        ]),
         (quality, ["valeur"]),
     ]
 
@@ -130,11 +159,13 @@ def prepare_datasets(datasets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFram
 
     datasets["analytics"] = analytics
     datasets["panel"] = panel
+    datasets["category_store_score"] = category_store_score
     datasets["competitiveness"] = competitiveness
     datasets["variation"] = variation
     datasets["inflation_category"] = inflation_category
     datasets["inflation_global"] = inflation_global
     datasets["fluctuation"] = fluctuation
+    datasets["ai_context"] = ai_context
     datasets["quality"] = quality
     return datasets
 
@@ -306,6 +337,325 @@ def build_store_gap_table(comparison: pd.DataFrame, store: str) -> pd.DataFrame:
     return gap
 
 
+def show_category_heatmap(score_table: pd.DataFrame, selected_stores: list[str]):
+    st.subheader("Heatmap indice categorie x magasin (base 100)")
+    if score_table.empty:
+        st.info("Aucun score categorie/magasin disponible pour les filtres actuels.")
+        return
+
+    heatmap_source = score_table.loc[
+        score_table["magasin_standardise"].isin(selected_stores)
+    ].copy()
+    if heatmap_source.empty:
+        st.info("Aucune categorie disponible pour les magasins selectionnes.")
+        return
+
+    heatmap_data = (
+        heatmap_source.groupby(
+            ["categorie_standardisee", "magasin_standardise"],
+            dropna=False,
+        )["indice_categorie_base_100"]
+        .mean()
+        .reset_index()
+    )
+    chart_height = max(320, min(800, 42 * heatmap_data["categorie_standardisee"].nunique()))
+    st.caption("Lecture rapide: indice < 100 = magasin plus competitif sur la categorie; indice > 100 = plus cher.")
+    st.vega_lite_chart(
+        heatmap_data,
+        {
+            "height": chart_height,
+            "layer": [
+                {"mark": "rect"},
+                {
+                    "mark": {"type": "text", "baseline": "middle", "fontSize": 11},
+                    "encoding": {
+                        "text": {"field": "indice_categorie_base_100", "type": "quantitative", "format": ".0f"},
+                        "color": {
+                            "condition": {"test": "datum.indice_categorie_base_100 > 120 || datum.indice_categorie_base_100 < 80", "value": "white"},
+                            "value": "black",
+                        },
+                    },
+                },
+            ],
+            "encoding": {
+                "x": {"field": "magasin_standardise", "type": "nominal", "title": "Magasin"},
+                "y": {"field": "categorie_standardisee", "type": "nominal", "title": "Categorie"},
+                "color": {
+                    "field": "indice_categorie_base_100",
+                    "type": "quantitative",
+                    "title": "Indice base 100",
+                    "scale": {"scheme": "redyellowgreen", "reverse": True},
+                },
+                "tooltip": [
+                    {"field": "categorie_standardisee", "type": "nominal", "title": "Categorie"},
+                    {"field": "magasin_standardise", "type": "nominal", "title": "Magasin"},
+                    {"field": "indice_categorie_base_100", "type": "quantitative", "title": "Indice", "format": ".1f"},
+                ],
+            },
+        },
+        use_container_width=True,
+    )
+
+    with st.expander("Voir le detail score categorie x magasin", expanded=False):
+        detail = heatmap_source[
+            [
+                "categorie_standardisee",
+                "magasin_standardise",
+                "nb_produits",
+                "prix_median",
+                "indice_categorie_base_100",
+                "couverture_categorie_pct",
+                "part_produits_normalises",
+            ]
+        ].copy()
+        detail = detail.sort_values(
+            ["categorie_standardisee", "indice_categorie_base_100"],
+            kind="stable",
+        )
+        st.dataframe(detail, width="stretch", hide_index=True)
+
+
+def show_price_dispersion_boxplot(
+    analytics: pd.DataFrame,
+    selected_stores: list[str],
+    selected_categories: list[str],
+    price_mode: str,
+    robust_scale: bool,
+):
+    st.subheader("Dispersion des prix par categorie (boxplot)")
+    value_column = "prix_normalise" if price_mode == "prix_normalise" else "prix_affiche"
+
+    box_data = analytics.loc[
+        analytics["magasin_standardise"].isin(selected_stores)
+    ].copy()
+    if selected_categories:
+        box_data = box_data.loc[box_data["categorie_standardisee"].isin(selected_categories)].copy()
+    box_data = box_data.loc[
+        box_data["categorie_standardisee"].notna() & box_data[value_column].notna()
+    ].copy()
+
+    if box_data.empty:
+        st.info("Pas assez de donnees pour afficher le boxplot avec les filtres actuels.")
+        return
+
+    chart_data = box_data.copy()
+    subtitle = ""
+    if robust_scale:
+        low = chart_data[value_column].quantile(0.01)
+        high = chart_data[value_column].quantile(0.99)
+        chart_data = chart_data.loc[chart_data[value_column].between(low, high)].copy()
+        subtitle = f"Echelle robuste active (1er-99e percentile: {low:,.0f} a {high:,.0f} FCFA).".replace(",", " ")
+        if chart_data.empty:
+            chart_data = box_data.copy()
+            subtitle += " Donnees trop filtrees: retour automatique a l'echelle complete."
+
+    st.caption(
+        "Distribution des prix "
+        + ("normalises (kg/L ou piece)." if value_column == "prix_normalise" else "affiches produit.")
+    )
+    if subtitle:
+        st.caption(subtitle)
+    stats = (
+        chart_data.groupby(["categorie_standardisee", "magasin_standardise"], dropna=False)[value_column]
+        .agg(
+            prix_min="min",
+            q1=lambda s: s.quantile(0.25),
+            mediane="median",
+            q3=lambda s: s.quantile(0.75),
+            prix_max="max",
+            nb_points="size",
+        )
+        .reset_index()
+    )
+    category_order = (
+        stats.groupby("categorie_standardisee", dropna=False)["mediane"]
+        .mean()
+        .sort_values()
+        .index.tolist()
+    )
+    store_order = [store for store in selected_stores if store in stats["magasin_standardise"].unique().tolist()]
+    if not store_order:
+        store_order = sorted(stats["magasin_standardise"].dropna().unique().tolist())
+
+    if stats.empty:
+        st.info("Pas assez de donnees pour calculer les quartiles du boxplot.")
+        return
+    st.caption(
+        "Lecture recommandee: choisir une categorie, puis comparer les boites entre magasins (plus bas = plutot moins cher)."
+    )
+    categorie_cible = st.selectbox(
+        "Categorie analysee",
+        options=category_order,
+        key="dispersion_categorie_cible",
+    )
+    stats_cible = stats.loc[stats["categorie_standardisee"] == categorie_cible].copy()
+    stats_cible = stats_cible.sort_values("mediane", kind="stable")
+    if stats_cible.empty:
+        st.info("Pas de donnees disponibles pour cette categorie.")
+        return
+
+    magasin_leader = stats_cible.iloc[0]
+    magasin_haut = stats_cible.iloc[-1]
+    ecart_mediane_pct = (
+        ((float(magasin_haut["mediane"]) - float(magasin_leader["mediane"])) / float(magasin_leader["mediane"])) * 100
+        if float(magasin_leader["mediane"]) > 0 else None
+    )
+    iqr_moyen = float((stats_cible["q3"] - stats_cible["q1"]).mean())
+    ratio_dispersion = (
+        iqr_moyen / float(magasin_leader["mediane"])
+        if float(magasin_leader["mediane"]) > 0 else None
+    )
+    if ratio_dispersion is None:
+        niveau_dispersion = "indeterminee"
+    elif ratio_dispersion < 0.25:
+        niveau_dispersion = "faible"
+    elif ratio_dispersion < 0.50:
+        niveau_dispersion = "moderee"
+    else:
+        niveau_dispersion = "elevee"
+
+    metric_cols = st.columns(3)
+    metric_cols[0].metric("Categorie", categorie_cible)
+    metric_cols[1].metric("Magasin mediane la plus basse", magasin_leader["magasin_standardise"])
+    metric_cols[2].metric("Ecart medianes", f"{ecart_mediane_pct:.1f}%" if ecart_mediane_pct is not None else "-")
+
+    st.vega_lite_chart(
+        stats_cible,
+        {
+            "height": 420,
+            "layer": [
+                {
+                    "mark": {"type": "rule", "strokeWidth": 1.5},
+                    "encoding": {
+                        "x": {"field": "magasin_standardise", "type": "nominal", "title": "Magasin", "sort": store_order},
+                        "y": {"field": "prix_min", "type": "quantitative", "title": "Prix (FCFA)"},
+                        "y2": {"field": "prix_max"},
+                        "color": {"field": "magasin_standardise", "type": "nominal", "title": "Magasin"},
+                    },
+                },
+                {
+                    "mark": {"type": "bar", "size": 36},
+                    "encoding": {
+                        "x": {"field": "magasin_standardise", "type": "nominal", "title": "Magasin", "sort": store_order},
+                        "y": {"field": "q1", "type": "quantitative"},
+                        "y2": {"field": "q3"},
+                        "color": {"field": "magasin_standardise", "type": "nominal", "title": "Magasin"},
+                        "tooltip": [
+                            {"field": "categorie_standardisee", "type": "nominal", "title": "Categorie"},
+                            {"field": "magasin_standardise", "type": "nominal", "title": "Magasin"},
+                            {"field": "nb_points", "type": "quantitative", "title": "Nb produits"},
+                            {"field": "prix_min", "type": "quantitative", "title": "Min", "format": ",.0f"},
+                            {"field": "q1", "type": "quantitative", "title": "Q1", "format": ",.0f"},
+                            {"field": "mediane", "type": "quantitative", "title": "Mediane", "format": ",.0f"},
+                            {"field": "q3", "type": "quantitative", "title": "Q3", "format": ",.0f"},
+                            {"field": "prix_max", "type": "quantitative", "title": "Max", "format": ",.0f"},
+                        ],
+                    },
+                },
+                {
+                    "mark": {"type": "tick", "thickness": 2, "size": 38, "color": "black"},
+                    "encoding": {
+                        "x": {"field": "magasin_standardise", "type": "nominal", "title": "Magasin", "sort": store_order},
+                        "y": {"field": "mediane", "type": "quantitative"},
+                    },
+                },
+            ],
+        },
+        use_container_width=True,
+    )
+    st.info(
+        f"Lecture: dans **{categorie_cible}**, **{magasin_leader['magasin_standardise']}** a la mediane la plus basse "
+        f"({format_fcfa(magasin_leader['mediane'])}); dispersion **{niveau_dispersion}** "
+        f"(IQR moyen: {format_fcfa(iqr_moyen)})."
+    )
+
+    ranking_view = stats_cible[["magasin_standardise", "mediane", "q1", "q3", "prix_min", "prix_max", "nb_points"]].copy()
+    ranking_view = ranking_view.rename(
+        columns={
+            "magasin_standardise": "magasin",
+            "mediane": "mediane",
+            "q1": "q1",
+            "q3": "q3",
+            "prix_min": "min",
+            "prix_max": "max",
+            "nb_points": "nb_produits",
+        }
+    )
+    for col in ["mediane", "q1", "q3", "min", "max"]:
+        ranking_view[col] = ranking_view[col].map(format_fcfa)
+    st.dataframe(ranking_view, width="stretch", hide_index=True)
+
+
+def show_ai_context_panel(
+    ai_context: pd.DataFrame,
+    selected_stores: list[str],
+    selected_categories: list[str],
+    focus_category: str | None = None,
+):
+    st.subheader("Contexte IA pret a injecter")
+    if ai_context.empty:
+        st.info("Le fichier de contexte IA n'est pas disponible. Lance `python kpi.py` pour le generer.")
+        return
+
+    filtered = ai_context.loc[ai_context["magasin_standardise"].isin(selected_stores)].copy()
+    if selected_categories:
+        filtered = filtered.loc[filtered["categorie_standardisee"].isin(selected_categories)].copy()
+    else:
+        # Alignement UX: si l'utilisateur a choisi une categorie dans l'onglet Dispersion,
+        # on l'utilise aussi ici par defaut.
+        if focus_category:
+            filtered = filtered.loc[filtered["categorie_standardisee"].eq(focus_category)].copy()
+    if filtered.empty:
+        st.info("Aucune ligne contexte IA avec les filtres actuels.")
+        return
+
+    # Filtre local optionnel pour garder coherence entre onglets sans surcharger la sidebar.
+    categories_options = sorted(filtered["categorie_standardisee"].dropna().unique().tolist())
+    if categories_options:
+        default_index = 0
+        if focus_category and focus_category in categories_options:
+            default_index = categories_options.index(focus_category)
+        selected_local_category = st.selectbox(
+            "Filtrer la categorie (onglet Contexte IA)",
+            options=["Toutes"] + categories_options,
+            index=(default_index + 1) if categories_options else 0,
+            key="ai_context_local_category",
+        )
+        if selected_local_category != "Toutes":
+            filtered = filtered.loc[filtered["categorie_standardisee"].eq(selected_local_category)].copy()
+
+    cols = st.columns(4)
+    cols[0].metric("Lignes contexte IA", len(filtered))
+    cols[1].metric("Categories couvertes", filtered["categorie_standardisee"].nunique())
+    cols[2].metric("Magasins couverts", filtered["magasin_standardise"].nunique())
+    cols[3].metric("Indice moyen base 100", f"{filtered['indice_categorie_base_100'].mean():.1f}")
+
+    confidence = (
+        filtered["score_confiance"]
+        .value_counts(dropna=False)
+        .rename_axis("score_confiance")
+        .reset_index(name="nb_lignes")
+    )
+    left, right = st.columns(2)
+    with left:
+        st.caption("Distribution du score de confiance")
+        st.dataframe(confidence, width="stretch", hide_index=True)
+    with right:
+        st.caption("Extrait des donnees injectables")
+        preview_cols = [
+            "niveau_comparaison",
+            "categorie_standardisee",
+            "magasin_standardise",
+            "nb_produits",
+            "indice_categorie_base_100",
+            "couverture_categorie_pct",
+            "part_produits_normalises",
+            "score_confiance",
+            "note_methodologique",
+        ]
+        st.dataframe(filtered[preview_cols].head(100), width="stretch", hide_index=True)
+
+
 def show_overview_metrics(analytics: pd.DataFrame, panel: pd.DataFrame, competition_subset: pd.DataFrame):
     comparable_keys = panel.loc[panel["comparabilite_stricte"], "cle_matching_exacte"].nunique()
     latest_day = analytics["jour"].max()
@@ -390,11 +740,13 @@ def main():
 
     analytics = datasets["analytics"]
     panel = datasets["panel"]
+    category_store_score = datasets["category_store_score"]
     competitiveness = datasets["competitiveness"]
     variation = datasets["variation"]
     inflation_category = datasets["inflation_category"]
     inflation_global = datasets["inflation_global"]
     fluctuation = datasets["fluctuation"]
+    ai_context = datasets.get("ai_context", pd.DataFrame())
     quality = datasets.get("quality", pd.DataFrame())
     paths = datasets["paths"]
 
@@ -423,6 +775,10 @@ def main():
         options=["Prix produit", "Prix normalise (kg/L ou piece)"],
         index=0,
     )
+    robust_boxplot = st.sidebar.checkbox(
+        "Boxplot lisible (ignorer extremes 1%-99%)",
+        value=True,
+    )
 
     st.sidebar.divider()
     st.sidebar.caption("Sources chargees automatiquement")
@@ -449,6 +805,9 @@ def main():
         ].copy()
         filtered_panel = filtered_panel.loc[
             filtered_panel["categorie_standardisee"].isin(selected_categories)
+        ].copy()
+        category_store_score = category_store_score.loc[
+            category_store_score["categorie_standardisee"].isin(selected_categories)
         ].copy()
 
     if search_term:
@@ -621,6 +980,25 @@ def main():
         display_gap["surcout_vs_min_pct"] = display_gap["surcout_vs_min_pct"].map(format_pct)
         st.dataframe(display_gap.head(50), width='stretch', hide_index=True)
 
+    st.divider()
+    st.subheader("Analyse categorie - Vue structuree")
+    st.caption("Tous les graphiques categorie sont regroupes ici pour une lecture continue: positionnement, dispersion, puis contexte IA.")
+    tab_heatmap, tab_boxplot, tab_ia = st.tabs(
+        ["Heatmap positionnement", "Dispersion des prix", "Contexte IA"]
+    )
+    with tab_heatmap:
+        show_category_heatmap(category_store_score, selected_stores)
+    with tab_boxplot:
+        show_price_dispersion_boxplot(
+            filtered_analytics,
+            selected_stores,
+            selected_categories,
+            price_mode,
+            robust_boxplot,
+        )
+    with tab_ia:
+        focus_category = st.session_state.get("dispersion_categorie_cible")
+        show_ai_context_panel(ai_context, selected_stores, selected_categories, focus_category=focus_category)
     st.divider()
     bottom_left, bottom_right = st.columns(2)
 

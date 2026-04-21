@@ -5,6 +5,7 @@ __pycache__/
 data/raw/*.csv
 data/processed/*.csv
 data/kpi/*.csv
+data/kpi/*.json
 
 .streamlit/
 .DS_Store
