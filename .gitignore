@@ -9,3 +9,4 @@ data/kpi/*.json
 
 .streamlit/
 .DS_Store
+.env

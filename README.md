@@ -96,6 +96,25 @@ Le dashboard charge automatiquement les **derniers exports** disponibles dans `d
 - un boxplot de **dispersion des prix** (par categorie, comparaison entre magasins)
 - une vue **Contexte IA** (donnees injectables + score de confiance)
 
+## Assistant IA (Groq)
+
+Le dashboard inclut un assistant conversationnel:
+
+- moteur LLM Groq (mode principal: `llama-3.1-70b-versatile`, fallback: `llama-3.1-8b-instant`)
+- bouton assistant flottant (popover) pour discuter sans quitter la page
+- reponses contraintes au contexte du projet (`kpi_contexte_ia_*`) avec garde-fous anti-hallucination
+
+Configuration cle API:
+
+- via variable d'environnement `GROQ_API_KEY`
+- ou via fichier `.env` a la racine:
+
+```text
+GROQ_API_KEY=ta_cle
+```
+
+Le fichier `.env` est ignore par git.
+
 ## Historique
 
 Le projet construit un historique a partir des fichiers `donnees_analytiques_kpi_*.csv` generes a des dates differentes.
@@ -106,5 +125,5 @@ Plus tu relances le pipeline sur plusieurs jours, plus les KPI de variation, inf
 - scraping multi-sources: en place
 - comparabilite produits: fiabilisee
 - KPI: fiabilises sur `comparable_normalise`
-- dashboard: vues Niveau 1 + Niveau 2 + Contexte IA
+- dashboard: vues Niveau 1 + Niveau 2 + Contexte IA + Assistant Groq
 - automatisation: point d'entree `run_pipeline.py` (execution + verification des exports attendus)

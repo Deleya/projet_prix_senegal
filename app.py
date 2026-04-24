@@ -1,6 +1,23 @@
 import pandas as pd
 import streamlit as st
+import os
+import requests
+from pathlib import Path
+import json
+import re
+import difflib
 from project_paths import KPI_DATA_DIR, PROCESSED_DATA_DIR, find_latest_file
+
+try:
+    from groq import Groq
+except Exception:  # pragma: no cover - runtime dependency check
+    Groq = None
+
+try:
+    from streamlit_float import float_init, float_parent  # type: ignore[reportMissingImports]
+except Exception:  # pragma: no cover - optional UX dependency
+    float_init = None
+    float_parent = None
 
 
 st.set_page_config(
@@ -180,6 +197,690 @@ def format_pct(value) -> str:
     if pd.isna(value):
         return "-"
     return f"{value:.1f}%"
+
+
+def load_env_file(path: str = ".env") -> None:
+    """
+    Minimal .env loader (no external dependency).
+    Loads KEY=VALUE pairs into os.environ if not already set.
+    """
+    try:
+        if not os.path.exists(path):
+            return
+        with open(path, "r", encoding="utf-8") as f:
+            for raw_line in f:
+                line = raw_line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, value = line.split("=", 1)
+                key = key.strip()
+                value = value.strip().strip("'").strip('"')
+                if key and key not in os.environ:
+                    os.environ[key] = value
+    except Exception:
+        return
+
+
+def queue_agent_message_from_key(input_key: str) -> None:
+    text = str(st.session_state.get(input_key, "")).strip()
+    if text:
+        st.session_state["agent_pending_send"] = text
+        st.session_state["agent_input_key"] = st.session_state.get("agent_input_key", 0) + 1
+
+
+def _normalize_text(text: str) -> str:
+    text = (text or "").strip().lower()
+    text = re.sub(r"[^a-z0-9\s&+-]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def detect_categories_from_question(question: str, available_categories: list[str]) -> tuple[list[str], list[str]]:
+    """
+    Returns (detected_categories, suggestions).
+    - detected_categories: 1+ categories confidently detected from the question
+    - suggestions: fuzzy matches when detection is not confident
+    """
+    if not question or not available_categories:
+        return [], []
+
+    q = _normalize_text(question)
+    normalized = {cat: _normalize_text(cat) for cat in available_categories}
+
+    # Simple synonyms/aliases -> canonical normalized tokens
+    aliases = {
+        "epicerie": ["epicerie", "epiceries", "grocery"],
+        "boissons": ["boisson", "boissons", "drink", "drinks"],
+        "produits locaux": ["produits locaux", "local", "locaux"],
+        "produits frais": ["produits frais", "frais", "fresh"],
+        "fruits & legumes": ["fruits legumes", "fruits & legumes", "fruit", "legume", "legumes"],
+        "hygiene & beaute": ["hygiene", "beaute", "hygiène", "beauty"],
+        "bebe & puericulture": ["bebe", "bébé", "puericulture", "puériculture"],
+    }
+
+    detected: list[str] = []
+
+    # 1) Contains match on category labels (multiple possible)
+    for cat, ncat in normalized.items():
+        if ncat and ncat in q:
+            detected.append(cat)
+
+    # 2) Alias match (multiple possible)
+    for canonical, keys in aliases.items():
+        if any(k in q for k in keys):
+            canon_norm = _normalize_text(canonical)
+            for cat, ncat in normalized.items():
+                if ncat == canon_norm and cat not in detected:
+                    detected.append(cat)
+
+    # If we detected multiple, keep them unique and stable
+    if detected:
+        # Deduplicate while preserving order
+        seen = set()
+        ordered = []
+        for item in detected:
+            if item not in seen:
+                ordered.append(item)
+                seen.add(item)
+        return ordered, []
+
+    # 3) Fuzzy suggestions on normalized categories
+    candidates = list(normalized.values())
+    inv = {v: k for k, v in normalized.items()}
+
+    close = difflib.get_close_matches(q, candidates, n=6, cutoff=0.35)
+    suggestions: list[str] = []
+    for c in close:
+        if c in inv and inv[c] not in suggestions:
+            suggestions.append(inv[c])
+
+    # Try fuzzy on each token separately (helps for short questions)
+    if not suggestions:
+        tokens = q.split()
+        for token in tokens:
+            close_tok = difflib.get_close_matches(token, candidates, n=3, cutoff=0.6)
+            for c in close_tok:
+                if c in inv and inv[c] not in suggestions:
+                    suggestions.append(inv[c])
+            if suggestions:
+                break
+
+    return [], suggestions
+
+
+def get_groq_api_key() -> str | None:
+    # Priority: Streamlit secrets then environment variables.
+    # Streamlit can run with a different CWD, so try both CWD and script directory.
+    load_env_file(".env")
+    try:
+        script_dir_env = str(Path(__file__).resolve().parent / ".env")
+        load_env_file(script_dir_env)
+    except Exception:
+        pass
+    key = None
+    try:
+        key = st.secrets.get("GROQ_API_KEY")
+    except Exception:
+        key = None
+    return key or os.environ.get("GROQ_API_KEY")
+
+
+def get_groq_client(api_key: str):
+    if Groq is None:
+        raise RuntimeError("Le package `groq` n'est pas installe. Lance `pip install groq`.")
+    return Groq(api_key=api_key)
+
+
+def build_agent_system_prompt(contexte_markdown: str) -> str:
+    return f"""
+Tu es un Agent Conversationnel Autonome pour le projet Prix Senegal.
+Tu aides un utilisateur non technique a comprendre les prix entre Auchan, Diarle et Sakanal.
+
+Base de connaissances unique (contexte du projet):
+{contexte_markdown}
+
+Regles strictes (guardrails):
+1) Tu reponds UNIQUEMENT sur les donnees prix du projet. Hors sujet -> refuse poliment.
+2) Tu n'inventes jamais de chiffres. Si absent du contexte: "Je n'ai pas cette information dans mes donnees actuelles."
+3) Tu gardes un ton humain, pedagogique et conversationnel.
+4) Quand tu recommandes un magasin, tu cites: categorie, indice, nb_produits, couverture, score_confiance.
+5) Si la question est floue, tu poses une courte question de clarification.
+""".strip()
+
+
+def show_groq_popover_assistant(ai_context: pd.DataFrame, selected_stores: list[str], selected_categories: list[str]):
+    st.markdown(
+        """
+<div class="ai-support-header">
+  <div class="ai-support-title">AI Support</div>
+  <div class="ai-support-status">● En ligne - Repond en quelques secondes</div>
+</div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    api_key = get_groq_api_key()
+    if not api_key:
+        st.warning("Assistant desactive: ajoute GROQ_API_KEY dans `.env` ou `st.secrets`.")
+        return
+
+    if ai_context.empty:
+        st.info("Contexte IA indisponible. Lance `python kpi.py`.")
+        return
+
+    filtered = ai_context.loc[ai_context["magasin_standardise"].isin(selected_stores)].copy()
+    if selected_categories:
+        filtered = filtered.loc[filtered["categorie_standardisee"].isin(selected_categories)].copy()
+    if filtered.empty:
+        st.info("Aucune ligne Contexte IA avec les filtres actuels.")
+        return
+
+    available_categories = sorted(filtered["categorie_standardisee"].dropna().unique().tolist())
+    with st.expander("Parametres assistant", expanded=False):
+        chosen_category = st.selectbox(
+            "Categorie (optionnel)",
+            options=["Auto"] + available_categories,
+            index=0,
+            key="agent_popover_category",
+        )
+        if chosen_category != "Auto":
+            filtered = filtered.loc[filtered["categorie_standardisee"].eq(chosen_category)].copy()
+
+    compact_cols = [
+        "categorie_standardisee",
+        "magasin_standardise",
+        "nb_produits",
+        "couverture_categorie_pct",
+        "indice_categorie_base_100",
+        "score_confiance",
+        "note_methodologique",
+    ]
+    # Avoid pandas.to_markdown dependency on `tabulate`.
+    context_json = json.dumps(
+        filtered[compact_cols].to_dict(orient="records"),
+        ensure_ascii=False,
+    )
+    system_prompt = build_agent_system_prompt(context_json)
+
+    if "agent_chat_history" not in st.session_state:
+        st.session_state.agent_chat_history = [{"role": "system", "content": system_prompt}]
+    else:
+        # Keep the latest context in system message as filters evolve.
+        st.session_state.agent_chat_history[0] = {"role": "system", "content": system_prompt}
+
+    if "agent_input_key" not in st.session_state:
+        st.session_state.agent_input_key = 0
+    if "agent_pending_send" not in st.session_state:
+        st.session_state.agent_pending_send = ""
+
+    chat_box = st.container(height=360, border=True)
+    with chat_box:
+        for msg in st.session_state.agent_chat_history:
+            if msg["role"] == "system":
+                continue
+            if msg["role"] == "user":
+                st.markdown(
+                    f'<div class="ai-msg-row user"><div class="ai-msg-bubble user">{msg["content"]}</div></div>',
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.markdown(
+                    f'<div class="ai-msg-row assistant"><div class="ai-msg-bubble assistant">{msg["content"]}</div></div>',
+                    unsafe_allow_html=True,
+                )
+
+    input_key = f"agent_chat_input_{st.session_state.agent_input_key}"
+    input_col, send_col = st.columns([5, 1])
+    with input_col:
+        st.text_input(
+            "Ton message",
+            key=input_key,
+            placeholder="Ex: Salut, aide-moi pour l'epicerie",
+            label_visibility="collapsed",
+            on_change=queue_agent_message_from_key,
+            args=(input_key,),
+        )
+    with send_col:
+        if st.button("➤", key=f"agent_send_btn_{st.session_state.agent_input_key}", use_container_width=True):
+            queue_agent_message_from_key(input_key)
+
+    user_text = str(st.session_state.get("agent_pending_send", "")).strip()
+    if user_text:
+        client = get_groq_client(api_key)
+        st.session_state.agent_chat_history.append({"role": "user", "content": user_text.strip()})
+        try:
+            completion = client.chat.completions.create(
+                model="llama-3.1-70b-versatile",
+                messages=st.session_state.agent_chat_history,
+                temperature=0.25,
+                max_tokens=700,
+            )
+            answer = completion.choices[0].message.content or "Je n'ai pas pu produire de reponse."
+        except Exception:
+            # Fallback model
+            completion = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=st.session_state.agent_chat_history,
+                temperature=0.25,
+                max_tokens=700,
+            )
+            answer = completion.choices[0].message.content or "Je n'ai pas pu produire de reponse."
+
+        st.session_state.agent_chat_history.append({"role": "assistant", "content": answer})
+        st.session_state.agent_pending_send = ""
+        st.rerun()
+
+
+def build_llm_system_prompt() -> str:
+    return (
+        "Tu es un assistant d'analyse prix pour le projet 'Prix Senegal'.\n"
+        "Regles STRICTES anti-hallucination:\n"
+        "1) Tu dois repondre UNIQUEMENT a partir des donnees fournies dans CONTEXTE_IA.\n"
+        "2) Si une information n'existe pas dans CONTEXTE_IA, tu dois dire: \"Je ne peux pas conclure avec les donnees disponibles\".\n"
+        "3) Tu n'as pas le droit d'inventer des chiffres, categories, magasins, ni de faire de suppositions.\n"
+        "4) Chaque reponse DOIT inclure:\n"
+        "   - le niveau de comparaison (ici: categorie)\n"
+        "   - la categorie concernee\n"
+        "   - les magasins compares\n"
+        "   - nb_produits et couverture_categorie_pct (au moins pour le magasin recommande)\n"
+        "   - l'indicateur principal (indice_categorie_base_100)\n"
+        "   - score_confiance et une note de prudence\n"
+        "5) Si l'utilisateur demande \"quel magasin choisir\", tu dois recommander le magasin avec l'indice_categorie_base_100 le plus faible\n"
+        "   DANS la categorie demandee, en rappelant la couverture et la confiance.\n"
+        "\n"
+        "Format de sortie obligatoire: tu dois repondre en JSON STRICT, sans texte autour.\n"
+        "Schema JSON:\n"
+        "{\n"
+        "  \"categorie\": \"...\",\n"
+        "  \"magasins\": [\"Auchan\", \"Diarle\", \"Sakanal\"],\n"
+        "  \"recommandation\": {\n"
+        "    \"magasin\": \"...\",\n"
+        "    \"indice_categorie_base_100\": 0.0,\n"
+        "    \"nb_produits\": 0,\n"
+        "    \"couverture_categorie_pct\": 0.0,\n"
+        "    \"score_confiance\": \"faible|moyen|eleve\",\n"
+        "    \"note_methodologique\": \"...\"\n"
+        "  },\n"
+        "  \"comparaison\": {\n"
+        "    \"ecart_indice_vs_max\": 0.0\n"
+        "  },\n"
+        "  \"reponse_courte\": \"2-4 phrases maximum, avec prudence methodologique\",\n"
+        "  \"sources\": [\n"
+        "    {\n"
+        "      \"magasin\": \"...\",\n"
+        "      \"indice_categorie_base_100\": 0.0,\n"
+        "      \"nb_produits\": 0,\n"
+        "      \"couverture_categorie_pct\": 0.0,\n"
+        "      \"score_confiance\": \"...\"\n"
+        "    }\n"
+        "  ]\n"
+        "}\n"
+    )
+
+
+def build_llm_system_prompt_autonomous() -> str:
+    return (
+        "Tu es un assistant conversationnel expert en analyse prix pour le projet 'Prix Senegal'.\n"
+        "Tu dois raisonner de facon naturelle et utile pour un utilisateur non technique.\n"
+        "Contraintes:\n"
+        "- Tu dois t'appuyer sur le CONTEXTE_IA fourni.\n"
+        "- Tu n'inventes pas de chiffres. Si la donnee manque, tu le dis clairement.\n"
+        "- Tu peux poser une question de clarification si la demande est floue.\n"
+        "- Style: clair, humain, pedagogique, concis.\n"
+        "- Quand tu recommandes un magasin, cite au minimum: categorie, indice, nb_produits, couverture, score_confiance.\n"
+    )
+
+
+def call_groq_chat(messages: list[dict], api_key: str, model: str = "llama-3.1-8b-instant") -> str:
+    url = "https://api.groq.com/openai/v1/chat/completions"
+    payload = {
+        "model": model,
+        "messages": messages,
+        "temperature": 0.2,
+        "max_tokens": 600,
+    }
+    resp = requests.post(
+        url,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        json=payload,
+        timeout=60,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    return data["choices"][0]["message"]["content"]
+
+
+def show_llm_assistant(ai_context: pd.DataFrame, selected_stores: list[str], selected_categories: list[str], focus_category: str | None):
+    st.subheader("Assistant IA (LLM)")
+    st.caption("Reponses fondees uniquement sur le Contexte IA (niveau 2).")
+
+    api_key = get_groq_api_key()
+    if not api_key:
+        st.warning("Assistant desactive: ajoute `GROQ_API_KEY` (variable d'environnement ou `st.secrets`).")
+        with st.expander("Diagnostic (sans afficher la cle)", expanded=False):
+            st.write(f"- `.env` dans CWD: {os.path.exists('.env')}")
+            try:
+                st.write(f"- `.env` dans dossier app.py: {os.path.exists(str(Path(__file__).resolve().parent / '.env'))}")
+            except Exception:
+                st.write("- `.env` dans dossier app.py: erreur")
+            st.write(f"- `GROQ_API_KEY` present dans os.environ: {'GROQ_API_KEY' in os.environ}")
+        return
+    if ai_context.empty:
+        st.info("Contexte IA indisponible. Lance `python kpi.py` pour generer `kpi_contexte_ia_*.csv`.")
+        return
+
+    # Base filter: stores first.
+    base_filtered = ai_context.loc[ai_context["magasin_standardise"].isin(selected_stores)].copy()
+    available_categories = sorted(base_filtered["categorie_standardisee"].dropna().unique().tolist())
+
+    # Category selection precedence:
+    # 1) explicit selected_categories from UI
+    # 2) focus_category (passed from caller)
+    # 3) detected from the user question (per message)
+    locked_categories = selected_categories[:] if selected_categories else []
+    if not locked_categories and focus_category:
+        locked_categories = [focus_category]
+
+    if base_filtered.empty:
+        st.info("Aucune ligne Contexte IA avec les filtres actuels.")
+        return
+
+    # Keep context compact to avoid token bloat.
+    keep_cols = [
+        "niveau_comparaison",
+        "categorie_standardisee",
+        "magasin_standardise",
+        "nb_produits",
+        "couverture_categorie_pct",
+        "indice_categorie_base_100",
+        "score_confiance",
+        "note_methodologique",
+    ]
+
+    model = st.selectbox(
+        "Modele Groq",
+        options=["llama-3.1-8b-instant", "llama-3.1-70b-versatile"],
+        index=0,
+        key="groq_model_select",
+    )
+    assistant_style = st.selectbox(
+        "Style assistant",
+        options=["LLM autonome", "Mode guide (regles strictes)"],
+        index=0,
+        key="assistant_style",
+    )
+
+    if "chat_messages" not in st.session_state:
+        st.session_state.chat_messages = []
+
+    for msg in st.session_state.chat_messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+
+    # Coach-mode state (clarifications)
+    if "assistant_pending_question" not in st.session_state:
+        st.session_state.assistant_pending_question = None
+    if "assistant_pending_category" not in st.session_state:
+        st.session_state.assistant_pending_category = None
+
+    user_text = st.chat_input("Ecris ici (ex: Quel magasin pour l'epicerie ?)")
+    if not user_text:
+        # If we are waiting for clarification, render the clarification UI.
+        if st.session_state.assistant_pending_question and not st.session_state.assistant_pending_category:
+            with st.chat_message("assistant"):
+                st.info("Pour te repondre proprement, j'ai besoin d'une categorie. Laquelle veux-tu analyser ?")
+                options = available_categories or []
+                if not options:
+                    st.warning("Aucune categorie disponible dans le Contexte IA.")
+                    return
+                choice = st.selectbox(
+                    "Categorie",
+                    options=options,
+                    key="assistant_clarify_category",
+                )
+                cols = st.columns([1, 1, 3])
+                if cols[0].button("Continuer", key="assistant_clarify_continue"):
+                    st.session_state.assistant_pending_category = choice
+                    st.rerun()
+                cols[1].button("Annuler", key="assistant_clarify_cancel")
+        return
+        return
+
+    # LLM-first mode: minimal automation, let the model drive the conversation.
+    if assistant_style == "LLM autonome":
+        st.session_state.chat_messages.append({"role": "user", "content": user_text})
+        with st.chat_message("user"):
+            st.markdown(user_text)
+
+        context_filtered = base_filtered.copy()
+        if selected_categories:
+            context_filtered = context_filtered.loc[
+                context_filtered["categorie_standardisee"].isin(selected_categories)
+            ].copy()
+        elif focus_category:
+            context_filtered = context_filtered.loc[
+                context_filtered["categorie_standardisee"].eq(focus_category)
+            ].copy()
+
+        if context_filtered.empty:
+            with st.chat_message("assistant"):
+                st.warning("Je ne peux pas repondre: le contexte filtre est vide.")
+            return
+
+        keep_cols = [
+            "niveau_comparaison",
+            "categorie_standardisee",
+            "magasin_standardise",
+            "nb_produits",
+            "couverture_categorie_pct",
+            "indice_categorie_base_100",
+            "score_confiance",
+            "note_methodologique",
+        ]
+        context_payload = context_filtered[keep_cols].to_dict(orient="records")
+        llm_messages = [
+            {"role": "system", "content": build_llm_system_prompt_autonomous()},
+            {"role": "user", "content": "CONTEXTE_IA (JSON):\n" + json.dumps(context_payload, ensure_ascii=False)},
+            {"role": "user", "content": user_text},
+        ]
+
+        with st.chat_message("assistant"):
+            with st.spinner("Generation de la reponse..."):
+                try:
+                    raw = call_groq_chat(llm_messages, api_key=api_key, model=model)
+                except requests.HTTPError:
+                    st.warning("Le modele selectionne ne repond pas. Bascule automatique sur llama-3.1-8b-instant.")
+                    raw = call_groq_chat(llm_messages, api_key=api_key, model="llama-3.1-8b-instant")
+                except Exception as exc:
+                    st.error(f"Erreur LLM: {exc}")
+                    return
+            st.markdown(raw)
+            st.session_state.chat_messages.append({"role": "assistant", "content": raw})
+        return
+
+    # Human-like onboarding: greetings should not trigger store recommendations.
+    greeting_tokens = ["salut", "bonjour", "bonsoir", "hello", "yo", "cv", "ça va", "ca va", "slt"]
+    norm_user = _normalize_text(user_text)
+    if any(tok in norm_user for tok in greeting_tokens) and len(norm_user.split()) <= 3:
+        st.session_state.chat_messages.append({"role": "user", "content": user_text})
+        with st.chat_message("user"):
+            st.markdown(user_text)
+        with st.chat_message("assistant"):
+            st.markdown(
+                "Bonjour. Je peux t'aider a comparer **Auchan / Diarle / Sakanal** a partir des donnees du projet.\n\n"
+                "Dis-moi simplement:\n"
+                "- la **categorie** (ex: Epicerie, Boissons, Produits locaux)\n"
+                "- et ton objectif (ex: *le moins cher* ou *la meilleure couverture*).\n"
+            )
+        st.session_state.chat_messages.append(
+            {
+                "role": "assistant",
+                "content": "Bonjour. Dis-moi la categorie (Epicerie, Boissons, Produits locaux) et ton objectif (moins cher / couverture).",
+            }
+        )
+        return
+
+    # Smart category detection (only if not locked by UI)
+    detected_categories: list[str] = []
+    suggestions: list[str] = []
+    if not locked_categories:
+        detected_categories, suggestions = detect_categories_from_question(user_text, available_categories)
+        if detected_categories:
+            st.session_state["assistant_detected_categories"] = detected_categories
+        elif suggestions:
+            st.session_state["assistant_category_suggestions"] = suggestions
+
+    effective_categories = locked_categories[:]
+    if not effective_categories:
+        detected = st.session_state.get("assistant_detected_categories") or []
+        if isinstance(detected, list):
+            effective_categories = detected[:]
+
+    # Coach behavior: if the question is generic and no category is detected, ask for clarification.
+    generic_intents = [
+        "quel magasin",
+        "tu me conseilles",
+        "le moins cher",
+        "meilleur magasin",
+        "recommande",
+        "conseille",
+        "ou acheter",
+    ]
+    is_generic = any(token in _normalize_text(user_text) for token in generic_intents)
+    if is_generic and not effective_categories and not st.session_state.get("assistant_category_suggestions"):
+        st.session_state.assistant_pending_question = user_text
+        st.session_state.assistant_pending_category = None
+        st.session_state.chat_messages.append({"role": "user", "content": user_text})
+        with st.chat_message("user"):
+            st.markdown(user_text)
+        with st.chat_message("assistant"):
+            st.info("Je peux t'aider, mais il me manque la categorie. Laquelle veux-tu analyser ?")
+            if available_categories:
+                choice = st.selectbox(
+                    "Categorie",
+                    options=available_categories,
+                    key="assistant_clarify_category_inline",
+                )
+                cols = st.columns([1, 1, 3])
+                if cols[0].button("Continuer", key="assistant_clarify_continue_inline"):
+                    st.session_state.assistant_pending_category = choice
+                    st.rerun()
+                cols[1].button("Annuler", key="assistant_clarify_cancel_inline")
+        return
+
+    # If a pending question exists and the user just clarified a category, convert it into an effective category.
+    if st.session_state.assistant_pending_question and st.session_state.assistant_pending_category and not locked_categories:
+        effective_categories = [st.session_state.assistant_pending_category]
+        # Replace user_text with the original pending question for continuity
+        user_text = st.session_state.assistant_pending_question
+        # Clear pending state after applying
+        st.session_state.assistant_pending_question = None
+        st.session_state.assistant_pending_category = None
+
+    # If multiple categories are detected, ask user to choose one.
+    if len(effective_categories) >= 2:
+        with st.chat_message("assistant"):
+            st.info("J'ai detecte plusieurs categories dans ta question. Laquelle veux-tu analyser ?")
+            choice = st.selectbox(
+                "Categorie",
+                options=effective_categories,
+                key="assistant_multi_category_choice",
+            )
+            cols = st.columns([1, 1, 3])
+            if cols[0].button("Utiliser cette categorie", key="assistant_use_multi_category"):
+                st.session_state["assistant_detected_categories"] = [choice]
+                st.rerun()
+            cols[1].button("Annuler", key="assistant_cancel_multi_category")
+        return
+
+    # If we still don't have a category but have suggestions, ask user to choose.
+    if not effective_categories and st.session_state.get("assistant_category_suggestions"):
+        with st.chat_message("assistant"):
+            st.warning("Je ne trouve pas exactement la categorie dans le Contexte IA. Choisis une categorie proche pour continuer.")
+            choice = st.selectbox(
+                "Categorie suggeree",
+                options=st.session_state["assistant_category_suggestions"],
+                key="assistant_category_choice",
+            )
+            cols = st.columns([1, 1, 3])
+            if cols[0].button("Utiliser cette categorie", key="assistant_use_suggested"):
+                st.session_state["assistant_detected_categories"] = [choice]
+                st.rerun()
+            cols[1].button("Annuler", key="assistant_cancel_suggested")
+        return
+
+    # Build context filtered for this specific message
+    context_filtered = base_filtered.copy()
+    if effective_categories:
+        context_filtered = context_filtered.loc[context_filtered["categorie_standardisee"].isin(effective_categories)].copy()
+
+    if context_filtered.empty:
+        with st.chat_message("assistant"):
+            st.warning("Je ne peux pas conclure avec les donnees disponibles (categorie absente ou filtre trop strict).")
+        return
+
+    # Small UX hint: show which category was used
+    if effective_categories:
+        st.caption(f"Categorie utilisee pour la reponse: **{', '.join(effective_categories)}**")
+
+    st.session_state.chat_messages.append({"role": "user", "content": user_text})
+    with st.chat_message("user"):
+        st.markdown(user_text)
+
+    context_payload = context_filtered[keep_cols].to_dict(orient="records")
+    system_prompt = build_llm_system_prompt()
+    llm_messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": "CONTEXTE_IA (JSON):\n" + json.dumps(context_payload, ensure_ascii=False)},
+        {"role": "user", "content": user_text},
+    ]
+
+    with st.chat_message("assistant"):
+        with st.spinner("Generation de la reponse..."):
+            try:
+                raw = call_groq_chat(llm_messages, api_key=api_key, model=model)
+            except requests.HTTPError as exc:
+                # Fallback si le modele n'est pas dispo sur le compte/region.
+                st.warning("Le modele selectionne ne repond pas. Bascule automatique sur llama-3.1-8b-instant.")
+                raw = call_groq_chat(llm_messages, api_key=api_key, model="llama-3.1-8b-instant")
+            except Exception as exc:
+                st.error(f"Erreur LLM: {exc}")
+                return
+
+        # Parse JSON strict (sinon afficher brut)
+        try:
+            data = json.loads(raw)
+        except Exception:
+            st.warning("Reponse non-JSON: affichage brut.")
+            st.markdown(raw)
+            st.session_state.chat_messages.append({"role": "assistant", "content": raw})
+            return
+
+        st.markdown("### Réponse")
+        st.write(data.get("reponse_courte", ""))
+
+        reco = data.get("recommandation", {}) or {}
+        cols = st.columns(4)
+        cols[0].metric("Magasin recommandé", str(reco.get("magasin", "-")))
+        cols[1].metric("Indice catégorie", f"{float(reco.get('indice_categorie_base_100', 0.0)):.1f}")
+        cols[2].metric("Nb produits", int(reco.get("nb_produits", 0)) if reco.get("nb_produits") is not None else 0)
+        cols[3].metric("Couverture", f"{float(reco.get('couverture_categorie_pct', 0.0)):.1f}%")
+
+        st.markdown("### Justification (données)")
+        st.write(
+            f"- Catégorie: **{data.get('categorie','-')}**\n"
+            f"- Magasins: **{', '.join(data.get('magasins', []) or [])}**\n"
+            f"- Confiance: **{reco.get('score_confiance','-')}**\n"
+            f"- Prudence: {reco.get('note_methodologique','-')}"
+        )
+
+        sources = data.get("sources", []) or []
+        if isinstance(sources, list) and sources:
+            st.dataframe(pd.DataFrame(sources), width="stretch", hide_index=True)
+
+        # Store a compact rendered version in history
+        rendered = data.get("reponse_courte", "") + "\n\n" + json.dumps(data.get("recommandation", {}), ensure_ascii=False)
+        st.session_state.chat_messages.append({"role": "assistant", "content": rendered})
 
 
 def build_price_comparison(
@@ -749,10 +1450,122 @@ def main():
     ai_context = datasets.get("ai_context", pd.DataFrame())
     quality = datasets.get("quality", pd.DataFrame())
     paths = datasets["paths"]
-
     available_stores = sorted(analytics["magasin_standardise"].dropna().unique().tolist())
     available_categories = sorted(analytics["categorie_standardisee"].dropna().unique().tolist())
     default_stores = [store for store in ["Auchan", "Sakanal", "Diarle"] if store in available_stores] or available_stores
+
+    # Floating assistant launcher (robust via streamlit-float when available).
+    if float_init is not None and float_parent is not None:
+        float_init()
+        st.markdown(
+            """
+<style>
+[data-testid="stPopover"] button {
+  width: 78px !important;
+  height: 78px !important;
+  border-radius: 999px !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.42) !important;
+  border: 2px solid rgba(255,255,255,0.35) !important;
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  color: white !important;
+}
+[data-testid="stPopover"] button p {
+  font-size: 36px !important;
+  line-height: 1 !important;
+}
+[data-testid="stPopover"] button:hover {
+  transform: scale(1.04);
+}
+[data-testid="stPopover"] [data-testid="stVerticalBlock"] {
+  max-width: 360px;
+}
+.ai-support-header {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+.ai-support-title {
+  color: #f8fafc;
+  font-size: 16px;
+  font-weight: 700;
+}
+.ai-support-status {
+  color: #22c55e;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.ai-msg-row {
+  display: flex;
+  width: 100%;
+  margin: 6px 0;
+}
+.ai-msg-row.user {
+  justify-content: flex-end;
+}
+.ai-msg-row.assistant {
+  justify-content: flex-start;
+}
+.ai-msg-bubble {
+  max-width: 85%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.35;
+  white-space: pre-wrap;
+}
+.ai-msg-bubble.user {
+  background: #22c55e;
+  color: #052e16;
+}
+.ai-msg-bubble.assistant {
+  background: rgba(255,255,255,0.08);
+  color: #e5e7eb;
+}
+[data-baseweb="popover"] {
+  animation: assistantZoomIn 180ms ease-out;
+  transform-origin: bottom right;
+}
+@keyframes assistantZoomIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to { opacity: 1; transform: scale(1); }
+}
+</style>
+            """,
+            unsafe_allow_html=True,
+        )
+        with st.container():
+            with st.popover("🤖", use_container_width=False):
+                chosen_stores = st.multiselect(
+                    "Magasins",
+                    options=available_stores,
+                    default=default_stores,
+                    key="assistant_popover_stores",
+                )
+                show_groq_popover_assistant(
+                    ai_context=ai_context,
+                    selected_stores=chosen_stores,
+                    selected_categories=[],
+                )
+            float_parent(css="position:fixed !important; left:calc(100vw - 110px) !important; right:auto !important; bottom:24px !important; z-index:2147483647 !important;")
+    else:
+        # Fallback when streamlit-float is not installed.
+        st.info("Pour afficher l'icone flottante, installe `streamlit-float` puis relance l'application.")
+        with st.popover("🤖 Assistant", use_container_width=False):
+            chosen_stores = st.multiselect(
+                "Magasins",
+                options=available_stores,
+                default=default_stores,
+                key="assistant_popover_stores_fallback",
+            )
+            show_groq_popover_assistant(
+                ai_context=ai_context,
+                selected_stores=chosen_stores,
+                selected_categories=[],
+            )
 
     st.sidebar.header("Filtres")
     selected_stores = st.sidebar.multiselect(
@@ -781,11 +1594,11 @@ def main():
     )
 
     st.sidebar.divider()
-    st.sidebar.caption("Sources chargees automatiquement")
-    for label, path in paths.items():
-        if path is None:
-            continue
-        st.sidebar.write(f"{label}: `{path.name}`")
+    with st.sidebar.expander("Sources chargees (debug)", expanded=False):
+        for label, path in paths.items():
+            if path is None:
+                continue
+            st.write(f"{label}: `{path.name}`")
 
     if not selected_stores:
         st.warning("Selectionne au moins un magasin pour afficher la comparaison.")
@@ -1000,6 +1813,7 @@ def main():
         focus_category = st.session_state.get("dispersion_categorie_cible")
         show_ai_context_panel(ai_context, selected_stores, selected_categories, focus_category=focus_category)
     st.divider()
+
     bottom_left, bottom_right = st.columns(2)
 
     with bottom_left:
